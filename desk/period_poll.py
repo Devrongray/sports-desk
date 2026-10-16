@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -106,8 +107,17 @@ def run_poll(cfg: dict, data_dir: Path, desk_root: Path, as_of: datetime | None 
     return _finish(out, desk_root, as_of)
 
 
+_KEY = re.compile(r"(apiKey=)[^&\s\"']+", re.IGNORECASE)
+
+
+def _redact(text):
+    return _KEY.sub(r"\1***", str(text)) if text is not None else None
+
+
 def _finish(out: dict, desk_root: Path, as_of: datetime) -> dict:
-    """Write the poll status next to the data (also on a skip) and print it."""
+    """Write the poll status next to the data (also on a skip) and print it.
+    Error text is redacted so a key can never land in a committed file."""
+    out["skipped"] = _redact(out.get("skipped"))
     day = as_of.strftime("%Y-%m-%d")
     stamp = as_of.strftime("%Y%m%dT%H%M%SZ")
     meta_path = desk_root / "data" / "desk_pinnacle" / day / f"poll_{stamp}.json"
