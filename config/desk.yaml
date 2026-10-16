@@ -60,19 +60,27 @@ period_markets:
   # inside the post window. Needs the ODDS_API_KEY secret in this repo.
   enabled: true
   within_minutes: 180
+  # An event polled within the last poll_minutes is not polled again (so two scans
+  # that land close together do not pay twice). 30 = every scan; 60 = hourly, which
+  # halves the cost and still satisfies the 60-minute reference-age rule.
   poll_minutes: 30
   # Hard ceilings: credits per run, credits per UTC day (sum of this day's polls),
   # and the key balance below which the desk stops polling so sports-method's own
   # hourly Pinnacle poll (same key) keeps running to the end of the cycle.
-  max_credits_per_run: 60
-  daily_credit_cap: 350
+  # Expected spend at 30-minute polling: a 10-game NHL night ~240 (4 markets x 6
+  # polls x 10), an 8-game NBA night ~144; the 400 cap trims only the busiest nights.
+  max_credits_per_run: 80
+  daily_credit_cap: 400
   quota_reserve: 2000
   # Winner legs: Polymarket US quotes period / first-five winners as three
   # contracts (home / away / tie), so the reference is the THREE-way Pinnacle
   # market. The two-way h2h_p1 / h2h_1st_5_innings treat a tie as a push and
   # would overstate each team by 15-20¢ on an NHL period. Never list those.
+  # h2h_3_way on NHL is the full-game three-way (regulation result): the reference
+  # for the three "lead after regulation" / "tied after regulation" contracts,
+  # quoted 13-15c wide on 16 Oct. Added 16 Oct (amendment 2).
   by_sport:
-    nhl: [totals_p1, spreads_p1, h2h_3_way_p1]
+    nhl: [totals_p1, spreads_p1, h2h_3_way_p1, h2h_3_way]
     nba: [totals_h1, spreads_h1, totals_q1]
     nfl: [totals_h1, totals_q1]
     mlb: [totals_1st_5_innings, h2h_3_way_1st_5_innings, spreads_1st_5_innings]

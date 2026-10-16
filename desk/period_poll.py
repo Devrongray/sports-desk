@@ -85,6 +85,19 @@ def run_poll(cfg: dict, data_dir: Path, desk_root: Path, as_of: datetime | None 
         max_credits = min(max_credits, daily_cap - spent_today)
     by_sport = pm["by_sport"]
     ev = upcoming_events(data_dir, as_of, pm["within_minutes"], by_sport)
+    # poll_minutes: an event polled more recently than this is skipped, so two scans
+    # that land close together (GitHub's cron jitter) do not pay twice, and the
+    # cadence can be relaxed to hourly by changing one number.
+    poll_minutes = float(pm.get("poll_minutes") or 0)
+    if poll_minutes and not ev.empty:
+        prev = D.desk_period_rows(desk_root, as_of, hours=max(poll_minutes / 60.0, 1.0) + 0.5)
+        if not prev.empty:
+            last = prev.groupby("event_id")["ts"].max()
+            cutoff = pd.Timestamp(as_of) - pd.Timedelta(minutes=poll_minutes - 2)   # 2 min slack
+            recent = set(last[last > cutoff].index.astype(str))
+            skipped = ev[ev["event_id"].astype(str).isin(recent)]
+            out["events_skipped_recent"] = int(len(skipped))
+            ev = ev[~ev["event_id"].astype(str).isin(recent)]
     api = OddsAPIEvents()
     try:
         api.sports()  # free; refreshes quota headers
@@ -93,7 +106,8 @@ def run_poll(cfg: dict, data_dir: Path, desk_root: Path, as_of: datetime | None 
         out["skipped"] = f"odds api unreachable: {e}"
         return _finish(out, desk_root, as_of)
     if ev.empty:
-        out["skipped"] = "no events inside the window"
+        out["skipped"] = ("all events inside the window were polled within poll_minutes"
+                          if out.get("events_skipped_recent") else "no events inside the window")
         return _finish(out, desk_root, as_of)
     rows: list[dict] = []
     spent = 0.0

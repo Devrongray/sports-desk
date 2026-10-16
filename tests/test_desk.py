@@ -205,9 +205,10 @@ def test_daily_credit_cap_stops_the_poll(tmp_path):
     as_of = datetime(2026, 10, 16, 23, 0, tzinfo=timezone.utc)
     day = tmp_path / "data" / "desk_pinnacle" / "2026-10-16"
     day.mkdir(parents=True)
-    for i, spent in enumerate([120, 130, 110]):
+    cap = cfg["period_markets"]["daily_credit_cap"]
+    for i, spent in enumerate([cap * 0.4, cap * 0.4, cap * 0.3]):      # 110% of the cap
         (day / f"poll_2026101{i}T000000Z.json").write_text(json.dumps({"credits_spent_est": spent}))
-    assert credits_spent_today(tmp_path, as_of) == 360
+    assert credits_spent_today(tmp_path, as_of) == pytest.approx(cap * 1.1)
     import os
     os.environ["ODDS_API_KEY"] = "test-not-a-real-key"
     try:
@@ -217,3 +218,46 @@ def test_daily_credit_cap_stops_the_poll(tmp_path):
     assert out["skipped"].startswith("daily credit cap")
     assert out["events"] == 0 and out["credits_spent_est"] == 0
     assert (tmp_path / "data" / "desk_pinnacle" / "latest_poll.json").exists()
+
+
+def test_poll_minutes_skips_recently_polled_events(tmp_path, monkeypatch=None):
+    """Two scans 20 minutes apart must not pay for the same event twice."""
+    import gzip, json, os
+    from desk import period_poll as P
+    cfg = load_config()
+    cfg["period_markets"]["poll_minutes"] = 30
+    as_of = datetime(2026, 10, 16, 23, 20, tzinfo=timezone.utc)
+    # the desk polled event E1 twenty minutes ago; E2 never
+    day = tmp_path / "data" / "desk_pinnacle" / "2026-10-16"
+    day.mkdir(parents=True)
+    with gzip.open(day / "period_20261016T230000Z.ndjson.gz", "wt") as f:
+        f.write(json.dumps({"ts": "2026-10-16T23:00:00+00:00", "sport": "nhl", "sport_key": "icehockey_nhl", "event_id": "E1",
+                            "commence_time": "2026-10-17T01:00:00Z", "home": "A", "away": "B", "bookmaker": "pinnacle",
+                            "market": "totals_p1", "outcome": "Over", "price": 1.9, "point": 1.5}) + "\n")
+    ev = pd.DataFrame([
+        {"sport": "nhl", "sport_key": "icehockey_nhl", "event_id": "E1", "commence_time": pd.Timestamp("2026-10-17T01:00:00Z"), "home": "A", "away": "B"},
+        {"sport": "nhl", "sport_key": "icehockey_nhl", "event_id": "E2", "commence_time": pd.Timestamp("2026-10-17T02:00:00Z"), "home": "C", "away": "D"},
+    ])
+    polled = []
+
+    class FakeAPI:
+        quota = {"remaining": 15000.0, "used": 5000.0}
+        def sports(self):
+            return []
+        def event_odds(self, sport_key, event_id, markets):
+            polled.append(event_id)
+            return {"id": event_id, "commence_time": "2026-10-17T01:00:00Z", "home_team": "A", "away_team": "B",
+                    "bookmakers": [{"key": "pinnacle", "markets": [{"key": m, "outcomes": [{"name": "Over", "price": 1.9, "point": 1.5}, {"name": "Under", "price": 1.9, "point": 1.5}]} for m in markets]}]}
+
+    orig_upcoming, orig_api = P.upcoming_events, P.OddsAPIEvents
+    P.upcoming_events = lambda *a, **k: ev
+    P.OddsAPIEvents = FakeAPI
+    os.environ["ODDS_API_KEY"] = "test-not-a-real-key"
+    try:
+        out = P.run_poll(cfg, tmp_path / "nodata", tmp_path, as_of)
+    finally:
+        P.upcoming_events, P.OddsAPIEvents = orig_upcoming, orig_api
+        del os.environ["ODDS_API_KEY"]
+    assert polled == ["E2"]
+    assert out["events_skipped_recent"] == 1 and out["events"] == 1
+    assert out["credits_spent_est"] == len(cfg["period_markets"]["by_sport"]["nhl"])

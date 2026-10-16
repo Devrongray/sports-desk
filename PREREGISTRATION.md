@@ -150,3 +150,11 @@ Never buy a contract under 10¢; buys under 20¢ are flagged.
    changed; no candidate, order or fill was produced under the wrong reference.
    Same commit: a daily credit cap (350) and per-run cap (60) on the period
    poll, so the desk cannot exhaust the Odds API key sports-method shares.
+2. **2026-10-16, 10:10 PT (still before the first period poll).** `h2h_3_way`
+   added to the NHL poll, so the three "lead after regulation" / "tied after
+   regulation" contracts (quoted 13–15¢ wide at 16:54 UTC) get their
+   reference. These contracts were already inside the pre-registered universe
+   (NHL WINNER, all segments); only the reference's availability changes.
+   Caps raised to 80 per run / 400 per day to fit a 10-game NHL night at four
+   markets; `poll_minutes` now enforced (an event polled within the last 30
+   minutes is not polled again). Rules unchanged.

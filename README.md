@@ -54,7 +54,7 @@ game costs up to 3 × 6 = 18 credits a day; a 10-game NHL night ≈ 180, an
 8-game NBA night ≈ 144. In full season that is ~300–350 credits a day
 (~10k a month) **on top of sports-method's own ~11–15k a month on the same
 key**, which does not fit a 20k plan. Three ceilings bound it
-(`period_markets` in `config/desk.yaml`): 60 credits per run, 350 per UTC day,
+(`period_markets` in `config/desk.yaml`): 80 credits per run, 400 per UTC day,
 and a stop when the key has fewer than 2,000 credits left, so sports-method's
 hourly poll keeps running to the end of the cycle. `data/desk_pinnacle/latest_poll.json`
 shows the quota and today's spend after every poll. Cheaper settings if
