@@ -48,11 +48,18 @@ workflow clones it into `vendor/`.
 2. Add the repository secret `ODDS_API_KEY` (the same The Odds API key sports-method uses). Without it the desk still scans full-game lines; period lines get no reference.
 3. Run the **Desk scan** workflow once by hand (Actions → Desk scan → Run workflow) and open `scans/latest.md`.
 
-Quota: the period poll costs (markets returned × 1) credits per event, capped at
-60 credits per run and stopped when the key has fewer than 2,000 credits left.
-At the default cadence that is roughly 1.5–4k credits a month on top of
-sports-method's ~15k, inside the 20k plan; the summary line in each scan's meta
-shows the quota after every poll.
+Quota: the period poll costs (markets returned × 1) credits per event per poll.
+An event is inside the 180-minute window for six half-hourly scans, so one NHL
+game costs up to 3 × 6 = 18 credits a day; a 10-game NHL night ≈ 180, an
+8-game NBA night ≈ 144. In full season that is ~300–350 credits a day
+(~10k a month) **on top of sports-method's own ~11–15k a month on the same
+key**, which does not fit a 20k plan. Three ceilings bound it
+(`period_markets` in `config/desk.yaml`): 60 credits per run, 350 per UTC day,
+and a stop when the key has fewer than 2,000 credits left, so sports-method's
+hourly poll keeps running to the end of the cycle. `data/desk_pinnacle/latest_poll.json`
+shows the quota and today's spend after every poll. Cheaper settings if
+needed: poll every 60 minutes instead of 30 (halves it; references stay inside
+the 60-minute rule), or drop NBA halves/quarters.
 
 ## The daily routine ("Desk")
 

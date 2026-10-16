@@ -48,10 +48,25 @@ def upcoming_events(data_dir: Path, as_of: datetime, within_minutes: int, sport_
     return ev
 
 
+def credits_spent_today(desk_root: Path, as_of: datetime) -> float:
+    """Sum of credits_spent_est over this UTC day's poll_*.json status files."""
+    day_dir = desk_root / "data" / "desk_pinnacle" / as_of.strftime("%Y-%m-%d")
+    total = 0.0
+    for p in sorted(day_dir.glob("poll_*.json")) if day_dir.exists() else []:
+        try:
+            total += float(json.loads(p.read_text()).get("credits_spent_est") or 0)
+        except (ValueError, OSError):
+            continue
+    return total
+
+
 def run_poll(cfg: dict, data_dir: Path, desk_root: Path, as_of: datetime | None = None,
-             quota_reserve: float = 2000, max_credits: float = 60) -> dict:
+             quota_reserve: float | None = None, max_credits: float | None = None) -> dict:
     as_of = as_of or D.utcnow()
     pm = cfg["period_markets"]
+    quota_reserve = pm.get("quota_reserve", 2000) if quota_reserve is None else quota_reserve
+    max_credits = pm.get("max_credits_per_run", 60) if max_credits is None else max_credits
+    daily_cap = pm.get("daily_credit_cap")
     out = {"ts": as_of.isoformat(timespec="seconds"), "enabled": pm.get("enabled", False), "events": 0, "rows": 0,
            "credits_spent_est": 0, "skipped": None, "quota": None}
     out["key_present"] = bool(os.environ.get("ODDS_API_KEY"))
@@ -61,6 +76,13 @@ def run_poll(cfg: dict, data_dir: Path, desk_root: Path, as_of: datetime | None 
     if not out["key_present"]:
         out["skipped"] = "ODDS_API_KEY not set"
         return _finish(out, desk_root, as_of)
+    spent_today = credits_spent_today(desk_root, as_of)
+    out["credits_spent_today_before"] = spent_today
+    if daily_cap is not None and spent_today >= daily_cap:
+        out["skipped"] = f"daily credit cap {daily_cap} reached ({spent_today:g} spent today)"
+        return _finish(out, desk_root, as_of)
+    if daily_cap is not None:
+        max_credits = min(max_credits, daily_cap - spent_today)
     by_sport = pm["by_sport"]
     ev = upcoming_events(data_dir, as_of, pm["within_minutes"], by_sport)
     api = OddsAPIEvents()

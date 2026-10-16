@@ -125,3 +125,95 @@ def test_clv_sign_conventions():
     from method.metrics import clv_points
     assert clv_points(0.57, 0.60, "long") == pytest.approx(0.03)
     assert clv_points(0.63, 0.60, "short") == pytest.approx(0.03)
+
+
+# --- three-way winner legs (16 Oct 2026) -------------------------------------
+# Polymarket US quotes period / first-five / regulation winners as three contracts
+# (home / away / tie). PIT@COL first period on 16 Oct: COL 0.41, PIT 0.27, tie 0.31.
+# Against the two-way h2h_p1 (tie = push) COL's fair would read ~0.60 and the desk
+# would have bid 0.57 on a 0.41 contract. These pin the mapping.
+
+def _fair_frame(rows):
+    df = pd.DataFrame(rows)
+    df["ts"] = pd.to_datetime(df["ts"], utc=True)
+    return df
+
+
+def test_pinnacle_market_key_routes_three_way_segments():
+    from desk.reference import pinnacle_market_key
+    seg = load_config()["segments"]
+    assert pinnacle_market_key({"market_class": "WINNER", "segment": "FULL_GAME"}, seg) == "h2h"
+    assert pinnacle_market_key({"market_class": "WINNER", "segment": "FIRST_PERIOD"}, seg) == "h2h_3_way_p1"
+    assert pinnacle_market_key({"market_class": "WINNER", "segment": "THIRD_PERIOD"}, seg) == "h2h_3_way_p3"
+    assert pinnacle_market_key({"market_class": "WINNER", "segment": "FIRST_FIVE"}, seg) == "h2h_3_way_1st_5_innings"
+    assert pinnacle_market_key({"market_class": "WINNER", "segment": "REGULATION"}, seg) == "h2h_3_way"
+    assert pinnacle_market_key({"market_class": "TOTAL", "segment": "FIRST_PERIOD"}, seg) == "totals_p1"
+    assert pinnacle_market_key({"market_class": "SPREAD", "segment": "FIRST_FIVE"}, seg) == "spreads_1st_5_innings"
+    assert pinnacle_market_key({"market_class": "TOTAL", "segment": "REGULATION"}, seg) is None   # winner-only segment
+    assert pinnacle_market_key({"market_class": "WINNER", "segment": "NOT_A_SEGMENT"}, seg) is None
+    assert pinnacle_market_key({"market_class": "TEAM_TOTAL", "segment": "FULL_GAME"}, seg) is None
+
+
+def test_config_polls_only_three_way_winner_markets_for_period_legs():
+    pm = load_config()["period_markets"]["by_sport"]
+    for sport, markets in pm.items():
+        for m in markets:
+            if m.startswith("h2h_"):
+                assert m.startswith("h2h_3_way"), f"{sport}: {m} is the two-way market (tie = push); use h2h_3_way_*"
+
+
+def test_period_winner_contracts_reference_the_three_way_fair_including_the_tie_leg():
+    from desk.reference import contract_reference
+    cfg = load_config()
+    as_of = datetime(2026, 10, 16, 22, 30, tzinfo=timezone.utc)
+    ts = "2026-10-16T22:20:00+00:00"
+    # Pinnacle three-way first period, already de-vigged: COL 0.42, PIT 0.27, Draw 0.31;
+    # and the two-way h2h_p1 the desk must NOT use: COL 0.61, PIT 0.39.
+    fair = _fair_frame([
+        {"sport": "nhl", "event_id": "P1", "ts": ts, "market": "h2h_3_way_p1", "point": None, "outcome": "Colorado Avalanche", "price": 2.30, "fair_prob": 0.42},
+        {"sport": "nhl", "event_id": "P1", "ts": ts, "market": "h2h_3_way_p1", "point": None, "outcome": "Pittsburgh Penguins", "price": 3.50, "fair_prob": 0.27},
+        {"sport": "nhl", "event_id": "P1", "ts": ts, "market": "h2h_3_way_p1", "point": None, "outcome": "Draw", "price": 3.10, "fair_prob": 0.31},
+        {"sport": "nhl", "event_id": "P1", "ts": ts, "market": "h2h_p1", "point": None, "outcome": "Colorado Avalanche", "price": 1.60, "fair_prob": 0.61},
+        {"sport": "nhl", "event_id": "P1", "ts": ts, "market": "h2h_p1", "point": None, "outcome": "Pittsburgh Penguins", "price": 2.45, "fair_prob": 0.39},
+    ])
+    matches = pd.DataFrame([{"sport": "nhl", "pm_event_id": "156066", "pin_event_id": "P1", "how": "test", "minutes_apart": 0, "pm_teams": "PIT/COL"}])
+    base = {"sport": "nhl", "event_id": "156066", "market_class": "WINNER", "segment": "FIRST_PERIOD", "line": None}
+    col = contract_reference({**base, "market_slug": "atc-nhl-pit-col-2026-10-16-p1-col", "long_team_name": "Avalanche"},
+                             fair, matches, cfg["segments"], as_of)
+    pit = contract_reference({**base, "market_slug": "atc-nhl-pit-col-2026-10-16-p1-pit", "long_team_name": "Penguins"},
+                             fair, matches, cfg["segments"], as_of)
+    tie = contract_reference({**base, "market_slug": "atc-nhl-pit-col-2026-10-16-p1-draw", "long_team_name": float("nan")},
+                             fair, matches, cfg["segments"], as_of)
+    assert col["pin_market"] == "h2h_3_way_p1" and col["fair"] == pytest.approx(0.42)
+    assert pit["fair"] == pytest.approx(0.27)
+    assert tie["fair"] == pytest.approx(0.31) and tie["pin_market"] == "h2h_3_way_p1"
+    assert abs(col["fair"] + pit["fair"] + tie["fair"] - 1.0) < 1e-9
+    # full-game winner still two-way
+    fg_fair = _fair_frame([
+        {"sport": "nhl", "event_id": "P1", "ts": ts, "market": "h2h", "point": None, "outcome": "Colorado Avalanche", "price": 1.52, "fair_prob": 0.655},
+        {"sport": "nhl", "event_id": "P1", "ts": ts, "market": "h2h", "point": None, "outcome": "Pittsburgh Penguins", "price": 2.90, "fair_prob": 0.345},
+    ])
+    fg = contract_reference({**base, "segment": "FULL_GAME", "market_slug": "aec-nhl-pit-col-2026-10-16", "long_team_name": "Penguins"},
+                            fg_fair, matches, cfg["segments"], as_of)
+    assert fg["pin_market"] == "h2h" and fg["fair"] == pytest.approx(0.345)
+
+
+def test_daily_credit_cap_stops_the_poll(tmp_path):
+    import json
+    from desk.period_poll import credits_spent_today, run_poll
+    cfg = load_config()
+    as_of = datetime(2026, 10, 16, 23, 0, tzinfo=timezone.utc)
+    day = tmp_path / "data" / "desk_pinnacle" / "2026-10-16"
+    day.mkdir(parents=True)
+    for i, spent in enumerate([120, 130, 110]):
+        (day / f"poll_2026101{i}T000000Z.json").write_text(json.dumps({"credits_spent_est": spent}))
+    assert credits_spent_today(tmp_path, as_of) == 360
+    import os
+    os.environ["ODDS_API_KEY"] = "test-not-a-real-key"
+    try:
+        out = run_poll(cfg, tmp_path / "nodata", tmp_path, as_of)
+    finally:
+        del os.environ["ODDS_API_KEY"]
+    assert out["skipped"].startswith("daily credit cap")
+    assert out["events"] == 0 and out["credits_spent_est"] == 0
+    assert (tmp_path / "data" / "desk_pinnacle" / "latest_poll.json").exists()

@@ -61,11 +61,21 @@ period_markets:
   enabled: true
   within_minutes: 180
   poll_minutes: 30
+  # Hard ceilings: credits per run, credits per UTC day (sum of this day's polls),
+  # and the key balance below which the desk stops polling so sports-method's own
+  # hourly Pinnacle poll (same key) keeps running to the end of the cycle.
+  max_credits_per_run: 60
+  daily_credit_cap: 350
+  quota_reserve: 2000
+  # Winner legs: Polymarket US quotes period / first-five winners as three
+  # contracts (home / away / tie), so the reference is the THREE-way Pinnacle
+  # market. The two-way h2h_p1 / h2h_1st_5_innings treat a tie as a push and
+  # would overstate each team by 15-20¢ on an NHL period. Never list those.
   by_sport:
-    nhl: [totals_p1, spreads_p1, h2h_p1]
+    nhl: [totals_p1, spreads_p1, h2h_3_way_p1]
     nba: [totals_h1, spreads_h1, totals_q1]
     nfl: [totals_h1, totals_q1]
-    mlb: [totals_1st_5_innings, h2h_1st_5_innings, spreads_1st_5_innings]
+    mlb: [totals_1st_5_innings, h2h_3_way_1st_5_innings, spreads_1st_5_innings]
   odds_api_sport:
     nhl: icehockey_nhl
     nba: basketball_nba
@@ -88,3 +98,6 @@ segments:
   FOURTH_QUARTER: "_q4"
   FIRST_FIVE: "_1st_5_innings"
   INNING1: "_1st_1_innings"
+  # Winner-only segment: NHL "lead after regulation" (3 contracts) -> Pinnacle's
+  # full-game three-way h2h_3_way. Referenced only if that market is polled.
+  REGULATION: ""

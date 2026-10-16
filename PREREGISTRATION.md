@@ -47,10 +47,19 @@ integrity flag.
 Pinnacle, de-vigged **additive** (sports-method test (c), 14 Oct 2026: additive,
 power and Shin equivalent on two-way markets; multiplicative worse). Full-game
 lines from sports-method's recorder; period/half/quarter/inning lines from this
-repo's own per-event Odds API poll (`totals_p1`, `spreads_p1`, `h2h_p1`,
-`totals_h1`, `totals_q1`, `totals_1st_5_innings`, …). A reference older than
-60 minutes is not used. A spread references the same signed line; a total the
-same line; otherwise no reference.
+repo's own per-event Odds API poll (`totals_p1`, `spreads_p1`, `h2h_3_way_p1`,
+`totals_h1`, `totals_q1`, `totals_1st_5_innings`, `h2h_3_way_1st_5_innings`, …).
+A reference older than 60 minutes is not used. A spread references the same
+signed line; a total the same line; otherwise no reference.
+
+Winner legs of a segment that Polymarket US quotes as three contracts (home /
+away / tie: period winners, first-five-innings winner, "lead after regulation")
+are referenced against Pinnacle's **three-way** market for that segment
+(`h2h_3_way_*`), the tie contract against its Draw outcome. The two-way
+period/innings moneyline (`h2h_p1`, `h2h_1st_5_innings`), in which a tie is a
+push, is never a reference for them: it overstates each team by
+1/(1 − P(tie)), 15–20¢ on an NHL period. Full-game winners include overtime
+and are two-way on both venues; they keep `h2h`. (Amendment 1.)
 
 ## 5. Quote state (Polymarket US best bid/ask, never the displayed probability)
 
@@ -130,4 +139,14 @@ Never buy a contract under 10¢; buys under 20¢ are flagged.
 
 ## Amendment log
 
-_(none)_
+1. **2026-10-16 (before the first period poll ran and before any order was
+   logged).** Reference for three-way winner legs corrected from the two-way
+   `h2h_p1` / `h2h_1st_5_innings` to `h2h_3_way_p1` / `h2h_3_way_1st_5_innings`;
+   tie contracts (`…-draw`) referenced against the Draw outcome; `REGULATION`
+   segment mapped to `h2h_3_way` (winner only; referenced only if that market
+   is polled, which it is not yet). Found while confirming Polymarket US quotes
+   NHL period winners as three contracts (PIT@COL 16 Oct, 1st period: COL 0.41,
+   PIT 0.27, tie 0.31). No rule, threshold, window, size, gate or kill rule
+   changed; no candidate, order or fill was produced under the wrong reference.
+   Same commit: a daily credit cap (350) and per-run cap (60) on the period
+   poll, so the desk cannot exhaust the Odds API key sports-method shares.
