@@ -1,0 +1,33 @@
+name: Desk grade
+
+on:
+  schedule:
+    - cron: "40 11 * * *"         # 11:40 UTC, after sports-method's history pull (09:20) and daily analysis (10:05)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: desk-grade
+  cancel-in-progress: false
+
+jobs:
+  grade:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Fetch sports-method (pinned) and its data branch
+        run: bash scripts/fetch_sports_method.sh
+      - name: Grade orders, fills and candidates against the Pinnacle close
+        env:
+          SPORTS_METHOD_PATH: vendor/sports-method
+        run: python -m desk grade --data vendor/sports-method-data/data
+      - name: Commit the scorecard
+        run: bash scripts/commit_main.sh "ledger" "desk: grade $(date -u +%F)"

@@ -1,0 +1,90 @@
+# sports-desk configuration.
+#
+# The desk is a separate track from the "Begin" daily picks and from the
+# sports-method research pipeline. It READS sports-method's public data branch
+# (Polymarket US quotes, Pinnacle odds, price histories) and adds its own
+# scan, ledger and grading. It never writes to sports-method.
+#
+# Anything under `rules` is frozen in PREREGISTRATION.md. Changing a rule
+# means adding a dated amendment there first, then editing here.
+
+desk:
+  name: sports-desk
+  bankroll_usd: 1000          # the 30-day trial bankroll
+  unit_usd: 20                # flat unit per position until calibration is proven
+  max_open_posts: 10          # posted orders alive at once
+  daily_exposure_cap: 0.20    # share of bankroll committed in one day
+  taker_depth_min_usd: 50     # a taker order needs this much showing on the other side
+  taker_depth_fraction: 0.25  # and takes at most this share of it
+
+reference:
+  sports_method_repo: https://github.com/Devrongray/sports-method
+  sports_method_sha: 1b2e5acc7e54871bafebb53cc1a89f9a901a6c9d
+  data_branch: data
+  devig_method: additive      # sports-method test (c), 14 Oct 2026: additive ≈ power ≈ Shin; multiplicative is worse
+  pinnacle_max_age_minutes: 60
+  match_tolerance_minutes: 90
+  history_hours: 6            # how far back to read Pinnacle snapshots for the scan
+
+rules:
+  post_window_minutes: [15, 180]      # post only between 15 and 180 minutes before start
+  margin_pts: 0.03                     # maker bid at fair − margin, maker ask at fair + margin
+  min_maker_edge_pts: 0.01             # after moving to the top of the book the edge must still be ≥ this
+  taker_min_edge_pts: 0.01             # taker edge after fee must be ≥ this + half the spread
+  tight_spread_max: 0.02               # ≤ 2¢: machine-quoted, anchored to the sharp price
+  unquoted_spread_min: 0.30            # ≥ 30¢: nobody is really quoting (dust at 0.01/0.99)
+  pinnacle_recent_move_pts: 0.02       # if Pinnacle moved more than this in the last 15 min, you are late: pass
+  pull_before_start_minutes: 15
+  fee_coefficient: 0.0695
+  table_tennis_coefficient: 0.10
+  never_buy_below: 0.10                # Method v1 rule 6: never buy a contract under 10¢
+  avoid_buy_below: 0.20                # and flag buys under 20¢
+
+universe:
+  # sport key -> market classes the desk may act on. Esports have no Pinnacle
+  # reference yet, so they are scanned (quote state, spread, depth) but never
+  # get an action until a reference feed exists.
+  nhl:   [WINNER, TOTAL, SPREAD]
+  nba:   [WINNER, TOTAL, SPREAD]
+  mlb:   [WINNER, TOTAL, SPREAD]
+  ncaab: [WINNER, TOTAL, SPREAD]
+  nfl:   [TOTAL]                       # your rule: no NFL sides or spreads
+  cs2:   [WINNER]
+  lol:   [WINNER]
+  # soccer leagues are recorded by sports-method as benchmarks only; not traded here
+
+period_markets:
+  # Polymarket US quotes period/half/quarter/inning lines 3–30¢ wide; Pinnacle's
+  # lines for them are the reference. They need the per-event Odds API endpoint,
+  # which costs (markets returned × 1) credits per event, so the poll runs only
+  # inside the post window. Needs the ODDS_API_KEY secret in this repo.
+  enabled: true
+  within_minutes: 180
+  poll_minutes: 30
+  by_sport:
+    nhl: [totals_p1, spreads_p1, h2h_p1]
+    nba: [totals_h1, spreads_h1, totals_q1]
+    nfl: [totals_h1, totals_q1]
+    mlb: [totals_1st_5_innings, h2h_1st_5_innings, spreads_1st_5_innings]
+  odds_api_sport:
+    nhl: icehockey_nhl
+    nba: basketball_nba
+    nfl: americanfootball_nfl
+    mlb: baseball_mlb
+    ncaab: basketball_ncaab
+
+segments:
+  # Polymarket US segment -> Odds API market suffix (joined to h2h/totals/spreads)
+  FULL_GAME: ""
+  FULL_TIME: ""
+  FIRST_PERIOD: "_p1"
+  SECOND_PERIOD: "_p2"
+  THIRD_PERIOD: "_p3"
+  FIRST_HALF: "_h1"
+  SECOND_HALF: "_h2"
+  FIRST_QUARTER: "_q1"
+  SECOND_QUARTER: "_q2"
+  THIRD_QUARTER: "_q3"
+  FOURTH_QUARTER: "_q4"
+  FIRST_FIVE: "_1st_5_innings"
+  INNING1: "_1st_1_innings"

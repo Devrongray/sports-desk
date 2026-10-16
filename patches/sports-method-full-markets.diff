@@ -1,0 +1,71 @@
+diff --git a/method/polymarket_us.py b/method/polymarket_us.py
+index 91d3fc3..fc0168d 100644
+--- a/method/polymarket_us.py
++++ b/method/polymarket_us.py
+@@ -96,6 +96,17 @@ class PolymarketUS:
+                 return out
+             offset += 50
+ 
++    def event_full(self, event_slug: str) -> dict | None:
++        """GET /v1/events/slug/{slug}: the event with its complete market list.
++
++        Since about 20:00 UTC on 15 Oct 2026 the league events feed embeds only
++        the headline full-game winner per event while `marketCounts.numMarkets`
++        reports 150-190; this endpoint still returns everything."""
++        data = self._get(f"/v1/events/slug/{event_slug}", {"groups": "false"})
++        if not data:
++            return None
++        return data.get("event") or data
++
+     def league_events(self, league_slug: str, type_: str = "sport", page: int = 50) -> list[dict]:
+         out: list[dict] = []
+         offset = 0
+@@ -293,6 +304,28 @@ def mark_main_lines(markets: list[dict], parsed: list[tuple[str, str, str, str]]
+     return is_main
+ 
+ 
++def with_full_markets(client: "PolymarketUS", ev: dict) -> dict:
++    """Return the event with its full market list when the nested list is truncated.
++
++    The league feed's `marketCounts.numMarkets` says how many markets exist; when
++    the embedded list is shorter (one market since 15 Oct 2026), fetch the event
++    by slug and merge, keeping the league feed's own fields where the full
++    document lacks them."""
++    nested = ev.get("markets") or []
++    counts = ev.get("marketCounts") or {}
++    want = int(counts.get("numMarkets") or 0) > len(nested) or len(nested) <= 1
++    if not want or not ev.get("slug"):
++        return ev
++    try:
++        full = client.event_full(ev["slug"])
++    except Exception as e:  # noqa: BLE001  keep the pass alive
++        print(f"[warn] event_full {ev.get('slug')}: {e}")
++        return ev
++    if not full or not (full.get("markets") or []):
++        return ev
++    return {**ev, **{k: v for k, v in full.items() if v is not None}}
++
++
+ def event_start(ev: dict) -> str | None:
+     for k in ("startTime", "startDate", "eventDate"):
+         if ev.get(k):
+diff --git a/method/snapshot.py b/method/snapshot.py
+index d0bfc8b..2245fa2 100644
+--- a/method/snapshot.py
++++ b/method/snapshot.py
+@@ -190,6 +190,7 @@ def collect_markets_full(client: pm.PolymarketUS, cfg: dict, now: datetime) -> t
+                 continue
+             if ev.get("ended") or ev.get("closed"):
+                 continue
++            ev = pm.with_full_markets(client, ev)   # league feed embeds only the winner since 15 Oct 2026
+             mts = (start - now).total_seconds() / 60.0
+             for row in pm.normalize_event_markets(ev, slug):
+                 row["sport"] = sp["key"]
+@@ -359,6 +360,7 @@ def cmd_history(args) -> None:
+             start = pm.parse_iso(pm.event_start(ev))
+             if start is None or not (since <= start <= now):
+                 continue
++            ev = pm.with_full_markets(client, ev)
+             for row in pm.normalize_event_markets(ev, slug, keep, segments, main_only=True):
+                 if row.get("market_slug") and row["market_slug"] not in targets:
+                     row["sport"] = sp["key"]

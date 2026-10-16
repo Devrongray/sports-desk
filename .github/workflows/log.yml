@@ -1,0 +1,75 @@
+name: Desk log (order / fill / cancel)
+
+# Lets an order, fill or cancel be recorded from outside the runner (e.g. Claude
+# triggering it with `gh workflow run` while you report fills in chat). Nothing
+# here touches Polymarket US; it only writes the ledger.
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "order | fill | cancel"
+        required: true
+        default: "order"
+      slug:
+        description: "market_slug (order)"
+        required: false
+      side:
+        description: "long | short (order)"
+        required: false
+      type:
+        description: "post | take (order)"
+        required: false
+      order_id:
+        description: "order id (fill / cancel)"
+        required: false
+      price:
+        description: "price 0–1 (order / fill)"
+        required: false
+      contracts:
+        description: "contracts (order / fill)"
+        required: false
+      fee:
+        description: "fee in dollars (fill, optional)"
+        required: false
+      note:
+        description: "free text"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: desk-log
+  cancel-in-progress: false
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Fetch sports-method (pinned)
+        run: bash scripts/fetch_sports_method.sh code-only
+      - name: Write the ledger row
+        env:
+          SPORTS_METHOD_PATH: vendor/sports-method
+          A: ${{ github.event.inputs.action }}
+        run: |
+          case "$A" in
+            order)  python -m desk order --slug "${{ github.event.inputs.slug }}" --side "${{ github.event.inputs.side }}" \
+                      --type "${{ github.event.inputs.type }}" --price "${{ github.event.inputs.price }}" \
+                      --contracts "${{ github.event.inputs.contracts }}" --note "${{ github.event.inputs.note }}" ;;
+            fill)   python -m desk fill --order "${{ github.event.inputs.order_id }}" --price "${{ github.event.inputs.price }}" \
+                      --contracts "${{ github.event.inputs.contracts }}" ${{ github.event.inputs.fee && format('--fee {0}', github.event.inputs.fee) || '' }} \
+                      --note "${{ github.event.inputs.note }}" ;;
+            cancel) python -m desk cancel --order "${{ github.event.inputs.order_id }}" --note "${{ github.event.inputs.note }}" ;;
+            *) echo "unknown action $A"; exit 1 ;;
+          esac
+      - name: Commit the ledger
+        run: bash scripts/commit_main.sh "ledger" "desk: ${{ github.event.inputs.action }} $(date -u +%FT%TZ)"

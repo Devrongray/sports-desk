@@ -1,0 +1,39 @@
+name: Desk scan
+
+on:
+  schedule:
+    - cron: "*/30 16-23 * * *"    # 09:00–16:30 Pacific
+    - cron: "*/30 0-5 * * *"      # 17:00–22:30 Pacific
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: desk-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Fetch sports-method (pinned) and its data branch
+        run: bash scripts/fetch_sports_method.sh
+      - name: Pinnacle period lines (own poll, inside the posting window)
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          SPORTS_METHOD_PATH: vendor/sports-method
+        run: python -m desk poll --data vendor/sports-method-data/data
+      - name: Scan (live Polymarket US + recorded Pinnacle)
+        env:
+          SPORTS_METHOD_PATH: vendor/sports-method
+        run: python -m desk scan --live --data vendor/sports-method-data/data
+      - name: Commit scans, ledger and desk data
+        run: bash scripts/commit_main.sh "scans ledger data" "desk: scan $(date -u +%FT%TZ)"
