@@ -53,23 +53,25 @@ def run_poll(cfg: dict, data_dir: Path, desk_root: Path, as_of: datetime | None 
     pm = cfg["period_markets"]
     out = {"ts": as_of.isoformat(timespec="seconds"), "enabled": pm.get("enabled", False), "events": 0, "rows": 0,
            "credits_spent_est": 0, "skipped": None, "quota": None}
+    out["key_present"] = bool(os.environ.get("ODDS_API_KEY"))
     if not pm.get("enabled"):
         out["skipped"] = "disabled in config"
-        return out
-    if not os.environ.get("ODDS_API_KEY"):
+        return _finish(out, desk_root, as_of)
+    if not out["key_present"]:
         out["skipped"] = "ODDS_API_KEY not set"
-        return out
+        return _finish(out, desk_root, as_of)
     by_sport = pm["by_sport"]
     ev = upcoming_events(data_dir, as_of, pm["within_minutes"], by_sport)
-    if ev.empty:
-        out["skipped"] = "no events inside the window"
-        return out
     api = OddsAPIEvents()
     try:
         api.sports()  # free; refreshes quota headers
+        out["quota"] = api.quota
     except Exception as e:  # noqa: BLE001
         out["skipped"] = f"odds api unreachable: {e}"
-        return out
+        return _finish(out, desk_root, as_of)
+    if ev.empty:
+        out["skipped"] = "no events inside the window"
+        return _finish(out, desk_root, as_of)
     rows: list[dict] = []
     spent = 0.0
     for e in ev.to_dict("records"):
@@ -101,8 +103,16 @@ def run_poll(cfg: dict, data_dir: Path, desk_root: Path, as_of: datetime | None 
         out["rows"] = D.write_ndjson_gz(desk_root / "data" / "desk_pinnacle" / day / f"period_{stamp}.ndjson.gz", rows)
     out["credits_spent_est"] = spent
     out["quota"] = api.quota
-    meta_path = desk_root / "data" / "desk_pinnacle" / day / f"quota_{stamp}.json"
+    return _finish(out, desk_root, as_of)
+
+
+def _finish(out: dict, desk_root: Path, as_of: datetime) -> dict:
+    """Write the poll status next to the data (also on a skip) and print it."""
+    day = as_of.strftime("%Y-%m-%d")
+    stamp = as_of.strftime("%Y%m%dT%H%M%SZ")
+    meta_path = desk_root / "data" / "desk_pinnacle" / day / f"poll_{stamp}.json"
     meta_path.parent.mkdir(parents=True, exist_ok=True)
     meta_path.write_text(json.dumps(out, default=str) + "\n")
+    (desk_root / "data" / "desk_pinnacle" / "latest_poll.json").write_text(json.dumps(out, default=str) + "\n")
     print(json.dumps(out, default=str))
     return out
