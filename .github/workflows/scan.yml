@@ -28,7 +28,7 @@ jobs:
         run: bash scripts/fetch_sports_method.sh
       - name: Pinnacle period lines (own poll, inside the posting window)
         env:
-          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY || vars.ODDS_API_KEY }}
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY || secrets.ODD_API_KEY || vars.ODDS_API_KEY }}
           SPORTS_METHOD_PATH: vendor/sports-method
         run: python -m desk poll --data vendor/sports-method-data/data
       - name: Scan (live Polymarket US + recorded Pinnacle)
