@@ -72,4 +72,5 @@ jobs:
             *) echo "unknown action $A"; exit 1 ;;
           esac
       - name: Commit the ledger
-        run: bash scripts/commit_main.sh "ledger" "desk: ${{ github.event.inputs.action }} $(date -u +%FT%TZ)"
+        run: |
+          bash scripts/commit_main.sh "ledger" "desk: ${{ github.event.inputs.action }} $(date -u +%FT%TZ)"

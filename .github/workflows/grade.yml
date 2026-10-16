@@ -30,4 +30,5 @@ jobs:
           SPORTS_METHOD_PATH: vendor/sports-method
         run: python -m desk grade --data vendor/sports-method-data/data
       - name: Commit the scorecard
-        run: bash scripts/commit_main.sh "ledger" "desk: grade $(date -u +%F)"
+        run: |
+          bash scripts/commit_main.sh "ledger" "desk: grade $(date -u +%F)"

@@ -36,4 +36,5 @@ jobs:
           SPORTS_METHOD_PATH: vendor/sports-method
         run: python -m desk scan --live --data vendor/sports-method-data/data
       - name: Commit scans, ledger and desk data
-        run: bash scripts/commit_main.sh "scans ledger data" "desk: scan $(date -u +%FT%TZ)"
+        run: |
+          bash scripts/commit_main.sh "scans ledger data" "desk: scan $(date -u +%FT%TZ)"
