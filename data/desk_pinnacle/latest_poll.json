@@ -1,1 +1,1 @@
-{"ts": "2026-10-16T14:56:20+00:00", "enabled": true, "events": 0, "rows": 0, "credits_spent_est": 0, "skipped": "ODDS_API_KEY not set", "quota": null, "key_present": false}
+{"ts": "2026-10-16T15:02:33+00:00", "enabled": true, "events": 0, "rows": 0, "credits_spent_est": 0, "skipped": "odds api unreachable: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports?apiKey=ODDS_API_KEY", "quota": null, "key_present": true}
