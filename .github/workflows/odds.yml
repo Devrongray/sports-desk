@@ -1,0 +1,47 @@
+name: Odds snapshot (Pinnacle, any sport)
+
+# One-shot Pinnacle snapshot for sports the recorder does not poll (college
+# football, UFC, soccer leagues ...). Cost: markets x 1 credit per sport.
+# Used by the Begin runs for the sharp reference line.
+
+on:
+  workflow_dispatch:
+    inputs:
+      sports:
+        description: "comma-separated Odds API sport keys"
+        required: true
+        default: "americanfootball_ncaaf"
+      markets:
+        description: "comma-separated markets"
+        required: false
+        default: "h2h,totals"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: desk-odds
+  cancel-in-progress: false
+
+jobs:
+  odds:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Fetch sports-method (pinned)
+        run: bash scripts/fetch_sports_method.sh code-only
+      - name: Snapshot
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY || secrets.ODD_API_KEY || vars.ODDS_API_KEY }}
+          SPORTS_METHOD_PATH: vendor/sports-method
+        run: |
+          python -m desk.odds_snapshot --sports "${{ github.event.inputs.sports }}" --markets "${{ github.event.inputs.markets || 'h2h,totals' }}"
+      - name: Commit
+        run: |
+          bash scripts/commit_main.sh "data" "desk: odds snapshot $(date -u +%FT%TZ)"
