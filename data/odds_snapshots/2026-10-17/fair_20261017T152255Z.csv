@@ -1,0 +1,527 @@
+ts,sport_key,event_id,commence_time,home,away,market,point,outcome,price,fair_prob
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,ec190e5e3401bc9ea7799610c0ca1125,2026-10-17T16:00:00Z,Army Black Knights,Florida Atlantic Owls,h2h,,Army Black Knights,1.77,0.551
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,ec190e5e3401bc9ea7799610c0ca1125,2026-10-17T16:00:00Z,Army Black Knights,Florida Atlantic Owls,h2h,,Florida Atlantic Owls,2.16,0.449
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,ec190e5e3401bc9ea7799610c0ca1125,2026-10-17T16:00:00Z,Army Black Knights,Florida Atlantic Owls,totals,55.5,Over,1.9,0.5067
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,ec190e5e3401bc9ea7799610c0ca1125,2026-10-17T16:00:00Z,Army Black Knights,Florida Atlantic Owls,totals,55.5,Under,1.95,0.4933
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9fe9b7a2a6f8cdab425c51e9a1b30b77,2026-10-17T16:00:00Z,Bowling Green Falcons,Ball State Cardinals,h2h,,Ball State Cardinals,3.08,0.3077
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9fe9b7a2a6f8cdab425c51e9a1b30b77,2026-10-17T16:00:00Z,Bowling Green Falcons,Ball State Cardinals,h2h,,Bowling Green Falcons,1.41,0.6923
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9fe9b7a2a6f8cdab425c51e9a1b30b77,2026-10-17T16:00:00Z,Bowling Green Falcons,Ball State Cardinals,totals,46.5,Over,1.93,0.4987
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9fe9b7a2a6f8cdab425c51e9a1b30b77,2026-10-17T16:00:00Z,Bowling Green Falcons,Ball State Cardinals,totals,46.5,Under,1.92,0.5013
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,0372910f02d1b4d9cbfef5b35bbfe439,2026-10-17T16:00:00Z,Boston College Eagles,Pittsburgh Panthers,h2h,,Boston College Eagles,2.95,0.3223
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,0372910f02d1b4d9cbfef5b35bbfe439,2026-10-17T16:00:00Z,Boston College Eagles,Pittsburgh Panthers,h2h,,Pittsburgh Panthers,1.44,0.6777
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,0372910f02d1b4d9cbfef5b35bbfe439,2026-10-17T16:00:00Z,Boston College Eagles,Pittsburgh Panthers,totals,43.0,Over,1.93,0.5
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,0372910f02d1b4d9cbfef5b35bbfe439,2026-10-17T16:00:00Z,Boston College Eagles,Pittsburgh Panthers,totals,43.0,Under,1.93,0.5
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,bdcdf3154bdeea4c2920375945d3f010,2026-10-17T16:00:00Z,Clemson Tigers,Charleston Southern Buccaneers,totals,54.0,Over,1.88,0.5069
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,bdcdf3154bdeea4c2920375945d3f010,2026-10-17T16:00:00Z,Clemson Tigers,Charleston Southern Buccaneers,totals,54.0,Under,1.93,0.4931
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,c67bc7b2b2b6bf3571ece5117facad42,2026-10-17T16:00:00Z,West Virginia Mountaineers,Cincinnati Bearcats,h2h,,Cincinnati Bearcats,2.01,0.4828
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,c67bc7b2b2b6bf3571ece5117facad42,2026-10-17T16:00:00Z,West Virginia Mountaineers,Cincinnati Bearcats,h2h,,West Virginia Mountaineers,1.88,0.5172
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,c67bc7b2b2b6bf3571ece5117facad42,2026-10-17T16:00:00Z,West Virginia Mountaineers,Cincinnati Bearcats,totals,64.5,Over,1.95,0.4933
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,c67bc7b2b2b6bf3571ece5117facad42,2026-10-17T16:00:00Z,West Virginia Mountaineers,Cincinnati Bearcats,totals,64.5,Under,1.9,0.5067
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,490b66058b6c826a08589c471698ce50,2026-10-17T16:00:00Z,Texas Longhorns,Florida Gators,h2h,,Florida Gators,4.63,0.1982
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,490b66058b6c826a08589c471698ce50,2026-10-17T16:00:00Z,Texas Longhorns,Florida Gators,h2h,,Texas Longhorns,1.22,0.8018
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,490b66058b6c826a08589c471698ce50,2026-10-17T16:00:00Z,Texas Longhorns,Florida Gators,totals,51.0,Over,1.91,0.504
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,490b66058b6c826a08589c471698ce50,2026-10-17T16:00:00Z,Texas Longhorns,Florida Gators,totals,51.0,Under,1.94,0.496
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f8b5d3a4b35efebd4f010433778fd629,2026-10-17T16:00:00Z,James Madison Dukes,Georgia State Panthers,h2h,,Georgia State Panthers,3.96,0.2356
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f8b5d3a4b35efebd4f010433778fd629,2026-10-17T16:00:00Z,James Madison Dukes,Georgia State Panthers,h2h,,James Madison Dukes,1.28,0.7644
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f8b5d3a4b35efebd4f010433778fd629,2026-10-17T16:00:00Z,James Madison Dukes,Georgia State Panthers,totals,58.0,Over,1.97,0.4878
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f8b5d3a4b35efebd4f010433778fd629,2026-10-17T16:00:00Z,James Madison Dukes,Georgia State Panthers,totals,58.0,Under,1.88,0.5122
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,685a8722f297502fa85e4cd8c7e54b1c,2026-10-17T16:00:00Z,Indiana Hoosiers,Ohio State Buckeyes,h2h,,Indiana Hoosiers,2.26,0.4271
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,685a8722f297502fa85e4cd8c7e54b1c,2026-10-17T16:00:00Z,Indiana Hoosiers,Ohio State Buckeyes,h2h,,Ohio State Buckeyes,1.7,0.5729
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,685a8722f297502fa85e4cd8c7e54b1c,2026-10-17T16:00:00Z,Indiana Hoosiers,Ohio State Buckeyes,totals,50.5,Over,2.01,0.4785
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,685a8722f297502fa85e4cd8c7e54b1c,2026-10-17T16:00:00Z,Indiana Hoosiers,Ohio State Buckeyes,totals,50.5,Under,1.85,0.5215
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9e8578b415e664eea71185131401e537,2026-10-17T16:00:00Z,Kansas State Wildcats,Kansas Jayhawks,h2h,,Kansas Jayhawks,2.3,0.4198
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9e8578b415e664eea71185131401e537,2026-10-17T16:00:00Z,Kansas State Wildcats,Kansas Jayhawks,h2h,,Kansas State Wildcats,1.68,0.5802
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9e8578b415e664eea71185131401e537,2026-10-17T16:00:00Z,Kansas State Wildcats,Kansas Jayhawks,totals,55.5,Over,1.94,0.496
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9e8578b415e664eea71185131401e537,2026-10-17T16:00:00Z,Kansas State Wildcats,Kansas Jayhawks,totals,55.5,Under,1.91,0.504
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,04c740fce71d3f3b8a4bdc4ea69f1281,2026-10-17T16:00:00Z,LSU Tigers,Mississippi State Bulldogs,h2h,,LSU Tigers,1.13,0.8675
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,04c740fce71d3f3b8a4bdc4ea69f1281,2026-10-17T16:00:00Z,LSU Tigers,Mississippi State Bulldogs,h2h,,Mississippi State Bulldogs,6.67,0.1325
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,04c740fce71d3f3b8a4bdc4ea69f1281,2026-10-17T16:00:00Z,LSU Tigers,Mississippi State Bulldogs,totals,55.5,Over,1.93,0.4987
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,04c740fce71d3f3b8a4bdc4ea69f1281,2026-10-17T16:00:00Z,LSU Tigers,Mississippi State Bulldogs,totals,55.5,Under,1.92,0.5013
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,fc01e4b9ad4f39e975b7e1fd9ad124d1,2026-10-17T16:00:00Z,Michigan State Spartans,Northwestern Wildcats,h2h,,Michigan State Spartans,3.55,0.2649
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,fc01e4b9ad4f39e975b7e1fd9ad124d1,2026-10-17T16:00:00Z,Michigan State Spartans,Northwestern Wildcats,h2h,,Northwestern Wildcats,1.33,0.7351
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,fc01e4b9ad4f39e975b7e1fd9ad124d1,2026-10-17T16:00:00Z,Michigan State Spartans,Northwestern Wildcats,totals,49.5,Over,1.92,0.5013
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,fc01e4b9ad4f39e975b7e1fd9ad124d1,2026-10-17T16:00:00Z,Michigan State Spartans,Northwestern Wildcats,totals,49.5,Under,1.93,0.4987
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,0763e3ed7ed8d646756e5849bac67b8d,2026-10-17T16:00:00Z,SMU Mustangs,Virginia Cavaliers,h2h,,SMU Mustangs,1.28,0.7631
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,0763e3ed7ed8d646756e5849bac67b8d,2026-10-17T16:00:00Z,SMU Mustangs,Virginia Cavaliers,h2h,,Virginia Cavaliers,3.92,0.2369
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,0763e3ed7ed8d646756e5849bac67b8d,2026-10-17T16:00:00Z,SMU Mustangs,Virginia Cavaliers,totals,52.0,Over,1.96,0.4891
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,0763e3ed7ed8d646756e5849bac67b8d,2026-10-17T16:00:00Z,SMU Mustangs,Virginia Cavaliers,totals,52.0,Under,1.88,0.5109
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,eb7db3ae999676aa80dd5cf7dfa32c1a,2026-10-17T16:30:00Z,Maryland Terrapins,Rutgers Scarlet Knights,h2h,,Maryland Terrapins,1.49,0.6564
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,eb7db3ae999676aa80dd5cf7dfa32c1a,2026-10-17T16:30:00Z,Maryland Terrapins,Rutgers Scarlet Knights,h2h,,Rutgers Scarlet Knights,2.79,0.3436
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,eb7db3ae999676aa80dd5cf7dfa32c1a,2026-10-17T16:30:00Z,Maryland Terrapins,Rutgers Scarlet Knights,totals,56.0,Over,1.96,0.4906
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,eb7db3ae999676aa80dd5cf7dfa32c1a,2026-10-17T16:30:00Z,Maryland Terrapins,Rutgers Scarlet Knights,totals,56.0,Under,1.89,0.5094
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,7d7f757d2bf4cb7b6d8bbfe9589d25a2,2026-10-17T17:00:00Z,Buffalo Bulls,UMass Minutemen,h2h,,Buffalo Bulls,1.37,0.7134
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,7d7f757d2bf4cb7b6d8bbfe9589d25a2,2026-10-17T17:00:00Z,Buffalo Bulls,UMass Minutemen,h2h,,UMass Minutemen,3.3,0.2866
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,7d7f757d2bf4cb7b6d8bbfe9589d25a2,2026-10-17T17:00:00Z,Buffalo Bulls,UMass Minutemen,totals,42.5,Over,1.93,0.4987
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,7d7f757d2bf4cb7b6d8bbfe9589d25a2,2026-10-17T17:00:00Z,Buffalo Bulls,UMass Minutemen,totals,42.5,Under,1.92,0.5013
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f10a59f9dd66cb1aa169a293326449d9,2026-10-17T17:00:00Z,Temple Owls,Charlotte 49ers,h2h,,Charlotte 49ers,10.01,0.0827
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f10a59f9dd66cb1aa169a293326449d9,2026-10-17T17:00:00Z,Temple Owls,Charlotte 49ers,h2h,,Temple Owls,1.07,0.9173
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f10a59f9dd66cb1aa169a293326449d9,2026-10-17T17:00:00Z,Temple Owls,Charlotte 49ers,totals,45.5,Over,1.91,0.504
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f10a59f9dd66cb1aa169a293326449d9,2026-10-17T17:00:00Z,Temple Owls,Charlotte 49ers,totals,45.5,Under,1.94,0.496
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,8ce4565fe6dda2fbac6a893844519dcf,2026-10-17T17:00:00Z,Texas A&M Aggies,Citadel Bulldogs,totals,55.5,Over,1.87,0.511
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,8ce4565fe6dda2fbac6a893844519dcf,2026-10-17T17:00:00Z,Texas A&M Aggies,Citadel Bulldogs,totals,55.5,Under,1.95,0.489
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,5dd30262ad321dcff02c37d7619376e4,2026-10-17T17:30:00Z,Central Michigan Chippewas,Western Michigan Broncos,h2h,,Central Michigan Chippewas,3.52,0.2661
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,5dd30262ad321dcff02c37d7619376e4,2026-10-17T17:30:00Z,Central Michigan Chippewas,Western Michigan Broncos,h2h,,Western Michigan Broncos,1.33,0.7339
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,5dd30262ad321dcff02c37d7619376e4,2026-10-17T17:30:00Z,Central Michigan Chippewas,Western Michigan Broncos,totals,43.0,Over,1.93,0.5
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,5dd30262ad321dcff02c37d7619376e4,2026-10-17T17:30:00Z,Central Michigan Chippewas,Western Michigan Broncos,totals,43.0,Under,1.93,0.5
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,43959d4bb3927439ced7a6bf26cc3c00,2026-10-17T19:30:00Z,Air Force Falcons,UNLV Rebels,h2h,,Air Force Falcons,1.99,0.4881
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,43959d4bb3927439ced7a6bf26cc3c00,2026-10-17T19:30:00Z,Air Force Falcons,UNLV Rebels,h2h,,UNLV Rebels,1.9,0.5119
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,43959d4bb3927439ced7a6bf26cc3c00,2026-10-17T19:30:00Z,Air Force Falcons,UNLV Rebels,totals,48.5,Over,1.94,0.496
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,43959d4bb3927439ced7a6bf26cc3c00,2026-10-17T19:30:00Z,Air Force Falcons,UNLV Rebels,totals,48.5,Under,1.91,0.504
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,6af8b2523c07aebb827163640d2a865d,2026-10-17T19:30:00Z,Miami (OH) RedHawks,Akron Zips,h2h,,Akron Zips,4.03,0.2304
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,6af8b2523c07aebb827163640d2a865d,2026-10-17T19:30:00Z,Miami (OH) RedHawks,Akron Zips,h2h,,Miami (OH) RedHawks,1.27,0.7696
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,6af8b2523c07aebb827163640d2a865d,2026-10-17T19:30:00Z,Miami (OH) RedHawks,Akron Zips,totals,46.0,Over,1.86,0.5188
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,6af8b2523c07aebb827163640d2a865d,2026-10-17T19:30:00Z,Miami (OH) RedHawks,Akron Zips,totals,46.0,Under,2.0,0.4812
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9ed02ffe3e126a8ec8846278bf18d393,2026-10-17T19:30:00Z,Tennessee Volunteers,Alabama Crimson Tide,h2h,,Alabama Crimson Tide,1.32,0.7407
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9ed02ffe3e126a8ec8846278bf18d393,2026-10-17T19:30:00Z,Tennessee Volunteers,Alabama Crimson Tide,h2h,,Tennessee Volunteers,3.62,0.2593
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9ed02ffe3e126a8ec8846278bf18d393,2026-10-17T19:30:00Z,Tennessee Volunteers,Alabama Crimson Tide,totals,51.0,Over,1.93,0.4987
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9ed02ffe3e126a8ec8846278bf18d393,2026-10-17T19:30:00Z,Tennessee Volunteers,Alabama Crimson Tide,totals,51.0,Under,1.92,0.5013
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,8e5b5fc6829c6204c73178807614cd97,2026-10-17T19:30:00Z,Texas Tech Red Raiders,Arizona State Sun Devils,h2h,,Arizona State Sun Devils,6.22,0.1418
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,8e5b5fc6829c6204c73178807614cd97,2026-10-17T19:30:00Z,Texas Tech Red Raiders,Arizona State Sun Devils,h2h,,Texas Tech Red Raiders,1.14,0.8582
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,8e5b5fc6829c6204c73178807614cd97,2026-10-17T19:30:00Z,Texas Tech Red Raiders,Arizona State Sun Devils,totals,50.0,Over,1.99,0.4839
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,8e5b5fc6829c6204c73178807614cd97,2026-10-17T19:30:00Z,Texas Tech Red Raiders,Arizona State Sun Devils,totals,50.0,Under,1.87,0.5161
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,2851c11a3831feac527b6df0b34b2a2a,2026-10-17T19:30:00Z,Georgia Bulldogs,Auburn Tigers,h2h,,Auburn Tigers,8.38,0.101
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,2851c11a3831feac527b6df0b34b2a2a,2026-10-17T19:30:00Z,Georgia Bulldogs,Auburn Tigers,h2h,,Georgia Bulldogs,1.09,0.899
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,2851c11a3831feac527b6df0b34b2a2a,2026-10-17T19:30:00Z,Georgia Bulldogs,Auburn Tigers,totals,49.5,Over,1.88,0.5134
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,2851c11a3831feac527b6df0b34b2a2a,2026-10-17T19:30:00Z,Georgia Bulldogs,Auburn Tigers,totals,49.5,Under,1.98,0.4866
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9e7a1e65bd6ffb3ff108db2a5e125170,2026-10-17T19:30:00Z,Duke Blue Devils,North Carolina Tar Heels,h2h,,Duke Blue Devils,1.67,0.5839
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9e7a1e65bd6ffb3ff108db2a5e125170,2026-10-17T19:30:00Z,Duke Blue Devils,North Carolina Tar Heels,h2h,,North Carolina Tar Heels,2.32,0.4161
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9e7a1e65bd6ffb3ff108db2a5e125170,2026-10-17T19:30:00Z,Duke Blue Devils,North Carolina Tar Heels,totals,47.0,Over,1.95,0.4933
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9e7a1e65bd6ffb3ff108db2a5e125170,2026-10-17T19:30:00Z,Duke Blue Devils,North Carolina Tar Heels,totals,47.0,Under,1.9,0.5067
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,006c37db6769b587a0adde2067498d53,2026-10-17T19:30:00Z,Eastern Michigan Eagles,Toledo Rockets,h2h,,Eastern Michigan Eagles,3.22,0.293
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,006c37db6769b587a0adde2067498d53,2026-10-17T19:30:00Z,Eastern Michigan Eagles,Toledo Rockets,h2h,,Toledo Rockets,1.38,0.707
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,006c37db6769b587a0adde2067498d53,2026-10-17T19:30:00Z,Eastern Michigan Eagles,Toledo Rockets,totals,53.0,Over,1.93,0.5
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,006c37db6769b587a0adde2067498d53,2026-10-17T19:30:00Z,Eastern Michigan Eagles,Toledo Rockets,totals,53.0,Under,1.93,0.5
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,d439d2aca5e246d9cd727f3b1e3fd443,2026-10-17T19:30:00Z,Virginia Tech Hokies,Georgia Tech Yellow Jackets,h2h,,Georgia Tech Yellow Jackets,3.84,0.2426
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,d439d2aca5e246d9cd727f3b1e3fd443,2026-10-17T19:30:00Z,Virginia Tech Hokies,Georgia Tech Yellow Jackets,h2h,,Virginia Tech Hokies,1.29,0.7574
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,d439d2aca5e246d9cd727f3b1e3fd443,2026-10-17T19:30:00Z,Virginia Tech Hokies,Georgia Tech Yellow Jackets,totals,56.0,Over,1.9,0.5067
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,d439d2aca5e246d9cd727f3b1e3fd443,2026-10-17T19:30:00Z,Virginia Tech Hokies,Georgia Tech Yellow Jackets,totals,56.0,Under,1.95,0.4933
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f8b421c996286807b6e7b8e4d5631f80,2026-10-17T19:30:00Z,Michigan Wolverines,Penn State Nittany Lions,h2h,,Michigan Wolverines,1.48,0.6599
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f8b421c996286807b6e7b8e4d5631f80,2026-10-17T19:30:00Z,Michigan Wolverines,Penn State Nittany Lions,h2h,,Penn State Nittany Lions,2.81,0.3401
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f8b421c996286807b6e7b8e4d5631f80,2026-10-17T19:30:00Z,Michigan Wolverines,Penn State Nittany Lions,totals,42.5,Over,1.88,0.5134
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f8b421c996286807b6e7b8e4d5631f80,2026-10-17T19:30:00Z,Michigan Wolverines,Penn State Nittany Lions,totals,42.5,Under,1.98,0.4866
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,5d09c85c1d67e8f9db8db560cb038027,2026-10-17T19:30:00Z,Ole Miss Rebels,Missouri Tigers,h2h,,Missouri Tigers,2.63,0.3654
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,5d09c85c1d67e8f9db8db560cb038027,2026-10-17T19:30:00Z,Ole Miss Rebels,Missouri Tigers,h2h,,Ole Miss Rebels,1.54,0.6346
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,5d09c85c1d67e8f9db8db560cb038027,2026-10-17T19:30:00Z,Ole Miss Rebels,Missouri Tigers,totals,58.5,Over,1.92,0.5013
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,5d09c85c1d67e8f9db8db560cb038027,2026-10-17T19:30:00Z,Ole Miss Rebels,Missouri Tigers,totals,58.5,Under,1.93,0.4987
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,7926661d4efb4a5fb94233d5e8aca9df,2026-10-17T19:30:00Z,Wyoming Cowboys,Northern Illinois Huskies,h2h,,Northern Illinois Huskies,3.62,0.2593
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,7926661d4efb4a5fb94233d5e8aca9df,2026-10-17T19:30:00Z,Wyoming Cowboys,Northern Illinois Huskies,h2h,,Wyoming Cowboys,1.32,0.7407
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,7926661d4efb4a5fb94233d5e8aca9df,2026-10-17T19:30:00Z,Wyoming Cowboys,Northern Illinois Huskies,totals,42.0,Over,1.87,0.5161
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,7926661d4efb4a5fb94233d5e8aca9df,2026-10-17T19:30:00Z,Wyoming Cowboys,Northern Illinois Huskies,totals,42.0,Under,1.99,0.4839
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,930dea051dca737443eb7aec0b650f45,2026-10-17T20:30:00Z,Rice Owls,Tulsa Golden Hurricane,h2h,,Rice Owls,2.68,0.3576
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,930dea051dca737443eb7aec0b650f45,2026-10-17T20:30:00Z,Rice Owls,Tulsa Golden Hurricane,h2h,,Tulsa Golden Hurricane,1.52,0.6424
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,930dea051dca737443eb7aec0b650f45,2026-10-17T20:30:00Z,Rice Owls,Tulsa Golden Hurricane,totals,46.0,Over,1.88,0.5122
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,930dea051dca737443eb7aec0b650f45,2026-10-17T20:30:00Z,Rice Owls,Tulsa Golden Hurricane,totals,46.0,Under,1.97,0.4878
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,edac5f5669470d4cc438ffe9b3d7046a,2026-10-17T21:00:00Z,Louisiana Ragin Cajuns,Troy Trojans,h2h,,Louisiana Ragin Cajuns,1.68,0.5802
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,edac5f5669470d4cc438ffe9b3d7046a,2026-10-17T21:00:00Z,Louisiana Ragin Cajuns,Troy Trojans,h2h,,Troy Trojans,2.3,0.4198
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,edac5f5669470d4cc438ffe9b3d7046a,2026-10-17T21:00:00Z,Louisiana Ragin Cajuns,Troy Trojans,totals,49.5,Over,1.97,0.4878
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,edac5f5669470d4cc438ffe9b3d7046a,2026-10-17T21:00:00Z,Louisiana Ragin Cajuns,Troy Trojans,totals,49.5,Under,1.88,0.5122
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,473d8828a17151640834e090d9eb46e4,2026-10-17T22:00:00Z,Oregon State Beavers,Washington State Cougars,h2h,,Oregon State Beavers,1.1,0.8904
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,473d8828a17151640834e090d9eb46e4,2026-10-17T22:00:00Z,Oregon State Beavers,Washington State Cougars,h2h,,Washington State Cougars,7.79,0.1096
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,473d8828a17151640834e090d9eb46e4,2026-10-17T22:00:00Z,Oregon State Beavers,Washington State Cougars,totals,52.0,Over,1.91,0.504
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,473d8828a17151640834e090d9eb46e4,2026-10-17T22:00:00Z,Oregon State Beavers,Washington State Cougars,totals,52.0,Under,1.94,0.496
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,c92acc311e3c969f78faf7c2ec5ef5b1,2026-10-17T23:00:00Z,Vanderbilt Commodores,Arkansas Razorbacks,h2h,,Arkansas Razorbacks,2.89,0.3305
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,c92acc311e3c969f78faf7c2ec5ef5b1,2026-10-17T23:00:00Z,Vanderbilt Commodores,Arkansas Razorbacks,h2h,,Vanderbilt Commodores,1.46,0.6695
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,c92acc311e3c969f78faf7c2ec5ef5b1,2026-10-17T23:00:00Z,Vanderbilt Commodores,Arkansas Razorbacks,totals,48.5,Over,1.94,0.496
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,c92acc311e3c969f78faf7c2ec5ef5b1,2026-10-17T23:00:00Z,Vanderbilt Commodores,Arkansas Razorbacks,totals,48.5,Under,1.91,0.504
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f89afd766421957193cfae45ff3aa16a,2026-10-17T23:00:00Z,Southern Mississippi Golden Eagles,Arkansas State Red Wolves,h2h,,Arkansas State Red Wolves,1.44,0.6789
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f89afd766421957193cfae45ff3aa16a,2026-10-17T23:00:00Z,Southern Mississippi Golden Eagles,Arkansas State Red Wolves,h2h,,Southern Mississippi Golden Eagles,2.97,0.3211
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f89afd766421957193cfae45ff3aa16a,2026-10-17T23:00:00Z,Southern Mississippi Golden Eagles,Arkansas State Red Wolves,totals,62.5,Over,2.0,0.4797
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f89afd766421957193cfae45ff3aa16a,2026-10-17T23:00:00Z,Southern Mississippi Golden Eagles,Arkansas State Red Wolves,totals,62.5,Under,1.85,0.5203
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,e45fd12f3d9475fd0941509e7429b596,2026-10-17T23:00:00Z,Baylor Bears,TCU Horned Frogs,h2h,,Baylor Bears,1.46,0.6682
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,e45fd12f3d9475fd0941509e7429b596,2026-10-17T23:00:00Z,Baylor Bears,TCU Horned Frogs,h2h,,TCU Horned Frogs,2.87,0.3318
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,e45fd12f3d9475fd0941509e7429b596,2026-10-17T23:00:00Z,Baylor Bears,TCU Horned Frogs,totals,50.0,Over,1.91,0.504
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,e45fd12f3d9475fd0941509e7429b596,2026-10-17T23:00:00Z,Baylor Bears,TCU Horned Frogs,totals,50.0,Under,1.94,0.496
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,33f259d8951535f271a8df5c790a832e,2026-10-17T23:00:00Z,Miami Hurricanes,Florida State Seminoles,h2h,,Florida State Seminoles,8.4,0.0922
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,33f259d8951535f271a8df5c790a832e,2026-10-17T23:00:00Z,Miami Hurricanes,Florida State Seminoles,h2h,,Miami Hurricanes,1.07,0.9078
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,33f259d8951535f271a8df5c790a832e,2026-10-17T23:00:00Z,Miami Hurricanes,Florida State Seminoles,totals,56.0,Over,1.86,0.5137
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,33f259d8951535f271a8df5c790a832e,2026-10-17T23:00:00Z,Miami Hurricanes,Florida State Seminoles,totals,56.0,Under,1.96,0.4863
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,56d8b3e4ae8cb9ce51d5ad6aedd5164e,2026-10-17T23:00:00Z,South Florida Bulls,Kent State Golden Flashes,h2h,,Kent State Golden Flashes,8.66,0.0948
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,56d8b3e4ae8cb9ce51d5ad6aedd5164e,2026-10-17T23:00:00Z,South Florida Bulls,Kent State Golden Flashes,h2h,,South Florida Bulls,1.08,0.9052
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,56d8b3e4ae8cb9ce51d5ad6aedd5164e,2026-10-17T23:00:00Z,South Florida Bulls,Kent State Golden Flashes,totals,45.0,Over,1.88,0.5122
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,56d8b3e4ae8cb9ce51d5ad6aedd5164e,2026-10-17T23:00:00Z,South Florida Bulls,Kent State Golden Flashes,totals,45.0,Under,1.97,0.4878
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,24244a1062254de107b2a7f5f79affe1,2026-10-17T23:00:00Z,North Dakota State Bison,Nevada Wolf Pack,h2h,,Nevada Wolf Pack,5.71,0.1565
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,24244a1062254de107b2a7f5f79affe1,2026-10-17T23:00:00Z,North Dakota State Bison,Nevada Wolf Pack,h2h,,North Dakota State Bison,1.16,0.8435
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,24244a1062254de107b2a7f5f79affe1,2026-10-17T23:00:00Z,North Dakota State Bison,Nevada Wolf Pack,totals,43.0,Over,1.95,0.4933
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,24244a1062254de107b2a7f5f79affe1,2026-10-17T23:00:00Z,North Dakota State Bison,Nevada Wolf Pack,totals,43.0,Under,1.9,0.5067
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,bd2d52fadefed8a6174e73c84cca9ce3,2026-10-17T23:30:00Z,BYU Cougars,Notre Dame Fighting Irish,h2h,,BYU Cougars,4.19,0.2193
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,bd2d52fadefed8a6174e73c84cca9ce3,2026-10-17T23:30:00Z,BYU Cougars,Notre Dame Fighting Irish,h2h,,Notre Dame Fighting Irish,1.25,0.7807
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,bd2d52fadefed8a6174e73c84cca9ce3,2026-10-17T23:30:00Z,BYU Cougars,Notre Dame Fighting Irish,totals,47.0,Over,1.93,0.4987
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,bd2d52fadefed8a6174e73c84cca9ce3,2026-10-17T23:30:00Z,BYU Cougars,Notre Dame Fighting Irish,totals,47.0,Under,1.92,0.5013
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,c4c9cbe2a4507d3f1235f7ca9e424a19,2026-10-17T23:30:00Z,Stanford Cardinal,Elon Phoenix,totals,55.5,Over,1.84,0.5205
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,c4c9cbe2a4507d3f1235f7ca9e424a19,2026-10-17T23:30:00Z,Stanford Cardinal,Elon Phoenix,totals,55.5,Under,1.99,0.4795
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,7830c18dc7e87ebf087ddded14c50de4,2026-10-17T23:30:00Z,Houston Cougars,Oklahoma State Cowboys,h2h,,Houston Cougars,1.53,0.6381
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,7830c18dc7e87ebf087ddded14c50de4,2026-10-17T23:30:00Z,Houston Cougars,Oklahoma State Cowboys,h2h,,Oklahoma State Cowboys,2.65,0.3619
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,7830c18dc7e87ebf087ddded14c50de4,2026-10-17T23:30:00Z,Houston Cougars,Oklahoma State Cowboys,totals,63.0,Over,2.01,0.4785
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,7830c18dc7e87ebf087ddded14c50de4,2026-10-17T23:30:00Z,Houston Cougars,Oklahoma State Cowboys,totals,63.0,Under,1.85,0.5215
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,0728226f9c1e3aace0f64536109f4d05,2026-10-17T23:30:00Z,Oklahoma Sooners,Kentucky Wildcats,h2h,,Kentucky Wildcats,3.07,0.3083
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,0728226f9c1e3aace0f64536109f4d05,2026-10-17T23:30:00Z,Oklahoma Sooners,Kentucky Wildcats,h2h,,Oklahoma Sooners,1.41,0.6917
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,0728226f9c1e3aace0f64536109f4d05,2026-10-17T23:30:00Z,Oklahoma Sooners,Kentucky Wildcats,totals,43.5,Over,1.93,0.4987
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,0728226f9c1e3aace0f64536109f4d05,2026-10-17T23:30:00Z,Oklahoma Sooners,Kentucky Wildcats,totals,43.5,Under,1.92,0.5013
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f9cb1259d9221016efb7646258f2acd5,2026-10-17T23:30:00Z,Syracuse Orange,Louisville Cardinals,h2h,,Louisville Cardinals,1.16,0.8432
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f9cb1259d9221016efb7646258f2acd5,2026-10-17T23:30:00Z,Syracuse Orange,Louisville Cardinals,h2h,,Syracuse Orange,5.69,0.1568
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f9cb1259d9221016efb7646258f2acd5,2026-10-17T23:30:00Z,Syracuse Orange,Louisville Cardinals,totals,55.5,Over,1.88,0.5122
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,f9cb1259d9221016efb7646258f2acd5,2026-10-17T23:30:00Z,Syracuse Orange,Louisville Cardinals,totals,55.5,Under,1.97,0.4878
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,05280844ab84b8ce5e50305f7cd195d9,2026-10-17T23:30:00Z,UCLA Bruins,Wisconsin Badgers,h2h,,UCLA Bruins,1.85,0.5264
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,05280844ab84b8ce5e50305f7cd195d9,2026-10-17T23:30:00Z,UCLA Bruins,Wisconsin Badgers,h2h,,Wisconsin Badgers,2.05,0.4736
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,05280844ab84b8ce5e50305f7cd195d9,2026-10-17T23:30:00Z,UCLA Bruins,Wisconsin Badgers,totals,43.0,Over,1.96,0.4906
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,05280844ab84b8ce5e50305f7cd195d9,2026-10-17T23:30:00Z,UCLA Bruins,Wisconsin Badgers,totals,43.0,Under,1.89,0.5094
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,a9a289b7b19e28b51572d20315e6bf42,2026-10-18T00:00:00Z,UL Monroe Warhawks,Louisiana Tech Bulldogs,h2h,,Louisiana Tech Bulldogs,1.14,0.8572
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,a9a289b7b19e28b51572d20315e6bf42,2026-10-18T00:00:00Z,UL Monroe Warhawks,Louisiana Tech Bulldogs,h2h,,UL Monroe Warhawks,6.14,0.1428
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,a9a289b7b19e28b51572d20315e6bf42,2026-10-18T00:00:00Z,UL Monroe Warhawks,Louisiana Tech Bulldogs,totals,56.0,Over,1.95,0.4933
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,a9a289b7b19e28b51572d20315e6bf42,2026-10-18T00:00:00Z,UL Monroe Warhawks,Louisiana Tech Bulldogs,totals,56.0,Under,1.9,0.5067
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,004aa0d62485e4264794681a6cc6c513,2026-10-18T00:00:00Z,UTSA Roadrunners,Navy Midshipmen,h2h,,Navy Midshipmen,3.0,0.317
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,004aa0d62485e4264794681a6cc6c513,2026-10-18T00:00:00Z,UTSA Roadrunners,Navy Midshipmen,h2h,,UTSA Roadrunners,1.43,0.683
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,004aa0d62485e4264794681a6cc6c513,2026-10-18T00:00:00Z,UTSA Roadrunners,Navy Midshipmen,totals,54.5,Over,1.95,0.4919
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,004aa0d62485e4264794681a6cc6c513,2026-10-18T00:00:00Z,UTSA Roadrunners,Navy Midshipmen,totals,54.5,Under,1.89,0.5081
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,121ada2c134388f8cc2f26ffc54f52d1,2026-10-18T01:00:00Z,UTEP Miners,San Jose State Spartans,h2h,,San Jose State Spartans,1.36,0.7184
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,121ada2c134388f8cc2f26ffc54f52d1,2026-10-18T01:00:00Z,UTEP Miners,San Jose State Spartans,h2h,,UTEP Miners,3.35,0.2816
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,121ada2c134388f8cc2f26ffc54f52d1,2026-10-18T01:00:00Z,UTEP Miners,San Jose State Spartans,totals,45.5,Over,1.93,0.5
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,121ada2c134388f8cc2f26ffc54f52d1,2026-10-18T01:00:00Z,UTEP Miners,San Jose State Spartans,totals,45.5,Under,1.93,0.5
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,11430b210e5b57c938e1c95a9db5ffb2,2026-10-18T02:00:00Z,Sacramento State Hornets,Ohio Bobcats,h2h,,Ohio Bobcats,1.15,0.8505
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,11430b210e5b57c938e1c95a9db5ffb2,2026-10-18T02:00:00Z,Sacramento State Hornets,Ohio Bobcats,h2h,,Sacramento State Hornets,5.93,0.1495
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,11430b210e5b57c938e1c95a9db5ffb2,2026-10-18T02:00:00Z,Sacramento State Hornets,Ohio Bobcats,totals,46.5,Over,1.9,0.5067
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,11430b210e5b57c938e1c95a9db5ffb2,2026-10-18T02:00:00Z,Sacramento State Hornets,Ohio Bobcats,totals,46.5,Under,1.95,0.4933
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9f43906997c18b956105dded3134ef1f,2026-10-18T02:15:00Z,Colorado Buffaloes,Utah Utes,h2h,,Colorado Buffaloes,6.43,0.1353
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9f43906997c18b956105dded3134ef1f,2026-10-18T02:15:00Z,Colorado Buffaloes,Utah Utes,h2h,,Utah Utes,1.13,0.8647
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9f43906997c18b956105dded3134ef1f,2026-10-18T02:15:00Z,Colorado Buffaloes,Utah Utes,totals,49.0,Over,1.9,0.5067
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,9f43906997c18b956105dded3134ef1f,2026-10-18T02:15:00Z,Colorado Buffaloes,Utah Utes,totals,49.0,Under,1.95,0.4933
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,b5e637cf502d6d5f408af440ea2d591d,2026-10-18T02:30:00Z,California Golden Bears,Wake Forest Demon Deacons,h2h,,California Golden Bears,4.11,0.2248
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,b5e637cf502d6d5f408af440ea2d591d,2026-10-18T02:30:00Z,California Golden Bears,Wake Forest Demon Deacons,h2h,,Wake Forest Demon Deacons,1.26,0.7752
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,b5e637cf502d6d5f408af440ea2d591d,2026-10-18T02:30:00Z,California Golden Bears,Wake Forest Demon Deacons,totals,53.5,Over,1.94,0.496
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,b5e637cf502d6d5f408af440ea2d591d,2026-10-18T02:30:00Z,California Golden Bears,Wake Forest Demon Deacons,totals,53.5,Under,1.91,0.504
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,917d8eb9ffc25af2925d0e7e8c91a0f4,2026-10-18T02:30:00Z,San Diego State Aztecs,Fresno State Bulldogs,h2h,,Fresno State Bulldogs,1.34,0.7278
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,917d8eb9ffc25af2925d0e7e8c91a0f4,2026-10-18T02:30:00Z,San Diego State Aztecs,Fresno State Bulldogs,h2h,,San Diego State Aztecs,3.44,0.2722
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,917d8eb9ffc25af2925d0e7e8c91a0f4,2026-10-18T02:30:00Z,San Diego State Aztecs,Fresno State Bulldogs,totals,46.0,Over,1.99,0.4839
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,917d8eb9ffc25af2925d0e7e8c91a0f4,2026-10-18T02:30:00Z,San Diego State Aztecs,Fresno State Bulldogs,totals,46.0,Under,1.87,0.5161
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,dd062699e8f42bd17509cfba1952e286,2026-10-18T02:30:00Z,Hawaii Rainbow Warriors,New Mexico Lobos,h2h,,Hawaii Rainbow Warriors,5.94,0.1494
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,dd062699e8f42bd17509cfba1952e286,2026-10-18T02:30:00Z,Hawaii Rainbow Warriors,New Mexico Lobos,h2h,,New Mexico Lobos,1.15,0.8506
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,dd062699e8f42bd17509cfba1952e286,2026-10-18T02:30:00Z,Hawaii Rainbow Warriors,New Mexico Lobos,totals,45.5,Over,1.92,0.5013
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,dd062699e8f42bd17509cfba1952e286,2026-10-18T02:30:00Z,Hawaii Rainbow Warriors,New Mexico Lobos,totals,45.5,Under,1.93,0.4987
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,5d147fefd2182aa2f5573ac03700a775,2026-10-18T03:00:00Z,Oregon Ducks,Nebraska Cornhuskers,h2h,,Nebraska Cornhuskers,3.15,0.3016
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,5d147fefd2182aa2f5573ac03700a775,2026-10-18T03:00:00Z,Oregon Ducks,Nebraska Cornhuskers,h2h,,Oregon Ducks,1.4,0.6984
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,5d147fefd2182aa2f5573ac03700a775,2026-10-18T03:00:00Z,Oregon Ducks,Nebraska Cornhuskers,totals,51.5,Over,1.95,0.4933
+2026-10-17T15:22:55+00:00,americanfootball_ncaaf,5d147fefd2182aa2f5573ac03700a775,2026-10-18T03:00:00Z,Oregon Ducks,Nebraska Cornhuskers,totals,51.5,Under,1.9,0.5067
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,e5bfb31cb9b7cc6844163ee7b1270790,2026-10-17T21:10:00Z,Cody Chovancek,Su Young You,h2h,,Cody Chovancek,1.79,0.5435
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,e5bfb31cb9b7cc6844163ee7b1270790,2026-10-17T21:10:00Z,Cody Chovancek,Su Young You,h2h,,Su Young You,2.12,0.4565
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,e5bfb31cb9b7cc6844163ee7b1270790,2026-10-17T21:10:00Z,Cody Chovancek,Su Young You,totals,2.5,Over,1.56,0.6229
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,e5bfb31cb9b7cc6844163ee7b1270790,2026-10-17T21:10:00Z,Cody Chovancek,Su Young You,totals,2.5,Under,2.53,0.3771
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,2feb821ccf32b225382f2f9797a77803,2026-10-17T21:45:00Z,Melissa Croden,Chelsea Chandler,h2h,,Chelsea Chandler,3.86,0.2449
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,2feb821ccf32b225382f2f9797a77803,2026-10-17T21:45:00Z,Melissa Croden,Chelsea Chandler,h2h,,Melissa Croden,1.3,0.7551
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,2feb821ccf32b225382f2f9797a77803,2026-10-17T21:45:00Z,Melissa Croden,Chelsea Chandler,totals,2.5,Over,1.62,0.5986
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,2feb821ccf32b225382f2f9797a77803,2026-10-17T21:45:00Z,Melissa Croden,Chelsea Chandler,totals,2.5,Under,2.38,0.4014
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,c87f6252be1d1714de23acac836b1359,2026-10-17T22:00:00Z,Chad Anheliger,Steven Koslow,h2h,,Chad Anheliger,2.52,0.382
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,c87f6252be1d1714de23acac836b1359,2026-10-17T22:00:00Z,Chad Anheliger,Steven Koslow,h2h,,Steven Koslow,1.58,0.618
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,c87f6252be1d1714de23acac836b1359,2026-10-17T22:00:00Z,Chad Anheliger,Steven Koslow,totals,1.5,Over,1.53,0.6345
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,c87f6252be1d1714de23acac836b1359,2026-10-17T22:00:00Z,Chad Anheliger,Steven Koslow,totals,1.5,Under,2.6,0.3655
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,0af3afefca4cd2458b05647644ed6422,2026-10-17T22:25:00Z,Mackenzie Stiller,Katlyn Chookagian,h2h,,Katlyn Chookagian,1.42,0.6898
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,0af3afefca4cd2458b05647644ed6422,2026-10-17T22:25:00Z,Mackenzie Stiller,Katlyn Chookagian,h2h,,Mackenzie Stiller,3.08,0.3102
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,0af3afefca4cd2458b05647644ed6422,2026-10-17T22:25:00Z,Mackenzie Stiller,Katlyn Chookagian,totals,2.5,Over,1.31,0.7428
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,0af3afefca4cd2458b05647644ed6422,2026-10-17T22:25:00Z,Mackenzie Stiller,Katlyn Chookagian,totals,2.5,Under,3.6,0.2572
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,95dbef1eff1e943bb1fec936d732e334,2026-10-17T22:50:00Z,Joel Faglier,Javad Mahjoub,h2h,,Javad Mahjoub,2.16,0.449
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,95dbef1eff1e943bb1fec936d732e334,2026-10-17T22:50:00Z,Joel Faglier,Javad Mahjoub,h2h,,Joel Faglier,1.77,0.551
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,95dbef1eff1e943bb1fec936d732e334,2026-10-17T22:50:00Z,Joel Faglier,Javad Mahjoub,totals,1.5,Over,1.93,0.5
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,95dbef1eff1e943bb1fec936d732e334,2026-10-17T22:50:00Z,Joel Faglier,Javad Mahjoub,totals,1.5,Under,1.93,0.5
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,c768abb043dc6a0932217f2956f0ff36,2026-10-17T23:15:00Z,Julien Leblanc,Nick Galanti,h2h,,Julien Leblanc,6.16,0.1464
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,c768abb043dc6a0932217f2956f0ff36,2026-10-17T23:15:00Z,Julien Leblanc,Nick Galanti,h2h,,Nick Galanti,1.15,0.8536
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,c768abb043dc6a0932217f2956f0ff36,2026-10-17T23:15:00Z,Julien Leblanc,Nick Galanti,totals,1.5,Over,2.48,0.3831
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,c768abb043dc6a0932217f2956f0ff36,2026-10-17T23:15:00Z,Julien Leblanc,Nick Galanti,totals,1.5,Under,1.57,0.6169
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,df1f179609ec9eea86a90917e7325cb0,2026-10-17T23:40:00Z,Tanner Boser,Jhonata Diniz,h2h,,Jhonata Diniz,1.48,0.6618
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,df1f179609ec9eea86a90917e7325cb0,2026-10-17T23:40:00Z,Tanner Boser,Jhonata Diniz,h2h,,Tanner Boser,2.84,0.3382
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,df1f179609ec9eea86a90917e7325cb0,2026-10-17T23:40:00Z,Tanner Boser,Jhonata Diniz,totals,2.5,Over,2.04,0.4719
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,df1f179609ec9eea86a90917e7325cb0,2026-10-17T23:40:00Z,Tanner Boser,Jhonata Diniz,totals,2.5,Under,1.83,0.5281
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,c66fefb93f75b08643187c5f0538c8df,2026-10-18T00:15:00Z,Mandel Nallo,Nate Landwehr,h2h,,Mandel Nallo,1.33,0.7363
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,c66fefb93f75b08643187c5f0538c8df,2026-10-18T00:15:00Z,Mandel Nallo,Nate Landwehr,h2h,,Nate Landwehr,3.58,0.2637
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,c66fefb93f75b08643187c5f0538c8df,2026-10-18T00:15:00Z,Mandel Nallo,Nate Landwehr,totals,1.5,Over,2.76,0.3433
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,c66fefb93f75b08643187c5f0538c8df,2026-10-18T00:15:00Z,Mandel Nallo,Nate Landwehr,totals,1.5,Under,1.48,0.6567
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,1c33424c4ef11b753412a9db35156d99,2026-10-18T00:45:00Z,Louis Jourdain,Timothy Cuamba,h2h,,Louis Jourdain,1.6,0.6109
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,1c33424c4ef11b753412a9db35156d99,2026-10-18T00:45:00Z,Louis Jourdain,Timothy Cuamba,h2h,,Timothy Cuamba,2.48,0.3891
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,1c33424c4ef11b753412a9db35156d99,2026-10-18T00:45:00Z,Louis Jourdain,Timothy Cuamba,totals,2.5,Over,1.72,0.5613
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,1c33424c4ef11b753412a9db35156d99,2026-10-18T00:45:00Z,Louis Jourdain,Timothy Cuamba,totals,2.5,Under,2.18,0.4387
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,8795864370c6bc77b97a54e3df04577b,2026-10-18T01:15:00Z,Marc-Andre Barriault,Kyle Daukaus,h2h,,Kyle Daukaus,1.52,0.6444
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,8795864370c6bc77b97a54e3df04577b,2026-10-18T01:15:00Z,Marc-Andre Barriault,Kyle Daukaus,h2h,,Marc-Andre Barriault,2.71,0.3556
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,8795864370c6bc77b97a54e3df04577b,2026-10-18T01:15:00Z,Marc-Andre Barriault,Kyle Daukaus,totals,2.5,Over,2.48,0.3831
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,8795864370c6bc77b97a54e3df04577b,2026-10-18T01:15:00Z,Marc-Andre Barriault,Kyle Daukaus,totals,2.5,Under,1.57,0.6169
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,951f0ebd6cee76cc1d518ca620ae085e,2026-10-18T01:45:00Z,Kyle Nelson,Cristian Pérez,h2h,,Cristian Pérez,1.3,0.7537
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,951f0ebd6cee76cc1d518ca620ae085e,2026-10-18T01:45:00Z,Kyle Nelson,Cristian Pérez,h2h,,Kyle Nelson,3.82,0.2463
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,951f0ebd6cee76cc1d518ca620ae085e,2026-10-18T01:45:00Z,Kyle Nelson,Cristian Pérez,totals,1.5,Over,2.0,0.4797
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,951f0ebd6cee76cc1d518ca620ae085e,2026-10-18T01:45:00Z,Kyle Nelson,Cristian Pérez,totals,1.5,Under,1.85,0.5203
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,1ff30ee6b39aa283bf9a92b86d0a0b05,2026-10-18T02:15:00Z,Erin Blanchfield,Jasmine Jasudavicius,h2h,,Erin Blanchfield,1.3,0.7537
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,1ff30ee6b39aa283bf9a92b86d0a0b05,2026-10-18T02:15:00Z,Erin Blanchfield,Jasmine Jasudavicius,h2h,,Jasmine Jasudavicius,3.82,0.2463
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,1ff30ee6b39aa283bf9a92b86d0a0b05,2026-10-18T02:15:00Z,Erin Blanchfield,Jasmine Jasudavicius,totals,2.5,Over,1.26,0.7731
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,1ff30ee6b39aa283bf9a92b86d0a0b05,2026-10-18T02:15:00Z,Erin Blanchfield,Jasmine Jasudavicius,totals,2.5,Under,4.04,0.2269
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,57fdd571620f90d8f598376aa039210a,2026-10-18T02:45:00Z,Joaquin Buckley,Mike Malott,h2h,,Joaquin Buckley,2.14,0.4527
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,57fdd571620f90d8f598376aa039210a,2026-10-18T02:45:00Z,Joaquin Buckley,Mike Malott,h2h,,Mike Malott,1.78,0.5473
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,57fdd571620f90d8f598376aa039210a,2026-10-18T02:45:00Z,Joaquin Buckley,Mike Malott,totals,3.5,Over,1.93,0.5
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,57fdd571620f90d8f598376aa039210a,2026-10-18T02:45:00Z,Joaquin Buckley,Mike Malott,totals,3.5,Under,1.93,0.5
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,45a1d00aced27b917a1f982482477b41,2026-10-24T14:00:00Z,Aaron Pico,Losene Keita,h2h,,Aaron Pico,1.97,0.4878
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,45a1d00aced27b917a1f982482477b41,2026-10-24T14:00:00Z,Aaron Pico,Losene Keita,h2h,,Losene Keita,1.88,0.5122
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,78d6472a61824019c0d8f1a535e3d475,2026-10-24T14:00:00Z,Nikita Krylov,Abdulrakhman Yakhyaev,h2h,,Abdulrakhman Yakhyaev,1.22,0.7997
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,78d6472a61824019c0d8f1a535e3d475,2026-10-24T14:00:00Z,Nikita Krylov,Abdulrakhman Yakhyaev,h2h,,Nikita Krylov,4.54,0.2003
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,4ca80986802a53598e9b7a0aaebad69e,2026-10-24T14:00:00Z,Abusupyian Magomedov,Cam Rowston,h2h,,Abusupyian Magomedov,1.97,0.4878
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,4ca80986802a53598e9b7a0aaebad69e,2026-10-24T14:00:00Z,Abusupyian Magomedov,Cam Rowston,h2h,,Cam Rowston,1.88,0.5122
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,48146e11c4874fe557649e1533c489a3,2026-10-24T14:00:00Z,Alexander Volkov,Rizvan Kuniev,h2h,,Alexander Volkov,1.88,0.5134
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,48146e11c4874fe557649e1533c489a3,2026-10-24T14:00:00Z,Alexander Volkov,Rizvan Kuniev,h2h,,Rizvan Kuniev,1.98,0.4866
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,d170133c67f017be45b7b81eba2a4dae,2026-10-24T14:00:00Z,Azamat Murzakanov,Dominick Reyes,h2h,,Azamat Murzakanov,1.46,0.6652
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,d170133c67f017be45b7b81eba2a4dae,2026-10-24T14:00:00Z,Azamat Murzakanov,Dominick Reyes,h2h,,Dominick Reyes,2.82,0.3348
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,b29313ed77b206f9319c46ed143d46d1,2026-10-24T14:00:00Z,Grant Dawson,Nurullo Aliev,h2h,,Grant Dawson,1.88,0.5122
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,b29313ed77b206f9319c46ed143d46d1,2026-10-24T14:00:00Z,Grant Dawson,Nurullo Aliev,h2h,,Nurullo Aliev,1.97,0.4878
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,3d66abf1b70ac44a10b9a31964c4f4af,2026-10-24T14:00:00Z,Lone'er Kavanagh,Ramazonbek Temirov,h2h,,Lone'er Kavanagh,1.88,0.5122
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,3d66abf1b70ac44a10b9a31964c4f4af,2026-10-24T14:00:00Z,Lone'er Kavanagh,Ramazonbek Temirov,h2h,,Ramazonbek Temirov,1.97,0.4878
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,434aefea124f696fec6cba7d9ec6f582,2026-10-25T03:30:00Z,Petr Yan,Merab Dvalishvili,h2h,,Merab Dvalishvili,2.46,0.3868
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,434aefea124f696fec6cba7d9ec6f582,2026-10-25T03:30:00Z,Petr Yan,Merab Dvalishvili,h2h,,Petr Yan,1.58,0.6132
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,73e2bada18e572af297a62064bd02d95,2026-10-25T04:00:00Z,Alex Volkanovski,Movsar Evloev,h2h,,Alex Volkanovski,1.93,0.5
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,73e2bada18e572af297a62064bd02d95,2026-10-25T04:00:00Z,Alex Volkanovski,Movsar Evloev,h2h,,Movsar Evloev,1.93,0.5
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,dca96b5f1b9adde7830680152cd5cbc7,2026-11-15T05:00:00Z,Kayla Harrison,Amanda Nunes,h2h,,Amanda Nunes,2.62,0.3619
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,dca96b5f1b9adde7830680152cd5cbc7,2026-11-15T05:00:00Z,Kayla Harrison,Amanda Nunes,h2h,,Kayla Harrison,1.52,0.6381
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,5298300e656df1b89af9e3524867ccbe,2026-11-15T05:30:00Z,Ciryl Gane,Josh Hokit,h2h,,Ciryl Gane,1.4,0.6959
+2026-10-17T15:22:55+00:00,mma_mixed_martial_arts,5298300e656df1b89af9e3524867ccbe,2026-11-15T05:30:00Z,Ciryl Gane,Josh Hokit,h2h,,Josh Hokit,3.1,0.3041
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,aef660734585649651415961a9d177c6,2026-10-17T14:15:00Z,Villarreal,Elche CF,h2h,,Elche CF,9.22,0.0921
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,aef660734585649651415961a9d177c6,2026-10-17T14:15:00Z,Villarreal,Elche CF,h2h,,Villarreal,1.5,0.6503
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,aef660734585649651415961a9d177c6,2026-10-17T14:15:00Z,Villarreal,Elche CF,h2h,,Draw,3.65,0.2576
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,aef660734585649651415961a9d177c6,2026-10-17T14:15:00Z,Villarreal,Elche CF,totals,1.75,Over,1.83,0.5305
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,aef660734585649651415961a9d177c6,2026-10-17T14:15:00Z,Villarreal,Elche CF,totals,1.75,Under,2.06,0.4695
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,846e496fc232b2fc20214754836727d0,2026-10-17T16:30:00Z,Real Betis,Barcelona,h2h,,Barcelona,1.45,0.6772
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,846e496fc232b2fc20214754836727d0,2026-10-17T16:30:00Z,Real Betis,Barcelona,h2h,,Real Betis,5.94,0.1559
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,846e496fc232b2fc20214754836727d0,2026-10-17T16:30:00Z,Real Betis,Barcelona,h2h,,Draw,5.58,0.1668
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,846e496fc232b2fc20214754836727d0,2026-10-17T16:30:00Z,Real Betis,Barcelona,totals,4.0,Over,1.8,0.5441
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,846e496fc232b2fc20214754836727d0,2026-10-17T16:30:00Z,Real Betis,Barcelona,totals,4.0,Under,2.14,0.4559
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,f00cd1ea41fa39149729d14ebc07aa6c,2026-10-17T19:00:00Z,Valencia,Athletic Bilbao,h2h,,Athletic Bilbao,2.31,0.4235
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,f00cd1ea41fa39149729d14ebc07aa6c,2026-10-17T19:00:00Z,Valencia,Athletic Bilbao,h2h,,Valencia,3.38,0.2865
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,f00cd1ea41fa39149729d14ebc07aa6c,2026-10-17T19:00:00Z,Valencia,Athletic Bilbao,h2h,,Draw,3.34,0.29
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,f00cd1ea41fa39149729d14ebc07aa6c,2026-10-17T19:00:00Z,Valencia,Athletic Bilbao,totals,2.25,Over,1.87,0.5223
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,f00cd1ea41fa39149729d14ebc07aa6c,2026-10-17T19:00:00Z,Valencia,Athletic Bilbao,totals,2.25,Under,2.04,0.4777
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,1f566f17c50fe5162724ec2863d2207b,2026-10-18T12:00:00Z,CA Osasuna,Real Racing Club de Santander,h2h,,CA Osasuna,2.0,0.4886
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,1f566f17c50fe5162724ec2863d2207b,2026-10-18T12:00:00Z,CA Osasuna,Real Racing Club de Santander,h2h,,Real Racing Club de Santander,3.72,0.2575
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,1f566f17c50fe5162724ec2863d2207b,2026-10-18T12:00:00Z,CA Osasuna,Real Racing Club de Santander,h2h,,Draw,3.77,0.2539
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,1f566f17c50fe5162724ec2863d2207b,2026-10-18T12:00:00Z,CA Osasuna,Real Racing Club de Santander,totals,2.75,Over,1.79,0.5446
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,1f566f17c50fe5162724ec2863d2207b,2026-10-18T12:00:00Z,CA Osasuna,Real Racing Club de Santander,totals,2.75,Under,2.13,0.4554
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,aabe899ecc4c19a1fafe5440151b62e4,2026-10-18T14:15:00Z,Celta Vigo,Alavés,h2h,,Alavés,3.54,0.271
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,aabe899ecc4c19a1fafe5440151b62e4,2026-10-18T14:15:00Z,Celta Vigo,Alavés,h2h,,Celta Vigo,2.21,0.441
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,aabe899ecc4c19a1fafe5440151b62e4,2026-10-18T14:15:00Z,Celta Vigo,Alavés,h2h,,Draw,3.34,0.2879
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,aabe899ecc4c19a1fafe5440151b62e4,2026-10-18T14:15:00Z,Celta Vigo,Alavés,totals,2.25,Over,1.92,0.5066
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,aabe899ecc4c19a1fafe5440151b62e4,2026-10-18T14:15:00Z,Celta Vigo,Alavés,totals,2.25,Under,1.97,0.4934
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,1051298b4aca6f07113309bff598a5c1,2026-10-18T16:30:00Z,Málaga,Real Sociedad,h2h,,Málaga,3.48,0.276
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,1051298b4aca6f07113309bff598a5c1,2026-10-18T16:30:00Z,Málaga,Real Sociedad,h2h,,Real Sociedad,2.15,0.4537
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,1051298b4aca6f07113309bff598a5c1,2026-10-18T16:30:00Z,Málaga,Real Sociedad,h2h,,Draw,3.55,0.2703
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,1051298b4aca6f07113309bff598a5c1,2026-10-18T16:30:00Z,Málaga,Real Sociedad,totals,2.75,Over,2.02,0.4801
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,1051298b4aca6f07113309bff598a5c1,2026-10-18T16:30:00Z,Málaga,Real Sociedad,totals,2.75,Under,1.87,0.5199
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,h2h,,Real Madrid,1.24,0.7926
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,h2h,,Sevilla,11.31,0.0746
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,h2h,,Draw,6.82,0.1328
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,totals,3.25,Over,1.87,0.5174
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,eccd63bf768e2f2a358b871d3f33a63d,2026-10-18T19:00:00Z,Real Madrid,Sevilla,totals,3.25,Under,2.0,0.4826
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,4a88bc4de574d43ef34677fd8d78722f,2026-10-19T19:00:00Z,Getafe,Rayo Vallecano,h2h,,Getafe,3.05,0.3171
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,4a88bc4de574d43ef34677fd8d78722f,2026-10-19T19:00:00Z,Getafe,Rayo Vallecano,h2h,,Rayo Vallecano,2.72,0.3569
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,4a88bc4de574d43ef34677fd8d78722f,2026-10-19T19:00:00Z,Getafe,Rayo Vallecano,h2h,,Draw,2.97,0.326
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,4a88bc4de574d43ef34677fd8d78722f,2026-10-19T19:00:00Z,Getafe,Rayo Vallecano,totals,2.0,Over,1.99,0.4881
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,4a88bc4de574d43ef34677fd8d78722f,2026-10-19T19:00:00Z,Getafe,Rayo Vallecano,totals,2.0,Under,1.9,0.5119
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,h2h,,Athletic Bilbao,2.17,0.4443
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,h2h,,Levante,3.77,0.2487
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,h2h,,Draw,3.09,0.3071
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,totals,2.5,Over,1.95,0.4905
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,a362cccad837f1ffae61ff43a3536688,2026-10-21T18:00:00Z,Levante,Athletic Bilbao,totals,2.5,Under,1.88,0.5095
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,903eb4941471ffe20d525b02dd3b77aa,2026-10-23T19:00:00Z,Alavés,Málaga,h2h,,Alavés,1.85,0.5225
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,903eb4941471ffe20d525b02dd3b77aa,2026-10-23T19:00:00Z,Alavés,Málaga,h2h,,Málaga,4.39,0.2098
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,903eb4941471ffe20d525b02dd3b77aa,2026-10-23T19:00:00Z,Alavés,Málaga,h2h,,Draw,3.5,0.2677
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,903eb4941471ffe20d525b02dd3b77aa,2026-10-23T19:00:00Z,Alavés,Málaga,totals,2.25,Over,1.87,0.5136
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,903eb4941471ffe20d525b02dd3b77aa,2026-10-23T19:00:00Z,Alavés,Málaga,totals,2.25,Under,1.97,0.4864
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,734ad601156f5f4e6bc42317e5141516,2026-10-24T12:00:00Z,Rayo Vallecano,Elche CF,h2h,,Elche CF,4.46,0.2059
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,734ad601156f5f4e6bc42317e5141516,2026-10-24T12:00:00Z,Rayo Vallecano,Elche CF,h2h,,Rayo Vallecano,1.76,0.5499
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,734ad601156f5f4e6bc42317e5141516,2026-10-24T12:00:00Z,Rayo Vallecano,Elche CF,h2h,,Draw,3.81,0.2442
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,734ad601156f5f4e6bc42317e5141516,2026-10-24T12:00:00Z,Rayo Vallecano,Elche CF,totals,2.5,Over,1.83,0.5245
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,734ad601156f5f4e6bc42317e5141516,2026-10-24T12:00:00Z,Rayo Vallecano,Elche CF,totals,2.5,Under,2.01,0.4755
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,5960b1b6c20acfd78e78764fed47d505,2026-10-24T14:15:00Z,Real Racing Club de Santander,Espanyol,h2h,,Espanyol,2.68,0.3567
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,5960b1b6c20acfd78e78764fed47d505,2026-10-24T14:15:00Z,Real Racing Club de Santander,Espanyol,h2h,,Real Racing Club de Santander,2.5,0.3835
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,5960b1b6c20acfd78e78764fed47d505,2026-10-24T14:15:00Z,Real Racing Club de Santander,Espanyol,h2h,,Draw,3.62,0.2598
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,5960b1b6c20acfd78e78764fed47d505,2026-10-24T14:15:00Z,Real Racing Club de Santander,Espanyol,totals,2.75,Over,1.91,0.5027
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,5960b1b6c20acfd78e78764fed47d505,2026-10-24T14:15:00Z,Real Racing Club de Santander,Espanyol,totals,2.75,Under,1.93,0.4973
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,0dae715cc56fe201f9e667917c126691,2026-10-24T16:30:00Z,Valencia,Villarreal,h2h,,Valencia,3.09,0.3068
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,0dae715cc56fe201f9e667917c126691,2026-10-24T16:30:00Z,Valencia,Villarreal,h2h,,Villarreal,2.17,0.444
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,0dae715cc56fe201f9e667917c126691,2026-10-24T16:30:00Z,Valencia,Villarreal,h2h,,Draw,3.76,0.2492
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,0dae715cc56fe201f9e667917c126691,2026-10-24T16:30:00Z,Valencia,Villarreal,totals,2.75,Over,1.91,0.5027
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,0dae715cc56fe201f9e667917c126691,2026-10-24T16:30:00Z,Valencia,Villarreal,totals,2.75,Under,1.93,0.4973
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,h2h,,Atlético Madrid,1.23,0.792
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,h2h,,Deportivo La Coruña,10.92,0.0706
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,h2h,,Draw,6.31,0.1375
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,totals,3.25,Over,2.04,0.4658
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,70df1835c3b5ddff1c99e0189532136b,2026-10-24T19:00:00Z,Atlético Madrid,Deportivo La Coruña,totals,3.25,Under,1.79,0.5342
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,9c4254cba9944a839b421db27260504d,2026-10-25T13:00:00Z,Athletic Bilbao,Getafe,h2h,,Athletic Bilbao,1.65,0.5876
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,9c4254cba9944a839b421db27260504d,2026-10-25T13:00:00Z,Athletic Bilbao,Getafe,h2h,,Getafe,4.72,0.1934
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,9c4254cba9944a839b421db27260504d,2026-10-25T13:00:00Z,Athletic Bilbao,Getafe,h2h,,Draw,4.21,0.219
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,9c4254cba9944a839b421db27260504d,2026-10-25T13:00:00Z,Athletic Bilbao,Getafe,totals,2.25,Over,1.93,0.4959
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,9c4254cba9944a839b421db27260504d,2026-10-25T13:00:00Z,Athletic Bilbao,Getafe,totals,2.25,Under,1.9,0.5041
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,2013e3955186ebe5258e85eb741a7553,2026-10-25T15:15:00Z,Celta Vigo,Real Betis,h2h,,Celta Vigo,2.66,0.3591
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,2013e3955186ebe5258e85eb741a7553,2026-10-25T15:15:00Z,Celta Vigo,Real Betis,h2h,,Real Betis,2.53,0.3784
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,2013e3955186ebe5258e85eb741a7553,2026-10-25T15:15:00Z,Celta Vigo,Real Betis,h2h,,Draw,3.58,0.2625
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,2013e3955186ebe5258e85eb741a7553,2026-10-25T15:15:00Z,Celta Vigo,Real Betis,totals,2.5,Over,1.81,0.5311
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,2013e3955186ebe5258e85eb741a7553,2026-10-25T15:15:00Z,Celta Vigo,Real Betis,totals,2.5,Under,2.04,0.4689
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,3cb8660cd2375b60e81144a7572cfb89,2026-10-25T17:30:00Z,Real Sociedad,Levante,h2h,,Levante,4.32,0.2136
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,3cb8660cd2375b60e81144a7572cfb89,2026-10-25T17:30:00Z,Real Sociedad,Levante,h2h,,Real Sociedad,1.74,0.5568
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,3cb8660cd2375b60e81144a7572cfb89,2026-10-25T17:30:00Z,Real Sociedad,Levante,h2h,,Draw,4.04,0.2296
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,3cb8660cd2375b60e81144a7572cfb89,2026-10-25T17:30:00Z,Real Sociedad,Levante,totals,2.75,Over,1.79,0.5378
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,3cb8660cd2375b60e81144a7572cfb89,2026-10-25T17:30:00Z,Real Sociedad,Levante,totals,2.75,Under,2.07,0.4622
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,72089d103a5fe6a922c35e17efba6ffc,2026-10-25T20:00:00Z,Barcelona,Real Madrid,h2h,,Barcelona,1.53,0.6341
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,72089d103a5fe6a922c35e17efba6ffc,2026-10-25T20:00:00Z,Barcelona,Real Madrid,h2h,,Real Madrid,4.64,0.196
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,72089d103a5fe6a922c35e17efba6ffc,2026-10-25T20:00:00Z,Barcelona,Real Madrid,h2h,,Draw,5.28,0.1699
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,72089d103a5fe6a922c35e17efba6ffc,2026-10-25T20:00:00Z,Barcelona,Real Madrid,totals,3.75,Over,1.78,0.5405
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,72089d103a5fe6a922c35e17efba6ffc,2026-10-25T20:00:00Z,Barcelona,Real Madrid,totals,3.75,Under,2.08,0.4595
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,85e464708d03287f24590e1478aeca31,2026-10-26T20:00:00Z,Sevilla,CA Osasuna,h2h,,CA Osasuna,4.08,0.2278
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,85e464708d03287f24590e1478aeca31,2026-10-26T20:00:00Z,Sevilla,CA Osasuna,h2h,,Sevilla,1.95,0.4955
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,85e464708d03287f24590e1478aeca31,2026-10-26T20:00:00Z,Sevilla,CA Osasuna,h2h,,Draw,3.4,0.2768
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,85e464708d03287f24590e1478aeca31,2026-10-26T20:00:00Z,Sevilla,CA Osasuna,totals,2.25,Over,1.9,0.5041
+2026-10-17T15:22:55+00:00,soccer_spain_la_liga,85e464708d03287f24590e1478aeca31,2026-10-26T20:00:00Z,Sevilla,CA Osasuna,totals,2.25,Under,1.93,0.4959
+2026-10-17T15:22:55+00:00,soccer_epl,8f1945e7272bc7e89016439f5ab321c7,2026-10-17T14:00:00Z,Brentford,Liverpool,h2h,,Brentford,2.75,0.3435
+2026-10-17T15:22:55+00:00,soccer_epl,8f1945e7272bc7e89016439f5ab321c7,2026-10-17T14:00:00Z,Brentford,Liverpool,h2h,,Liverpool,2.71,0.3488
+2026-10-17T15:22:55+00:00,soccer_epl,8f1945e7272bc7e89016439f5ab321c7,2026-10-17T14:00:00Z,Brentford,Liverpool,h2h,,Draw,3.05,0.3077
+2026-10-17T15:22:55+00:00,soccer_epl,8f1945e7272bc7e89016439f5ab321c7,2026-10-17T14:00:00Z,Brentford,Liverpool,totals,2.75,Over,1.82,0.5308
+2026-10-17T15:22:55+00:00,soccer_epl,8f1945e7272bc7e89016439f5ab321c7,2026-10-17T14:00:00Z,Brentford,Liverpool,totals,2.75,Under,2.05,0.4692
+2026-10-17T15:22:55+00:00,soccer_epl,7895f97f2f9577f3b13287a3d086859d,2026-10-17T14:00:00Z,Fulham,Hull City,h2h,,Fulham,1.16,0.847
+2026-10-17T15:22:55+00:00,soccer_epl,7895f97f2f9577f3b13287a3d086859d,2026-10-17T14:00:00Z,Fulham,Hull City,h2h,,Hull City,31.94,0.0163
+2026-10-17T15:22:55+00:00,soccer_epl,7895f97f2f9577f3b13287a3d086859d,2026-10-17T14:00:00Z,Fulham,Hull City,h2h,,Draw,6.59,0.1367
+2026-10-17T15:22:55+00:00,soccer_epl,7895f97f2f9577f3b13287a3d086859d,2026-10-17T14:00:00Z,Fulham,Hull City,totals,2.0,Over,1.74,0.558
+2026-10-17T15:22:55+00:00,soccer_epl,7895f97f2f9577f3b13287a3d086859d,2026-10-17T14:00:00Z,Fulham,Hull City,totals,2.0,Under,2.18,0.442
+2026-10-17T15:22:55+00:00,soccer_epl,bf2142d1ca76ba2fc9e61afce80f86c0,2026-10-17T14:00:00Z,Manchester City,Ipswich Town,h2h,,Ipswich Town,37.59,0.0132
+2026-10-17T15:22:55+00:00,soccer_epl,bf2142d1ca76ba2fc9e61afce80f86c0,2026-10-17T14:00:00Z,Manchester City,Ipswich Town,h2h,,Manchester City,1.13,0.8716
+2026-10-17T15:22:55+00:00,soccer_epl,bf2142d1ca76ba2fc9e61afce80f86c0,2026-10-17T14:00:00Z,Manchester City,Ipswich Town,h2h,,Draw,7.78,0.1152
+2026-10-17T15:22:55+00:00,soccer_epl,bf2142d1ca76ba2fc9e61afce80f86c0,2026-10-17T14:00:00Z,Manchester City,Ipswich Town,totals,4.5,Over,1.95,0.4973
+2026-10-17T15:22:55+00:00,soccer_epl,bf2142d1ca76ba2fc9e61afce80f86c0,2026-10-17T14:00:00Z,Manchester City,Ipswich Town,totals,4.5,Under,1.93,0.5027
+2026-10-17T15:22:55+00:00,soccer_epl,d1bbbdcd3d430e70091b518369b559cf,2026-10-17T16:30:00Z,Newcastle United,Aston Villa,h2h,,Aston Villa,2.97,0.3273
+2026-10-17T15:22:55+00:00,soccer_epl,d1bbbdcd3d430e70091b518369b559cf,2026-10-17T16:30:00Z,Newcastle United,Aston Villa,h2h,,Newcastle United,2.37,0.4125
+2026-10-17T15:22:55+00:00,soccer_epl,d1bbbdcd3d430e70091b518369b559cf,2026-10-17T16:30:00Z,Newcastle United,Aston Villa,h2h,,Draw,3.71,0.2601
+2026-10-17T15:22:55+00:00,soccer_epl,d1bbbdcd3d430e70091b518369b559cf,2026-10-17T16:30:00Z,Newcastle United,Aston Villa,totals,3.0,Over,1.92,0.5092
+2026-10-17T15:22:55+00:00,soccer_epl,d1bbbdcd3d430e70091b518369b559cf,2026-10-17T16:30:00Z,Newcastle United,Aston Villa,totals,3.0,Under,1.99,0.4908
+2026-10-17T15:22:55+00:00,soccer_epl,dfd5d6648be46426e418801584d46a68,2026-10-18T13:00:00Z,Bournemouth,Sunderland,h2h,,Bournemouth,2.16,0.452
+2026-10-17T15:22:55+00:00,soccer_epl,dfd5d6648be46426e418801584d46a68,2026-10-18T13:00:00Z,Bournemouth,Sunderland,h2h,,Sunderland,3.51,0.274
+2026-10-17T15:22:55+00:00,soccer_epl,dfd5d6648be46426e418801584d46a68,2026-10-18T13:00:00Z,Bournemouth,Sunderland,h2h,,Draw,3.51,0.274
+2026-10-17T15:22:55+00:00,soccer_epl,dfd5d6648be46426e418801584d46a68,2026-10-18T13:00:00Z,Bournemouth,Sunderland,totals,2.5,Over,1.93,0.504
+2026-10-17T15:22:55+00:00,soccer_epl,dfd5d6648be46426e418801584d46a68,2026-10-18T13:00:00Z,Bournemouth,Sunderland,totals,2.5,Under,1.96,0.496
+2026-10-17T15:22:55+00:00,soccer_epl,9fc08b390a49c4434f7cf631a0bb88fb,2026-10-18T13:00:00Z,Brighton and Hove Albion,Crystal Palace,h2h,,Brighton and Hove Albion,1.52,0.645
+2026-10-17T15:22:55+00:00,soccer_epl,9fc08b390a49c4434f7cf631a0bb88fb,2026-10-18T13:00:00Z,Brighton and Hove Albion,Crystal Palace,h2h,,Crystal Palace,5.92,0.156
+2026-10-17T15:22:55+00:00,soccer_epl,9fc08b390a49c4434f7cf631a0bb88fb,2026-10-18T13:00:00Z,Brighton and Hove Albion,Crystal Palace,h2h,,Draw,4.72,0.199
+2026-10-17T15:22:55+00:00,soccer_epl,9fc08b390a49c4434f7cf631a0bb88fb,2026-10-18T13:00:00Z,Brighton and Hove Albion,Crystal Palace,totals,3.0,Over,1.93,0.5027
+2026-10-17T15:22:55+00:00,soccer_epl,9fc08b390a49c4434f7cf631a0bb88fb,2026-10-18T13:00:00Z,Brighton and Hove Albion,Crystal Palace,totals,3.0,Under,1.95,0.4973
+2026-10-17T15:22:55+00:00,soccer_epl,676b3b0b609e9cf565da450786618d26,2026-10-18T13:00:00Z,Leeds United,Manchester United,h2h,,Leeds United,2.35,0.4144
+2026-10-17T15:22:55+00:00,soccer_epl,676b3b0b609e9cf565da450786618d26,2026-10-18T13:00:00Z,Leeds United,Manchester United,h2h,,Manchester United,3.05,0.3167
+2026-10-17T15:22:55+00:00,soccer_epl,676b3b0b609e9cf565da450786618d26,2026-10-18T13:00:00Z,Leeds United,Manchester United,h2h,,Draw,3.57,0.2689
+2026-10-17T15:22:55+00:00,soccer_epl,676b3b0b609e9cf565da450786618d26,2026-10-18T13:00:00Z,Leeds United,Manchester United,totals,2.75,Over,1.88,0.5172
+2026-10-17T15:22:55+00:00,soccer_epl,676b3b0b609e9cf565da450786618d26,2026-10-18T13:00:00Z,Leeds United,Manchester United,totals,2.75,Under,2.01,0.4828
+2026-10-17T15:22:55+00:00,soccer_epl,f696a248965373d9071dc0662e5c58a8,2026-10-18T15:30:00Z,Nottingham Forest,Arsenal,h2h,,Arsenal,1.64,0.597
+2026-10-17T15:22:55+00:00,soccer_epl,f696a248965373d9071dc0662e5c58a8,2026-10-18T15:30:00Z,Nottingham Forest,Arsenal,h2h,,Nottingham Forest,6.07,0.152
+2026-10-17T15:22:55+00:00,soccer_epl,f696a248965373d9071dc0662e5c58a8,2026-10-18T15:30:00Z,Nottingham Forest,Arsenal,h2h,,Draw,3.79,0.2511
+2026-10-17T15:22:55+00:00,soccer_epl,f696a248965373d9071dc0662e5c58a8,2026-10-18T15:30:00Z,Nottingham Forest,Arsenal,totals,2.5,Over,1.95,0.4973
+2026-10-17T15:22:55+00:00,soccer_epl,f696a248965373d9071dc0662e5c58a8,2026-10-18T15:30:00Z,Nottingham Forest,Arsenal,totals,2.5,Under,1.93,0.5027
+2026-10-17T15:22:55+00:00,soccer_epl,9baaf4e48b041cfef04e70e42532502e,2026-10-19T19:00:00Z,Tottenham Hotspur,Coventry City,h2h,,Coventry City,6.4,0.1442
+2026-10-17T15:22:55+00:00,soccer_epl,9baaf4e48b041cfef04e70e42532502e,2026-10-19T19:00:00Z,Tottenham Hotspur,Coventry City,h2h,,Tottenham Hotspur,1.49,0.6591
+2026-10-17T15:22:55+00:00,soccer_epl,9baaf4e48b041cfef04e70e42532502e,2026-10-19T19:00:00Z,Tottenham Hotspur,Coventry City,h2h,,Draw,4.79,0.1967
+2026-10-17T15:22:55+00:00,soccer_epl,9baaf4e48b041cfef04e70e42532502e,2026-10-19T19:00:00Z,Tottenham Hotspur,Coventry City,totals,3.0,Over,1.96,0.496
+2026-10-17T15:22:55+00:00,soccer_epl,9baaf4e48b041cfef04e70e42532502e,2026-10-19T19:00:00Z,Tottenham Hotspur,Coventry City,totals,3.0,Under,1.93,0.504
+2026-10-17T15:22:55+00:00,soccer_epl,d0202960708a442401d7fc7bd74a0183,2026-10-23T19:00:00Z,Ipswich Town,Nottingham Forest,h2h,,Ipswich Town,3.06,0.3098
+2026-10-17T15:22:55+00:00,soccer_epl,d0202960708a442401d7fc7bd74a0183,2026-10-23T19:00:00Z,Ipswich Town,Nottingham Forest,h2h,,Nottingham Forest,2.26,0.4255
+2026-10-17T15:22:55+00:00,soccer_epl,d0202960708a442401d7fc7bd74a0183,2026-10-23T19:00:00Z,Ipswich Town,Nottingham Forest,h2h,,Draw,3.55,0.2647
+2026-10-17T15:22:55+00:00,soccer_epl,d0202960708a442401d7fc7bd74a0183,2026-10-23T19:00:00Z,Ipswich Town,Nottingham Forest,totals,2.5,Over,1.78,0.5417
+2026-10-17T15:22:55+00:00,soccer_epl,d0202960708a442401d7fc7bd74a0183,2026-10-23T19:00:00Z,Ipswich Town,Nottingham Forest,totals,2.5,Under,2.09,0.4583
+2026-10-17T15:22:55+00:00,soccer_epl,aca5dd297dbee71f576f7641569fe578,2026-10-24T11:30:00Z,Aston Villa,Manchester City,h2h,,Aston Villa,4.37,0.2108
+2026-10-17T15:22:55+00:00,soccer_epl,aca5dd297dbee71f576f7641569fe578,2026-10-24T11:30:00Z,Aston Villa,Manchester City,h2h,,Manchester City,1.72,0.5634
+2026-10-17T15:22:55+00:00,soccer_epl,aca5dd297dbee71f576f7641569fe578,2026-10-24T11:30:00Z,Aston Villa,Manchester City,h2h,,Draw,4.1,0.2259
+2026-10-17T15:22:55+00:00,soccer_epl,aca5dd297dbee71f576f7641569fe578,2026-10-24T11:30:00Z,Aston Villa,Manchester City,totals,3.0,Over,1.91,0.5027
+2026-10-17T15:22:55+00:00,soccer_epl,aca5dd297dbee71f576f7641569fe578,2026-10-24T11:30:00Z,Aston Villa,Manchester City,totals,3.0,Under,1.93,0.4973
+2026-10-17T15:22:55+00:00,soccer_epl,f66e4f29c1b7bcfc5ab58c0b88c8850b,2026-10-24T14:00:00Z,Arsenal,Everton,h2h,,Arsenal,1.4,0.6949
+2026-10-17T15:22:55+00:00,soccer_epl,f66e4f29c1b7bcfc5ab58c0b88c8850b,2026-10-24T14:00:00Z,Arsenal,Everton,h2h,,Everton,8.54,0.0977
+2026-10-17T15:22:55+00:00,soccer_epl,f66e4f29c1b7bcfc5ab58c0b88c8850b,2026-10-24T14:00:00Z,Arsenal,Everton,h2h,,Draw,4.41,0.2074
+2026-10-17T15:22:55+00:00,soccer_epl,f66e4f29c1b7bcfc5ab58c0b88c8850b,2026-10-24T14:00:00Z,Arsenal,Everton,totals,2.75,Over,2.05,0.4677
+2026-10-17T15:22:55+00:00,soccer_epl,f66e4f29c1b7bcfc5ab58c0b88c8850b,2026-10-24T14:00:00Z,Arsenal,Everton,totals,2.75,Under,1.81,0.5323
+2026-10-17T15:22:55+00:00,soccer_epl,0fbb2626ed9534b9dcf21d16925f9bd7,2026-10-24T14:00:00Z,Coventry City,Fulham,h2h,,Coventry City,2.94,0.3237
+2026-10-17T15:22:55+00:00,soccer_epl,0fbb2626ed9534b9dcf21d16925f9bd7,2026-10-24T14:00:00Z,Coventry City,Fulham,h2h,,Fulham,2.34,0.411
+2026-10-17T15:22:55+00:00,soccer_epl,0fbb2626ed9534b9dcf21d16925f9bd7,2026-10-24T14:00:00Z,Coventry City,Fulham,h2h,,Draw,3.55,0.2653
+2026-10-17T15:22:55+00:00,soccer_epl,0fbb2626ed9534b9dcf21d16925f9bd7,2026-10-24T14:00:00Z,Coventry City,Fulham,totals,2.75,Over,1.93,0.4973
+2026-10-17T15:22:55+00:00,soccer_epl,0fbb2626ed9534b9dcf21d16925f9bd7,2026-10-24T14:00:00Z,Coventry City,Fulham,totals,2.75,Under,1.91,0.5027
+2026-10-17T15:22:55+00:00,soccer_epl,0382a9faef0bb8df1bcc436536cffb05,2026-10-24T16:30:00Z,Chelsea,Tottenham Hotspur,h2h,,Chelsea,1.83,0.5288
+2026-10-17T15:22:55+00:00,soccer_epl,0382a9faef0bb8df1bcc436536cffb05,2026-10-24T16:30:00Z,Chelsea,Tottenham Hotspur,h2h,,Tottenham Hotspur,3.87,0.2407
+2026-10-17T15:22:55+00:00,soccer_epl,0382a9faef0bb8df1bcc436536cffb05,2026-10-24T16:30:00Z,Chelsea,Tottenham Hotspur,h2h,,Draw,4.03,0.2305
+2026-10-17T15:22:55+00:00,soccer_epl,0382a9faef0bb8df1bcc436536cffb05,2026-10-24T16:30:00Z,Chelsea,Tottenham Hotspur,totals,3.0,Over,1.89,0.5068
+2026-10-17T15:22:55+00:00,soccer_epl,0382a9faef0bb8df1bcc436536cffb05,2026-10-24T16:30:00Z,Chelsea,Tottenham Hotspur,totals,3.0,Under,1.94,0.4932
+2026-10-17T15:22:55+00:00,soccer_epl,33fb7467b23c91d57dc976d9ab05ea97,2026-10-25T14:00:00Z,Manchester United,Bournemouth,h2h,,Bournemouth,3.92,0.2375
+2026-10-17T15:22:55+00:00,soccer_epl,33fb7467b23c91d57dc976d9ab05ea97,2026-10-25T14:00:00Z,Manchester United,Bournemouth,h2h,,Manchester United,1.82,0.5319
+2026-10-17T15:22:55+00:00,soccer_epl,33fb7467b23c91d57dc976d9ab05ea97,2026-10-25T14:00:00Z,Manchester United,Bournemouth,h2h,,Draw,4.03,0.2306
+2026-10-17T15:22:55+00:00,soccer_epl,33fb7467b23c91d57dc976d9ab05ea97,2026-10-25T14:00:00Z,Manchester United,Bournemouth,totals,3.25,Over,1.96,0.4891
+2026-10-17T15:22:55+00:00,soccer_epl,33fb7467b23c91d57dc976d9ab05ea97,2026-10-25T14:00:00Z,Manchester United,Bournemouth,totals,3.25,Under,1.88,0.5109
+2026-10-17T15:22:55+00:00,soccer_epl,69493b5ebb84f24ab1d6023a30ee89f0,2026-10-25T14:00:00Z,Hull City,Brentford,h2h,,Brentford,1.71,0.5667
+2026-10-17T15:22:55+00:00,soccer_epl,69493b5ebb84f24ab1d6023a30ee89f0,2026-10-25T14:00:00Z,Hull City,Brentford,h2h,,Hull City,4.61,0.1988
+2026-10-17T15:22:55+00:00,soccer_epl,69493b5ebb84f24ab1d6023a30ee89f0,2026-10-25T14:00:00Z,Hull City,Brentford,h2h,,Draw,3.96,0.2344
+2026-10-17T15:22:55+00:00,soccer_epl,69493b5ebb84f24ab1d6023a30ee89f0,2026-10-25T14:00:00Z,Hull City,Brentford,totals,2.75,Over,1.89,0.5068
+2026-10-17T15:22:55+00:00,soccer_epl,69493b5ebb84f24ab1d6023a30ee89f0,2026-10-25T14:00:00Z,Hull City,Brentford,totals,2.75,Under,1.94,0.4932
+2026-10-17T15:22:55+00:00,soccer_epl,290ba8cd3f3a2e9252effca673bf5549,2026-10-25T14:00:00Z,Liverpool,Brighton and Hove Albion,h2h,,Brighton and Hove Albion,3.32,0.2841
+2026-10-17T15:22:55+00:00,soccer_epl,290ba8cd3f3a2e9252effca673bf5549,2026-10-25T14:00:00Z,Liverpool,Brighton and Hove Albion,h2h,,Liverpool,2.01,0.4804
+2026-10-17T15:22:55+00:00,soccer_epl,290ba8cd3f3a2e9252effca673bf5549,2026-10-25T14:00:00Z,Liverpool,Brighton and Hove Albion,h2h,,Draw,3.96,0.2354
+2026-10-17T15:22:55+00:00,soccer_epl,290ba8cd3f3a2e9252effca673bf5549,2026-10-25T14:00:00Z,Liverpool,Brighton and Hove Albion,totals,3.0,Over,1.96,0.4891
+2026-10-17T15:22:55+00:00,soccer_epl,290ba8cd3f3a2e9252effca673bf5549,2026-10-25T14:00:00Z,Liverpool,Brighton and Hove Albion,totals,3.0,Under,1.88,0.5109
+2026-10-17T15:22:55+00:00,soccer_epl,fe235b26408c477368c40672a4488694,2026-10-25T14:00:00Z,Crystal Palace,Newcastle United,h2h,,Crystal Palace,2.68,0.3564
+2026-10-17T15:22:55+00:00,soccer_epl,fe235b26408c477368c40672a4488694,2026-10-25T14:00:00Z,Crystal Palace,Newcastle United,h2h,,Newcastle United,2.52,0.3801
+2026-10-17T15:22:55+00:00,soccer_epl,fe235b26408c477368c40672a4488694,2026-10-25T14:00:00Z,Crystal Palace,Newcastle United,h2h,,Draw,3.57,0.2634
+2026-10-17T15:22:55+00:00,soccer_epl,fe235b26408c477368c40672a4488694,2026-10-25T14:00:00Z,Crystal Palace,Newcastle United,totals,2.75,Over,1.77,0.5433
+2026-10-17T15:22:55+00:00,soccer_epl,fe235b26408c477368c40672a4488694,2026-10-25T14:00:00Z,Crystal Palace,Newcastle United,totals,2.75,Under,2.09,0.4567
+2026-10-17T15:22:55+00:00,soccer_epl,e82f6b60fa41b82c8510f5b67ce61849,2026-10-25T16:30:00Z,Sunderland,Leeds United,h2h,,Leeds United,2.57,0.3725
+2026-10-17T15:22:55+00:00,soccer_epl,e82f6b60fa41b82c8510f5b67ce61849,2026-10-25T16:30:00Z,Sunderland,Leeds United,h2h,,Sunderland,2.76,0.3457
+2026-10-17T15:22:55+00:00,soccer_epl,e82f6b60fa41b82c8510f5b67ce61849,2026-10-25T16:30:00Z,Sunderland,Leeds United,h2h,,Draw,3.35,0.2819
+2026-10-17T15:22:55+00:00,soccer_epl,e82f6b60fa41b82c8510f5b67ce61849,2026-10-25T16:30:00Z,Sunderland,Leeds United,totals,2.25,Over,1.82,0.5284
+2026-10-17T15:22:55+00:00,soccer_epl,e82f6b60fa41b82c8510f5b67ce61849,2026-10-25T16:30:00Z,Sunderland,Leeds United,totals,2.25,Under,2.03,0.4716
+2026-10-17T15:22:55+00:00,icehockey_nhl,841c71c033cf05ad1313e3d5ecd2d9ab,2026-10-17T17:10:00Z,Washington Capitals,New Jersey Devils,h2h,,New Jersey Devils,1.98,0.4935
+2026-10-17T15:22:55+00:00,icehockey_nhl,841c71c033cf05ad1313e3d5ecd2d9ab,2026-10-17T17:10:00Z,Washington Capitals,New Jersey Devils,h2h,,Washington Capitals,1.93,0.5065
+2026-10-17T15:22:55+00:00,icehockey_nhl,841c71c033cf05ad1313e3d5ecd2d9ab,2026-10-17T17:10:00Z,Washington Capitals,New Jersey Devils,totals,6.0,Over,1.91,0.5093
+2026-10-17T15:22:55+00:00,icehockey_nhl,841c71c033cf05ad1313e3d5ecd2d9ab,2026-10-17T17:10:00Z,Washington Capitals,New Jersey Devils,totals,6.0,Under,1.98,0.4907
+2026-10-17T15:22:55+00:00,icehockey_nhl,c9ba2e7837386a5948a9c2233c36314c,2026-10-17T19:40:00Z,Winnipeg Jets,Carolina Hurricanes,h2h,,Carolina Hurricanes,1.5,0.6535
+2026-10-17T15:22:55+00:00,icehockey_nhl,c9ba2e7837386a5948a9c2233c36314c,2026-10-17T19:40:00Z,Winnipeg Jets,Carolina Hurricanes,h2h,,Winnipeg Jets,2.78,0.3465
+2026-10-17T15:22:55+00:00,icehockey_nhl,c9ba2e7837386a5948a9c2233c36314c,2026-10-17T19:40:00Z,Winnipeg Jets,Carolina Hurricanes,totals,6.0,Over,1.86,0.5237
+2026-10-17T15:22:55+00:00,icehockey_nhl,c9ba2e7837386a5948a9c2233c36314c,2026-10-17T19:40:00Z,Winnipeg Jets,Carolina Hurricanes,totals,6.0,Under,2.04,0.4763
+2026-10-17T15:22:55+00:00,icehockey_nhl,a803d2ced256aea33428fbca55aba33e,2026-10-17T20:10:00Z,Tampa Bay Lightning,Vancouver Canucks,h2h,,Tampa Bay Lightning,1.27,0.7723
+2026-10-17T15:22:55+00:00,icehockey_nhl,a803d2ced256aea33428fbca55aba33e,2026-10-17T20:10:00Z,Tampa Bay Lightning,Vancouver Canucks,h2h,,Vancouver Canucks,4.12,0.2277
+2026-10-17T15:22:55+00:00,icehockey_nhl,a803d2ced256aea33428fbca55aba33e,2026-10-17T20:10:00Z,Tampa Bay Lightning,Vancouver Canucks,totals,6.5,Over,1.89,0.5146
+2026-10-17T15:22:55+00:00,icehockey_nhl,a803d2ced256aea33428fbca55aba33e,2026-10-17T20:10:00Z,Tampa Bay Lightning,Vancouver Canucks,totals,6.5,Under,2.0,0.4854
+2026-10-17T15:22:55+00:00,icehockey_nhl,397fc11daab60801858ad82037395ae3,2026-10-17T22:10:00Z,Florida Panthers,Seattle Kraken,h2h,,Florida Panthers,1.54,0.6367
+2026-10-17T15:22:55+00:00,icehockey_nhl,397fc11daab60801858ad82037395ae3,2026-10-17T22:10:00Z,Florida Panthers,Seattle Kraken,h2h,,Seattle Kraken,2.66,0.3633
+2026-10-17T15:22:55+00:00,icehockey_nhl,397fc11daab60801858ad82037395ae3,2026-10-17T22:10:00Z,Florida Panthers,Seattle Kraken,totals,6.0,Over,1.88,0.5172
+2026-10-17T15:22:55+00:00,icehockey_nhl,397fc11daab60801858ad82037395ae3,2026-10-17T22:10:00Z,Florida Panthers,Seattle Kraken,totals,6.0,Under,2.01,0.4828
+2026-10-17T15:22:55+00:00,icehockey_nhl,984292d22f1502fb5ec22d5619c3d12c,2026-10-17T23:10:00Z,Montréal Canadiens,Buffalo Sabres,h2h,,Buffalo Sabres,2.24,0.4342
+2026-10-17T15:22:55+00:00,icehockey_nhl,984292d22f1502fb5ec22d5619c3d12c,2026-10-17T23:10:00Z,Montréal Canadiens,Buffalo Sabres,h2h,,Montréal Canadiens,1.73,0.5658
+2026-10-17T15:22:55+00:00,icehockey_nhl,984292d22f1502fb5ec22d5619c3d12c,2026-10-17T23:10:00Z,Montréal Canadiens,Buffalo Sabres,totals,6.5,Over,1.94,0.5
+2026-10-17T15:22:55+00:00,icehockey_nhl,984292d22f1502fb5ec22d5619c3d12c,2026-10-17T23:10:00Z,Montréal Canadiens,Buffalo Sabres,totals,6.5,Under,1.94,0.5
+2026-10-17T15:22:55+00:00,icehockey_nhl,e39eef5e74111ce110e9036298b318df,2026-10-17T23:10:00Z,Chicago Blackhawks,Dallas Stars,h2h,,Chicago Blackhawks,2.92,0.3288
+2026-10-17T15:22:55+00:00,icehockey_nhl,e39eef5e74111ce110e9036298b318df,2026-10-17T23:10:00Z,Chicago Blackhawks,Dallas Stars,h2h,,Dallas Stars,1.46,0.6712
+2026-10-17T15:22:55+00:00,icehockey_nhl,e39eef5e74111ce110e9036298b318df,2026-10-17T23:10:00Z,Chicago Blackhawks,Dallas Stars,totals,6.0,Over,1.98,0.4907
+2026-10-17T15:22:55+00:00,icehockey_nhl,e39eef5e74111ce110e9036298b318df,2026-10-17T23:10:00Z,Chicago Blackhawks,Dallas Stars,totals,6.0,Under,1.91,0.5093
+2026-10-17T15:22:55+00:00,icehockey_nhl,8c3a146ab31ea5b382be8f36a0637798,2026-10-17T23:10:00Z,Columbus Blue Jackets,New York Rangers,h2h,,Columbus Blue Jackets,1.77,0.5531
+2026-10-17T15:22:55+00:00,icehockey_nhl,8c3a146ab31ea5b382be8f36a0637798,2026-10-17T23:10:00Z,Columbus Blue Jackets,New York Rangers,h2h,,New York Rangers,2.18,0.4469
+2026-10-17T15:22:55+00:00,icehockey_nhl,8c3a146ab31ea5b382be8f36a0637798,2026-10-17T23:10:00Z,Columbus Blue Jackets,New York Rangers,totals,6.5,Over,2.05,0.4736
+2026-10-17T15:22:55+00:00,icehockey_nhl,8c3a146ab31ea5b382be8f36a0637798,2026-10-17T23:10:00Z,Columbus Blue Jackets,New York Rangers,totals,6.5,Under,1.85,0.5264
+2026-10-17T15:22:55+00:00,icehockey_nhl,826b87745ff513a2f7ba27643fc47bce,2026-10-17T23:10:00Z,Detroit Red Wings,San Jose Sharks,h2h,,Detroit Red Wings,1.65,0.5929
+2026-10-17T15:22:55+00:00,icehockey_nhl,826b87745ff513a2f7ba27643fc47bce,2026-10-17T23:10:00Z,Detroit Red Wings,San Jose Sharks,h2h,,San Jose Sharks,2.38,0.4071
+2026-10-17T15:22:55+00:00,icehockey_nhl,826b87745ff513a2f7ba27643fc47bce,2026-10-17T23:10:00Z,Detroit Red Wings,San Jose Sharks,totals,6.5,Over,2.04,0.4748
+2026-10-17T15:22:55+00:00,icehockey_nhl,826b87745ff513a2f7ba27643fc47bce,2026-10-17T23:10:00Z,Detroit Red Wings,San Jose Sharks,totals,6.5,Under,1.85,0.5252
+2026-10-17T15:22:55+00:00,icehockey_nhl,72d1180c19caf72334666cf7ccf93c48,2026-10-17T23:10:00Z,Toronto Maple Leafs,New York Islanders,h2h,,New York Islanders,2.16,0.4506
+2026-10-17T15:22:55+00:00,icehockey_nhl,72d1180c19caf72334666cf7ccf93c48,2026-10-17T23:10:00Z,Toronto Maple Leafs,New York Islanders,h2h,,Toronto Maple Leafs,1.78,0.5494
+2026-10-17T15:22:55+00:00,icehockey_nhl,72d1180c19caf72334666cf7ccf93c48,2026-10-17T23:10:00Z,Toronto Maple Leafs,New York Islanders,totals,6.0,Over,1.88,0.5172
+2026-10-17T15:22:55+00:00,icehockey_nhl,72d1180c19caf72334666cf7ccf93c48,2026-10-17T23:10:00Z,Toronto Maple Leafs,New York Islanders,totals,6.0,Under,2.01,0.4828
+2026-10-17T15:22:55+00:00,icehockey_nhl,95168b13c92e52aca0ad08f18b66ccd4,2026-10-17T23:10:00Z,Philadelphia Flyers,Ottawa Senators,h2h,,Ottawa Senators,1.69,0.5794
+2026-10-17T15:22:55+00:00,icehockey_nhl,95168b13c92e52aca0ad08f18b66ccd4,2026-10-17T23:10:00Z,Philadelphia Flyers,Ottawa Senators,h2h,,Philadelphia Flyers,2.31,0.4206
+2026-10-17T15:22:55+00:00,icehockey_nhl,95168b13c92e52aca0ad08f18b66ccd4,2026-10-17T23:10:00Z,Philadelphia Flyers,Ottawa Senators,totals,5.5,Over,1.97,0.4934
+2026-10-17T15:22:55+00:00,icehockey_nhl,95168b13c92e52aca0ad08f18b66ccd4,2026-10-17T23:10:00Z,Philadelphia Flyers,Ottawa Senators,totals,5.5,Under,1.92,0.5066
+2026-10-17T15:22:55+00:00,icehockey_nhl,0fc72a0b9fd45e4ea478959e642a54f4,2026-10-18T00:10:00Z,Nashville Predators,St Louis Blues,h2h,,Nashville Predators,2.0,0.4882
+2026-10-17T15:22:55+00:00,icehockey_nhl,0fc72a0b9fd45e4ea478959e642a54f4,2026-10-18T00:10:00Z,Nashville Predators,St Louis Blues,h2h,,St Louis Blues,1.91,0.5118
+2026-10-17T15:22:55+00:00,icehockey_nhl,0fc72a0b9fd45e4ea478959e642a54f4,2026-10-18T00:10:00Z,Nashville Predators,St Louis Blues,totals,6.0,Over,1.96,0.496
+2026-10-17T15:22:55+00:00,icehockey_nhl,0fc72a0b9fd45e4ea478959e642a54f4,2026-10-18T00:10:00Z,Nashville Predators,St Louis Blues,totals,6.0,Under,1.93,0.504
+2026-10-17T15:22:55+00:00,icehockey_nhl,ad530128f8a287b794e713643ee46757,2026-10-18T01:10:00Z,Los Angeles Kings,Boston Bruins,h2h,,Boston Bruins,2.23,0.4369
+2026-10-17T15:22:55+00:00,icehockey_nhl,ad530128f8a287b794e713643ee46757,2026-10-18T01:10:00Z,Los Angeles Kings,Boston Bruins,h2h,,Los Angeles Kings,1.74,0.5631
+2026-10-17T15:22:55+00:00,icehockey_nhl,ad530128f8a287b794e713643ee46757,2026-10-18T01:10:00Z,Los Angeles Kings,Boston Bruins,totals,6.0,Over,2.04,0.4748
+2026-10-17T15:22:55+00:00,icehockey_nhl,ad530128f8a287b794e713643ee46757,2026-10-18T01:10:00Z,Los Angeles Kings,Boston Bruins,totals,6.0,Under,1.85,0.5252
+2026-10-17T15:22:55+00:00,icehockey_nhl,b5419971529fadc0610c47b095627156,2026-10-18T02:10:00Z,Utah Mammoth,Edmonton Oilers,h2h,,Edmonton Oilers,2.24,0.4342
+2026-10-17T15:22:55+00:00,icehockey_nhl,b5419971529fadc0610c47b095627156,2026-10-18T02:10:00Z,Utah Mammoth,Edmonton Oilers,h2h,,Utah Mammoth,1.73,0.5658
+2026-10-17T15:22:55+00:00,icehockey_nhl,b5419971529fadc0610c47b095627156,2026-10-18T02:10:00Z,Utah Mammoth,Edmonton Oilers,totals,6.5,Over,1.85,0.5252
+2026-10-17T15:22:55+00:00,icehockey_nhl,b5419971529fadc0610c47b095627156,2026-10-18T02:10:00Z,Utah Mammoth,Edmonton Oilers,totals,6.5,Under,2.04,0.4748
+2026-10-17T15:22:55+00:00,icehockey_nhl,b8769f5cc81325b0693ee4b3e3f41407,2026-10-18T02:10:00Z,Vegas Golden Knights,Pittsburgh Penguins,h2h,,Pittsburgh Penguins,2.74,0.3514
+2026-10-17T15:22:55+00:00,icehockey_nhl,b8769f5cc81325b0693ee4b3e3f41407,2026-10-18T02:10:00Z,Vegas Golden Knights,Pittsburgh Penguins,h2h,,Vegas Golden Knights,1.51,0.6486
+2026-10-17T15:22:55+00:00,icehockey_nhl,b8769f5cc81325b0693ee4b3e3f41407,2026-10-18T02:10:00Z,Vegas Golden Knights,Pittsburgh Penguins,totals,6.5,Over,1.84,0.529
+2026-10-17T15:22:55+00:00,icehockey_nhl,b8769f5cc81325b0693ee4b3e3f41407,2026-10-18T02:10:00Z,Vegas Golden Knights,Pittsburgh Penguins,totals,6.5,Under,2.06,0.471
+2026-10-17T15:22:55+00:00,baseball_mlb,bf41baaebfa23a202d2f3a6811425ff9,2026-10-18T00:00:00Z,Cleveland Guardians,Tampa Bay Rays,h2h,,Cleveland Guardians,1.97,0.4974
+2026-10-17T15:22:55+00:00,baseball_mlb,bf41baaebfa23a202d2f3a6811425ff9,2026-10-18T00:00:00Z,Cleveland Guardians,Tampa Bay Rays,h2h,,Tampa Bay Rays,1.95,0.5026
+2026-10-17T15:22:55+00:00,baseball_mlb,bf41baaebfa23a202d2f3a6811425ff9,2026-10-18T00:00:00Z,Cleveland Guardians,Tampa Bay Rays,totals,6.5,Over,1.92,0.5066
+2026-10-17T15:22:55+00:00,baseball_mlb,bf41baaebfa23a202d2f3a6811425ff9,2026-10-18T00:00:00Z,Cleveland Guardians,Tampa Bay Rays,totals,6.5,Under,1.97,0.4934
