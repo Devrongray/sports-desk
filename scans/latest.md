@@ -1,6 +1,6 @@
-# Desk scan 2026-10-18T02:15:35+00:00
+# Desk scan 2026-10-18T02:52:55+00:00
 
-Universe: 318 upcoming main-line contracts; 14 events matched to Pinnacle; 3 contracts with a reference; 0 live actions. Quote states: {'unquoted': 109, 'wide': 106, 'tight': 103}.
+Universe: 318 upcoming main-line contracts; 14 events matched to Pinnacle; 9 contracts with a reference; 0 live actions. Quote states: {'tight': 112, 'unquoted': 107, 'wide': 99}.
 
 ## Actions inside the posting window
 
@@ -10,27 +10,33 @@ None. Every referenced contract inside the window is either machine-quoted withi
 
 | sport | segment | contract | line | mins | bid | ask | state | fair | mid − fair | would | at | edge |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| nhl | FULL_GAME | Who will win in the upcoming hockey event CBJ Blue Jackets v |  | 1184 | 0.360 | 0.370 | tight | 0.366 | -0.001 |  |  |  |
-| nhl | FULL_GAME | Will the total in CBJ vs MIN be more than 6.5? | 6.5 | 1184 | 0.460 | 0.480 | tight | 0.473 | -0.003 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event CAR Hurricanes vs  |  | 1304 | 0.660 | 0.670 | tight | 0.666 | -0.001 |  |  |  |
+| nfl | FULL_GAME | Will the total in BUF Bills vs. LV Raiders be more than 53.5 | 53.5 | 1052 | 0.495 | 0.500 | tight | 0.496 | 0.002 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event CBJ Blue Jackets v |  | 1147 | 0.360 | 0.370 | tight | 0.370 | -0.005 |  |  |  |
+| nhl | FULL_GAME | Will the total in CBJ vs MIN be more than 6.5? | 6.5 | 1147 | 0.460 | 0.480 | tight | 0.473 | -0.003 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event CAR Hurricanes vs  |  | 1267 | 0.660 | 0.670 | tight | 0.670 | -0.005 |  |  |  |
+| nfl | FULL_GAME | Will the total in CHI Bears vs. ATL Falcons be more than 53. | 53.5 | 847 | 0.475 | 0.480 | tight | 0.477 | 0.000 |  |  |  |
+| nfl | FULL_GAME | Will the total in BAL Ravens vs. CLE Browns be more than 39. | 39.5 | 847 | 0.495 | 0.505 | tight | 0.500 | 0.000 |  |  |  |
+| nfl | FULL_GAME | Will the total in LA Chargers vs. KC Chiefs be more than 41. | 41.5 | 1052 | 0.490 | 0.495 | tight | 0.499 | -0.006 |  |  |  |
+| nfl | FULL_GAME | Will the total in ARI Cardinals vs. LA Rams be more than 51. | 51.5 | 1032 | 0.495 | 0.500 | tight | 0.504 | -0.006 |  |  |  |
+| nfl | FULL_GAME | Will the total in HOU Texans vs. JAC Jaguars be more than 41 | 41.5 | 637 | 0.505 | 0.510 | tight | 0.491 | 0.017 |  |  |  |
 
 ## Passed inside the window: 0
 
 
-## No Pinnacle reference yet: 315 contracts
+## No Pinnacle reference yet: 309 contracts
 
 | sport | quote state | n |
 |---|---|---|
-| cs2 | tight | 37 |
-| cs2 | unquoted | 79 |
-| cs2 | wide | 31 |
+| cs2 | tight | 38 |
+| cs2 | unquoted | 81 |
+| cs2 | wide | 28 |
 | lol | tight | 1 |
-| mlb | tight | 2 |
-| mlb | unquoted | 30 |
-| mlb | wide | 12 |
-| nfl | tight | 50 |
-| nfl | wide | 34 |
-| nhl | tight | 10 |
-| nhl | wide | 29 |
+| mlb | tight | 3 |
+| mlb | unquoted | 26 |
+| mlb | wide | 15 |
+| nfl | tight | 47 |
+| nfl | wide | 31 |
+| nhl | tight | 14 |
+| nhl | wide | 25 |
 
 Rules: PREREGISTRATION.md. Edges in probability points per $1 contract; maker pays no fee; taker fee 0.0695·p(1−p).
