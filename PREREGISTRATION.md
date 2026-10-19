@@ -158,3 +158,22 @@ Never buy a contract under 10¢; buys under 20¢ are flagged.
    Caps raised to 80 per run / 400 per day to fit a 10-game NHL night at four
    markets; `poll_minutes` now enforced (an event polled within the last 30
    minutes is not polled again). Rules unchanged.
+3. **2026-10-19.** Two additions after the first weekend (0 real fills; 24
+   scanner signals, every one an NHL "after regulation" leg).
+   (a) **Paper series.** Every live action the scanner flags inside the window
+   is now also recorded, the first time it appears for that contract/action/game,
+   as a paper position in `ledger/paper.csv`: takes at the quoted touch (depth
+   already checked), posts at the post price. Graded separately as
+   "paper takes" (fee charged, P&L assumed filled) and "paper posts" (fill
+   unknown). The paper series never counts toward Gate A/B fill counts; it is
+   the "if every signal had been followed" record and exists because the
+   operator cannot always trade (travel, geofencing). Backfilled from the
+   candidates ledger for 16–18 Oct.
+   (b) **Named sub-hypothesis H5.** Polymarket US's regulation-result legs
+   (home/away lead after 60 minutes, tied after 60) are priced off a tie
+   probability of ~14–18% on some games while Pinnacle's three-way market
+   implies ~22%, producing taker edges of 3–9¢ on tight quotes. H5: the
+   fee-adjusted CLV of taker actions on REGULATION legs is positive. Read at
+   100 paper takes; a mean below +1¢ or a sign flip over any 50 kills it.
+   Observed so far: 21 paper takes, mean CLV +3.7¢ after fees — noted, not
+   believed, until n is there. No rule, threshold, size, window or gate changed.

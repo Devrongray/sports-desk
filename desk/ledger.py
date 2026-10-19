@@ -128,3 +128,52 @@ def _set_status(desk_root: Path, order_id: str, status: str, note: str | None = 
     if note:
         df.loc[m, "note"] = (df.loc[m, "note"].astype(str) + " | " + note).str.strip(" |")
     df.to_csv(path, index=False)
+
+
+# --- paper positions -----------------------------------------------------------
+# Every live action the scanner flags inside the window is also recorded as a
+# PAPER position the first time it appears for that (contract, action) on that
+# game: takes at the quoted touch (depth was checked by the scanner), posts at
+# the post price. This is the "if we had followed every signal" series. It is
+# graded separately from real fills and never counts toward the fill gates.
+PAPER_COLS = ["paper_id", "first_flag_ts", "market_slug", "sport", "market_class", "segment", "line", "question",
+              "long_team", "start", "minutes_to_start", "action", "side", "order_type", "price", "size_usd", "contracts",
+              "quote_state", "bid_at_entry", "ask_at_entry", "bid_usd", "ask_usd", "fair_at_entry", "pin_market",
+              "pin_ts_at_entry", "edge_pts", "reason"]
+
+
+def append_paper(scan_df: pd.DataFrame, meta: dict, desk_root: Path) -> int:
+    if scan_df.empty:
+        return 0
+    live = scan_df[scan_df["action"].isin(ACTIONS_LIVE)].copy()
+    if live.empty:
+        return 0
+    path = desk_root / "ledger" / "paper.csv"
+    existing = read_csv(path, PAPER_COLS)
+    have = set(zip(existing["market_slug"], existing["action"], existing["start"])) if not existing.empty else set()
+    rows = []
+    for r in live.to_dict("records"):
+        key = (r["market_slug"], r["action"], str(r.get("start") or ""))
+        if key in have:
+            continue
+        have.add(key)
+        px = r.get("post_px")
+        side = r.get("side")
+        try:
+            px_f = float(px)
+            size = float(r.get("size_usd") or 0) or 20.0
+            contracts = round(size / (px_f if side == "long" else (1 - px_f)), 2)
+        except (TypeError, ValueError):
+            contracts = None
+        rows.append({
+            "paper_id": uuid.uuid4().hex[:10], "first_flag_ts": meta["as_of"], "market_slug": r["market_slug"],
+            "sport": r.get("sport"), "market_class": r.get("market_class"), "segment": r.get("segment"), "line": r.get("line"),
+            "question": r.get("question"), "long_team": r.get("long_team"), "start": r.get("start"),
+            "minutes_to_start": r.get("minutes_to_start"), "action": r["action"], "side": side,
+            "order_type": "take" if str(r["action"]).startswith("take") else "post", "price": px,
+            "size_usd": r.get("size_usd"), "contracts": contracts, "quote_state": r.get("quote_state"),
+            "bid_at_entry": r.get("bid"), "ask_at_entry": r.get("ask"), "bid_usd": r.get("bid_usd"), "ask_usd": r.get("ask_usd"),
+            "fair_at_entry": r.get("fair"), "pin_market": r.get("pin_market"), "pin_ts_at_entry": r.get("pin_ts"),
+            "edge_pts": r.get("edge_pts"), "reason": r.get("reason"),
+        })
+    return _append(path, rows, PAPER_COLS)

@@ -25,7 +25,7 @@ import pandas as pd
 
 from . import data as D
 from .config import ensure_sports_method
-from .ledger import CAND_COLS, FILL_COLS, ORDER_COLS, read_csv
+from .ledger import CAND_COLS, FILL_COLS, ORDER_COLS, PAPER_COLS, read_csv
 from .reference import contract_reference, fair_table, match_table
 
 ensure_sports_method()
@@ -116,6 +116,32 @@ def grade_all(cfg: dict, data_dir: Path, desk_root: Path, now: datetime | None =
                         "settlement": settlement, "clv_pts": None if clv is None else round(clv, 4), "fee_per_contract": 0.0,
                         "pnl_usd": None, "graded_ts": now.isoformat(timespec="seconds"), "note": f"status {o['status']}"})
 
+    # paper positions: every signal the scanner flagged, first flag only. Takes are
+    # assumed filled at the quoted touch (the scanner had checked depth) and pay the
+    # taker fee; posts are scored at the post price with the fill unknown.
+    paper = read_csv(desk_root / "ledger" / "paper.csv", PAPER_COLS)
+    if not paper.empty:
+        pp = paper[paper["start"] != ""].copy()
+        pp = pp[pd.to_datetime(pp["start"], utc=True, errors="coerce") <= pd.Timestamp(now)]
+        for p_ in pp.to_dict("records"):
+            ref = _close_reference(p_, cfg, data_dir, desk_root, cache)
+            fair_close = ref["fair"] if ref else None
+            pm_mid, settlement = settle_info(p_["market_slug"])
+            px, side, n = _f(p_["price"]), p_["side"], _f(p_["contracts"]) or 0.0
+            is_take = p_["order_type"] == "take"
+            fee_pc = taker_fee(px, cfg["rules"]["fee_coefficient"]) if (is_take and px) else 0.0
+            clv = None if (fair_close is None or px is None) else ((fair_close - px) if side == "long" else (px - fair_close)) - fee_pc
+            pnl = None
+            if is_take and settlement is not None and px is not None and n:
+                pnl = n * (((settlement - px) if side == "long" else (px - settlement)) - fee_pc)
+            out.append({"kind": "paper_take" if is_take else "paper_post", "id": p_["paper_id"], "market_slug": p_["market_slug"],
+                        "sport": p_["sport"], "market_class": p_["market_class"], "segment": p_["segment"], "quote_state": p_["quote_state"],
+                        "action": p_["action"], "side": side, "price": px, "contracts": n, "start": p_["start"],
+                        "fair_at_entry": p_.get("fair_at_entry"), "fair_close": fair_close, "pin_close_ts": ref["pin_ts"] if ref else None,
+                        "pm_last_mid": pm_mid, "settlement": settlement, "clv_pts": None if clv is None else round(clv, 4),
+                        "fee_per_contract": round(fee_pc, 5), "pnl_usd": None if pnl is None else round(pnl, 2),
+                        "graded_ts": now.isoformat(timespec="seconds"), "note": "paper; fill assumed at the touch" if is_take else "paper; fill unknown"})
+
     # candidates: one grade per (market_slug, action) at the last scan before start
     if not cands.empty:
         cd = cands[cands["start"] != ""].copy()
@@ -176,6 +202,13 @@ def summary_markdown(grades: pd.DataFrame, cfg: dict, now: datetime | None = Non
     pnl = pd.to_numeric(fills["pnl_usd"], errors="coerce").dropna()
     lines.append(row("fills (what you actually hold)", fs, f"P&L ${pnl.sum():+,.2f} on {len(pnl)} settled" if len(pnl) else ""))
     lines.append(row("unfilled posts (would-have, at post price)", _stats(posts["clv_pts"])))
+    pt = grades[grades["kind"] == "paper_take"]
+    ppo = grades[grades["kind"] == "paper_post"]
+    ppnl = pd.to_numeric(pt["pnl_usd"], errors="coerce").dropna()
+    pwin = int((ppnl > 0).sum())
+    lines.append(row("paper takes (every flagged take, filled at the touch, fee charged)", _stats(pt["clv_pts"]),
+                     f"P&L ${ppnl.sum():+,.2f} on {len(ppnl)} settled, {pwin} winners" if len(ppnl) else ""))
+    lines.append(row("paper posts (every flagged post, at post price, fill unknown)", _stats(ppo["clv_pts"])))
     lines.append(row("live-action candidates (scanner, at post price)", _stats(live_c["clv_pts"])))
     lines.append(row("all referenced candidates (at mid)", _stats(cands["clv_pts"])))
     n_posts = int(len(posts)) + int(len(fills[fills["action"] == "post"]))

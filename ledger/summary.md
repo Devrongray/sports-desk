@@ -1,4 +1,4 @@
-# Desk scorecard 2026-10-18T11:58:06+00:00
+# Desk scorecard 2026-10-19T07:52:26+00:00
 
 Closing-line value in probability points per $1 contract against Pinnacle's last pre-game fair price; fee-adjusted on fills. Decisions use the t statistic on fills once n is in the hundreds; everything else is context.
 
@@ -6,26 +6,29 @@ Closing-line value in probability points per $1 contract against Pinnacle's last
 |---|---|---|---|---|---|
 | fills (what you actually hold) | 0 |  |  |  |  |
 | unfilled posts (would-have, at post price) | 0 |  |  |  |  |
-| live-action candidates (scanner, at post price) | 20 | +0.0513 | 0.0043 | 11.89 |  |
-| all referenced candidates (at mid) | 126 | +0.0067 | 0.0029 | 2.28 |  |
+| paper takes (every flagged take, filled at the touch, fee charged) | 21 | +0.0366 | 0.0046 | 8.05 | P&L $+416.90 on 19 settled, 12 winners |
+| paper posts (every flagged post, at post price, fill unknown) | 3 | +0.0397 | 0.0067 | 5.92 |  |
+| live-action candidates (scanner, at post price) | 24 | +0.0508 | 0.0038 | 13.38 |  |
+| all referenced candidates (at mid) | 179 | +0.0047 | 0.0022 | 2.08 |  |
 
 ## By sport (live-action candidates)
 
 | group | n | mean CLV | se | t |
 |---|---|---|---|---|
-| nhl | 20 | +0.0513 | 0.0043 | 11.89 |
+| nhl | 24 | +0.0508 | 0.0038 | 13.38 |
 
 ## By quote state (live-action candidates)
 
 | group | n | mean CLV | se | t |
 |---|---|---|---|---|
-| tight | 20 | +0.0513 | 0.0043 | 11.89 |
+| tight | 23 | +0.0517 | 0.0038 | 13.45 |
+| wide | 1 | +0.0295 |  |  |
 
 ## By segment (live-action candidates)
 
 | group | n | mean CLV | se | t |
 |---|---|---|---|---|
-| REGULATION | 20 | +0.0513 | 0.0043 | 11.89 |
+| REGULATION | 24 | +0.0508 | 0.0038 | 13.38 |
 
 ## Is Pinnacle's close calibrated on Polymarket US settlements?
 

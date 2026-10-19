@@ -38,6 +38,7 @@ def cmd_scan(a):
     paths = write_outputs(df, meta, cfg, ROOT)
     n = ledger.append_candidates(df, meta, ROOT) if not a.no_ledger else 0
     meta["ledger_rows_added"] = n
+    meta["paper_positions_added"] = ledger.append_paper(df, meta, ROOT) if not a.no_ledger else 0
     meta["outputs"] = paths
     print(json.dumps(meta, default=str, indent=2))
     if a.print:
