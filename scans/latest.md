@@ -1,70 +1,69 @@
-# Desk scan 2026-10-20T22:21:55+00:00
+# Desk scan 2026-10-20T22:55:56+00:00
 
-Universe: 495 upcoming main-line contracts; 24 events matched to Pinnacle; 67 contracts with a reference; 4 live actions. Quote states: {'tight': 307, 'wide': 99, 'unquoted': 89}.
+Universe: 498 upcoming main-line contracts; 24 events matched to Pinnacle; 71 contracts with a reference; 0 live actions. Quote states: {'tight': 315, 'wide': 95, 'unquoted': 88}.
 
 ## Actions inside the posting window
 
-| # | sport | segment | contract | line | mins | bid | ask | state | fair (ref) | action | price | edge | size $ | flags |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | nhl | REGULATION | Will SJS Sharks lead after regulation of SJS vs MTL? |  | 38 | 0.180 | 0.190 | tight | 0.251 (h2h_3_way) | **take_long** | 0.190 | 0.050 | 20.00 | buying under 0.20 |
-| 2 | nhl | REGULATION | Will MTL Canadiens lead after regulation of SJS vs MTL? |  | 38 | 0.610 | 0.620 | tight | 0.551 (h2h_3_way) | **take_short** | 0.610 | 0.043 | 20.00 |  |
-| 3 | nhl | REGULATION | Will WSH Capitals lead after regulation of LAK vs WSH? |  | 38 | 0.530 | 0.540 | tight | 0.473 (h2h_3_way) | **take_short** | 0.530 | 0.039 | 20.00 |  |
-| 4 | nhl | REGULATION | Will COL Avalanche lead after regulation of COL vs NJD? |  | 38 | 0.410 | 0.420 | tight | 0.372 (h2h_3_way) | **take_short** | 0.410 | 0.021 | 20.00 |  |
+None. Every referenced contract inside the window is either machine-quoted within the margin of Pinnacle or Pinnacle just moved.
 
 ## Referenced contracts outside the window (largest gaps first)
 
 | sport | segment | contract | line | mins | bid | ask | state | fair | mid − fair | would | at | edge |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| nba | FULL_GAME | Who will win in the upcoming basketball event SAC Kings vs L |  | 1688 | 0.350 | 0.360 | tight | 0.348 | 0.007 |  |  |  |
-| nba | FULL_GAME | Will the total in SAC Kings vs. LA Clippers be more than 228 | 228.5 | 1688 | 0.490 | 0.500 | tight | 0.504 | -0.009 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event GS Warriors vs |  | 1658 | 0.340 | 0.350 | tight | 0.341 | 0.004 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event PHO Suns vs PO |  | 1658 | 0.390 | 0.400 | tight | 0.398 | -0.003 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event DAL Mavericks  |  | 1568 | 0.240 | 0.250 | tight | 0.238 | 0.007 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event UTA Jazz vs ME |  | 1538 | 0.480 | 0.490 | tight | 0.480 | 0.005 |  |  |  |
-| nba | FULL_GAME | Will the total in IND Pacers vs. NO Pelicans be more than 23 | 239.5 | 1538 | 0.500 | 0.510 | tight | 0.500 | 0.005 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event IND Pacers vs  |  | 1538 | 0.590 | 0.600 | tight | 0.598 | -0.003 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event MIN Timberwolv |  | 1508 | 0.480 | 0.490 | tight | 0.477 | 0.007 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event CHI Bulls vs T |  | 1508 | 0.220 | 0.230 | tight | 0.218 | 0.007 |  |  |  |
-| nba | FULL_GAME | Will the total in CHI Bulls vs. TOR Raptors be more than 236 | 236.5 | 1508 | 0.500 | 0.510 | tight | 0.509 | -0.004 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event CHA Hornets vs |  | 1508 | 0.420 | 0.430 | tight | 0.420 | 0.005 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event ATL Hawks vs O |  | 1478 | 0.420 | 0.430 | tight | 0.421 | 0.004 |  |  |  |
-| nba | FULL_GAME | Will the total in ATL Hawks vs. ORL Magic be more than 236.5 | 236.5 | 1478 | 0.490 | 0.500 | tight | 0.501 | -0.006 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event MIL Bucks vs W |  | 1478 | 0.360 | 0.370 | tight | 0.370 | -0.005 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event OKC Thunder vs |  | 188 | 0.510 | 0.520 | tight | 0.510 | 0.004 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event TBL Lightning vs V |  | 248 | 0.500 | 0.510 | tight | 0.497 | 0.008 |  |  |  |
-| nhl | FULL_GAME | Will the total in CAR vs VAN be more than 6.5? | 6.5 | 218 | 0.480 | 0.490 | tight | 0.493 | -0.008 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event CAR Hurricanes vs  |  | 218 | 0.730 | 0.740 | tight | 0.733 | 0.002 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event DET Red Wings vs S |  | 198 | 0.520 | 0.530 | tight | 0.520 | 0.005 |  |  |  |
-| nhl | FULL_GAME | Will the total in DET vs SEA be more than 6.5? | 6.5 | 198 | 0.490 | 0.500 | tight | 0.491 | 0.004 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event SAC Kings vs L |  | 1654 | 0.350 | 0.360 | tight | 0.352 | 0.003 |  |  |  |
+| nba | FULL_GAME | Will the total in SAC Kings vs. LA Clippers be more than 228 | 228.5 | 1654 | 0.490 | 0.500 | tight | 0.501 | -0.006 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event GS Warriors vs |  | 1624 | 0.340 | 0.350 | tight | 0.331 | 0.014 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event PHO Suns vs PO |  | 1624 | 0.390 | 0.400 | tight | 0.398 | -0.003 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event DAL Mavericks  |  | 1534 | 0.240 | 0.250 | tight | 0.238 | 0.007 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event UTA Jazz vs ME |  | 1504 | 0.480 | 0.490 | tight | 0.480 | 0.005 |  |  |  |
+| nba | FULL_GAME | Will the total in IND Pacers vs. NO Pelicans be more than 23 | 239.5 | 1504 | 0.500 | 0.510 | tight | 0.500 | 0.005 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event IND Pacers vs  |  | 1504 | 0.590 | 0.600 | tight | 0.598 | -0.003 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event MIN Timberwolv |  | 1474 | 0.480 | 0.490 | tight | 0.477 | 0.007 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event CHI Bulls vs T |  | 1474 | 0.220 | 0.230 | tight | 0.214 | 0.011 |  |  |  |
+| nba | FULL_GAME | Will the total in CHI Bulls vs. TOR Raptors be more than 236 | 236.5 | 1474 | 0.500 | 0.510 | tight | 0.509 | -0.004 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event CHA Hornets vs |  | 1474 | 0.420 | 0.430 | tight | 0.434 | -0.009 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event ATL Hawks vs O |  | 1444 | 0.420 | 0.430 | tight | 0.421 | 0.004 |  |  |  |
+| nba | FULL_GAME | Will the total in ATL Hawks vs. ORL Magic be more than 236.5 | 236.5 | 1444 | 0.490 | 0.500 | tight | 0.501 | -0.006 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event MIL Bucks vs W |  | 1444 | 0.360 | 0.370 | tight | 0.371 | -0.006 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event PHI 76ers vs N |  | 4 | 0.380 | 0.390 | tight | 0.384 | 0.001 |  |  |  |
+| nba | FIRST_HALF | Will the first half total in PHI 76ers vs. NY Knicks be more | 118.5 | 4 | 0.490 | 0.500 | tight | 0.496 | -0.001 |  |  |  |
+| nhl | REGULATION | Will SJS vs MTL be tied after regulation? |  | 4 | 0.190 | 0.200 | tight | 0.198 | -0.003 |  |  |  |
+| nhl | REGULATION | Will SJS Sharks lead after regulation of SJS vs MTL? |  | 4 | 0.240 | 0.280 | wide | 0.251 | 0.009 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event SJS Sharks vs MTL  |  | 4 | 0.330 | 0.340 | tight | 0.332 | 0.003 |  |  |  |
+| nhl | FULL_GAME | Will the total in SJS vs MTL be more than 6.5? | 6.5 | 4 | 0.530 | 0.540 | tight | 0.533 | 0.002 |  |  |  |
+| nhl | FIRST_PERIOD | Will SJS vs MTL have more than 1.5 goals in the first period | 1.5 | 4 | 0.600 | 0.610 | tight | 0.576 | 0.029 |  |  |  |
+| nhl | REGULATION | Will MTL Canadiens lead after regulation of SJS vs MTL? |  | 4 | 0.600 | 0.620 | tight | 0.551 | 0.059 | post_ask | 0.610 | 0.059 |
+| nhl | REGULATION | Will ANA vs NYI be tied after regulation? |  | 4 | 0.200 | 0.210 | tight | 0.219 | -0.014 |  |  |  |
+| nhl | FIRST_PERIOD | Will TOR vs CBJ have more than 1.5 goals in the first period | 1.5 | 4 | 0.570 | 0.580 | tight | 0.565 | 0.010 |  |  |  |
 
-## Passed inside the window: 42
+## Passed inside the window: 23
 
-- nhl REGULATION Will CBJ Blue Jackets lead after regulation of TOR vs CBJ? — machine-quoted within the margin of Pinnacle
-- nhl REGULATION Will COL vs NJD be tied after regulation? — machine-quoted within the margin of Pinnacle
+- nhl REGULATION Will DET vs SEA be tied after regulation? — machine-quoted within the margin of Pinnacle
 - nhl REGULATION Will EDM Oilers lead after regulation of MIN vs EDM? — machine-quoted within the margin of Pinnacle
-- nhl FULL_GAME Will the total in TOR vs CBJ be more than 6.5? — machine-quoted within the margin of Pinnacle
-- nhl FULL_GAME Who will win in the upcoming hockey event MIN Wild vs EDM Oilers sched — machine-quoted within the margin of Pinnacle
-- nhl FIRST_PERIOD Will MIN vs EDM have more than 1.5 goals in the first period? — machine-quoted within the margin of Pinnacle
-- nhl REGULATION Will ANA Ducks lead after regulation of ANA vs NYI? — machine-quoted within the margin of Pinnacle
+- nhl REGULATION Will BOS Bruins lead after regulation of BOS vs DAL? — machine-quoted within the margin of Pinnacle
 - nhl FIRST_PERIOD Will WPG vs STL have more than 1.5 goals in the first period? — machine-quoted within the margin of Pinnacle
 - nhl REGULATION Will STL Blues lead after regulation of WPG vs STL? — machine-quoted within the margin of Pinnacle
-- nhl FULL_GAME Who will win in the upcoming hockey event SJS Sharks vs MTL Canadiens  — machine-quoted within the margin of Pinnacle
-- nhl REGULATION Will NJD Devils lead after regulation of COL vs NJD? — machine-quoted within the margin of Pinnacle
-- nhl FULL_GAME Who will win in the upcoming hockey event COL Avalanche vs NJD Devils  — machine-quoted within the margin of Pinnacle
-- nhl FULL_GAME Will the total in COL vs NJD be more than 6.5? — machine-quoted within the margin of Pinnacle
-- nhl FIRST_PERIOD Will COL vs NJD have more than 1.5 goals in the first period? — machine-quoted within the margin of Pinnacle
-- nhl REGULATION Will WPG vs STL be tied after regulation? — machine-quoted within the margin of Pinnacle
+- nhl FULL_GAME Who will win in the upcoming hockey event WPG Jets vs STL Blues schedu — machine-quoted within the margin of Pinnacle
+- nhl FULL_GAME Who will win in the upcoming hockey event MIN Wild vs EDM Oilers sched — machine-quoted within the margin of Pinnacle
+- nhl FULL_GAME Who will win in the upcoming hockey event BOS Bruins vs DAL Stars sche — machine-quoted within the margin of Pinnacle
+- nhl REGULATION Will SEA Kraken lead after regulation of DET vs SEA? — machine-quoted within the margin of Pinnacle
+- nhl FIRST_PERIOD Will BOS vs DAL have more than 1.5 goals in the first period? — machine-quoted within the margin of Pinnacle
+- nhl FULL_GAME Will the total in BOS vs DAL be more than 5.5? — machine-quoted within the margin of Pinnacle
+- nhl REGULATION Will DAL Stars lead after regulation of BOS vs DAL? — machine-quoted within the margin of Pinnacle
+- nhl REGULATION Will DET Red Wings lead after regulation of DET vs SEA? — machine-quoted within the margin of Pinnacle
+- nhl FIRST_PERIOD Will MIN vs EDM have more than 1.5 goals in the first period? — machine-quoted within the margin of Pinnacle
+- nhl REGULATION Will MIN Wild lead after regulation of MIN vs EDM? — machine-quoted within the margin of Pinnacle
 
-## No Pinnacle reference yet: 428 contracts
+## No Pinnacle reference yet: 427 contracts
 
 | sport | quote state | n |
 |---|---|---|
-| cs2 | tight | 47 |
-| cs2 | unquoted | 89 |
-| cs2 | wide | 23 |
-| nba | tight | 34 |
-| nba | wide | 11 |
-| nhl | tight | 159 |
-| nhl | wide | 65 |
+| cs2 | tight | 52 |
+| cs2 | unquoted | 88 |
+| cs2 | wide | 22 |
+| nba | tight | 35 |
+| nba | wide | 10 |
+| nhl | tight | 158 |
+| nhl | wide | 62 |
 
 Rules: PREREGISTRATION.md. Edges in probability points per $1 contract; maker pays no fee; taker fee 0.0695·p(1−p).
