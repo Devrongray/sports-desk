@@ -1,6 +1,6 @@
-# Desk scan 2026-10-21T04:58:08+00:00
+# Desk scan 2026-10-21T05:22:30+00:00
 
-Universe: 253 upcoming main-line contracts; 13 events matched to Pinnacle; 16 contracts with a reference; 0 live actions. Quote states: {'tight': 142, 'wide': 61, 'unquoted': 50}.
+Universe: 253 upcoming main-line contracts; 13 events matched to Pinnacle; 16 contracts with a reference; 0 live actions. Quote states: {'tight': 141, 'wide': 60, 'unquoted': 52}.
 
 ## Actions inside the posting window
 
@@ -10,22 +10,22 @@ None. Every referenced contract inside the window is either machine-quoted withi
 
 | sport | segment | contract | line | mins | bid | ask | state | fair | mid − fair | would | at | edge |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| nba | FULL_GAME | Who will win in the upcoming basketball event MIL Bucks vs W |  | 1082 | 0.360 | 0.370 | tight | 0.374 | -0.009 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event ATL Hawks vs O |  | 1082 | 0.420 | 0.430 | tight | 0.426 | -0.001 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event CHA Hornets vs |  | 1112 | 0.460 | 0.470 | tight | 0.440 | 0.025 |  |  |  |
-| nba | FULL_GAME | Will the total in SAC Kings vs. LA Clippers be more than 228 | 228.5 | 1292 | 0.490 | 0.500 | tight | 0.501 | -0.006 |  |  |  |
-| nba | FULL_GAME | Will the total in CHI Bulls vs. TOR Raptors be more than 236 | 236.5 | 1112 | 0.500 | 0.510 | tight | 0.509 | -0.004 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event SAC Kings vs L |  | 1292 | 0.350 | 0.360 | tight | 0.352 | 0.003 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event GS Warriors vs |  | 1262 | 0.330 | 0.340 | tight | 0.336 | -0.001 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event CHI Bulls vs T |  | 1112 | 0.220 | 0.230 | tight | 0.211 | 0.014 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event PHO Suns vs PO |  | 1262 | 0.420 | 0.430 | tight | 0.428 | -0.003 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event DAL Mavericks  |  | 1172 | 0.240 | 0.250 | tight | 0.238 | 0.007 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event MIN Timberwolv |  | 1112 | 0.480 | 0.490 | tight | 0.477 | 0.007 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event IND Pacers vs  |  | 1142 | 0.580 | 0.590 | tight | 0.590 | -0.005 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event PHI Flyers vs BUF  |  | 1112 | 0.360 | 0.370 | tight | 0.373 | -0.008 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event FLA Panthers vs OT |  | 1112 | 0.490 | 0.500 | tight | 0.500 | -0.005 |  |  |  |
-| nba | FULL_GAME | Will the total in IND Pacers vs. NO Pelicans be more than 23 | 239.5 | 1142 | 0.490 | 0.510 | tight | 0.501 | -0.001 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event UTA Jazz vs ME |  | 1142 | 0.480 | 0.490 | tight | 0.485 | -0.000 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event MIL Bucks vs W |  | 1058 | 0.360 | 0.370 | tight | 0.374 | -0.009 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event ATL Hawks vs O |  | 1058 | 0.420 | 0.430 | tight | 0.426 | -0.001 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event CHA Hornets vs |  | 1088 | 0.470 | 0.480 | tight | 0.440 | 0.035 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event GS Warriors vs |  | 1238 | 0.340 | 0.350 | tight | 0.336 | 0.009 |  |  |  |
+| nba | FULL_GAME | Will the total in SAC Kings vs. LA Clippers be more than 228 | 228.5 | 1268 | 0.490 | 0.500 | tight | 0.501 | -0.006 |  |  |  |
+| nba | FULL_GAME | Will the total in CHI Bulls vs. TOR Raptors be more than 236 | 236.5 | 1088 | 0.500 | 0.510 | tight | 0.509 | -0.004 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event SAC Kings vs L |  | 1268 | 0.350 | 0.360 | tight | 0.352 | 0.003 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event CHI Bulls vs T |  | 1088 | 0.220 | 0.230 | tight | 0.211 | 0.014 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event PHO Suns vs PO |  | 1238 | 0.420 | 0.430 | tight | 0.428 | -0.003 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event DAL Mavericks  |  | 1148 | 0.240 | 0.250 | tight | 0.238 | 0.007 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event MIN Timberwolv |  | 1088 | 0.480 | 0.490 | tight | 0.477 | 0.007 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event IND Pacers vs  |  | 1118 | 0.580 | 0.590 | tight | 0.590 | -0.005 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event PHI Flyers vs BUF  |  | 1088 | 0.360 | 0.370 | tight | 0.373 | -0.008 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event FLA Panthers vs OT |  | 1088 | 0.490 | 0.500 | tight | 0.500 | -0.005 |  |  |  |
+| nba | FULL_GAME | Will the total in IND Pacers vs. NO Pelicans be more than 23 | 239.5 | 1118 | 0.490 | 0.500 | tight | 0.501 | -0.006 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event UTA Jazz vs ME |  | 1118 | 0.480 | 0.490 | tight | 0.485 | -0.000 |  |  |  |
 
 ## Passed inside the window: 0
 
@@ -34,9 +34,9 @@ None. Every referenced contract inside the window is either machine-quoted withi
 
 | sport | quote state | n |
 |---|---|---|
-| cs2 | tight | 101 |
-| cs2 | unquoted | 50 |
-| cs2 | wide | 26 |
+| cs2 | tight | 100 |
+| cs2 | unquoted | 52 |
+| cs2 | wide | 25 |
 | lol | tight | 1 |
 | nba | tight | 19 |
 | nhl | tight | 5 |
