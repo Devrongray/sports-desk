@@ -1,69 +1,59 @@
-# Desk scan 2026-10-24T23:47:26+00:00
+# Desk scan 2026-10-25T00:08:55+00:00
 
-Universe: 565 upcoming main-line contracts; 24 events matched to Pinnacle; 41 contracts with a reference; 2 live actions. Quote states: {'wide': 224, 'tight': 219, 'unquoted': 122}.
+Universe: 454 upcoming main-line contracts; 21 events matched to Pinnacle; 33 contracts with a reference; 1 live actions. Quote states: {'wide': 203, 'tight': 154, 'unquoted': 97}.
 
 ## Actions inside the posting window
 
 | # | sport | segment | contract | line | mins | bid | ask | state | fair (ref) | action | price | edge | size $ | flags |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | nhl | REGULATION | Will DET Red Wings lead after regulation of DET vs CGY? |  | 133 | 0.470 | 0.480 | tight | 0.432 (h2h_3_way) | **take_short** | 0.470 | 0.021 | 20.00 |  |
-| 2 | nhl | FIRST_PERIOD | Will MIN vs SEA have more than 1.5 goals in the first period | 1.5 | 133 | 0.580 | 0.590 | tight | 0.543 (totals_p1) | **take_short** | 0.580 | 0.020 | 20.00 |  |
+| 1 | nhl | REGULATION | Will DET Red Wings lead after regulation of DET vs CGY? |  | 111 | 0.470 | 0.480 | tight | 0.432 (h2h_3_way) | **take_short** | 0.470 | 0.021 | 20.00 |  |
 
 ## Referenced contracts outside the window (largest gaps first)
 
 | sport | segment | contract | line | mins | bid | ask | state | fair | mid − fair | would | at | edge |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| mlb | FULL_GAME | Will the total in Game 2: TB Rays vs. MIL Brewers be more th | 6.5 | 13 | 0.495 | 0.500 | tight | 0.488 | 0.009 |  |  |  |
-| mlb | FULL_GAME | Who will win in the upcoming baseball event Tampa Bay Rays v |  | 13 | 0.475 | 0.480 | tight | 0.478 | -0.000 |  |  |  |
-| nfl | FULL_GAME | Will the total in IND Colts vs. MIN Vikings be more than 41. | 41.5 | 1033 | 0.490 | 0.495 | tight | 0.499 | -0.006 |  |  |  |
-| nfl | FULL_GAME | Will the total in MIA Dolphins vs. NY Jets be more than 39.5 | 39.5 | 1033 | 0.485 | 0.490 | tight | 0.487 | 0.001 |  |  |  |
-| nfl | FULL_GAME | Will the total in PIT Steelers vs. NO Saints be more than 44 | 44.5 | 823 | 0.485 | 0.490 | tight | 0.491 | -0.003 |  |  |  |
-| nfl | FULL_GAME | Will the total in SF 49ers vs. ATL Falcons be more than 49.5 | 49.5 | 1033 | 0.500 | 0.505 | tight | 0.501 | 0.001 |  |  |  |
-| nfl | FULL_GAME | Will the total in LA Rams vs. LV Raiders be more than 48.5? | 48.5 | 1238 | 0.495 | 0.500 | tight | 0.499 | -0.001 |  |  |  |
-| nfl | FULL_GAME | Will the total in GB Packers vs. DET Lions be more than 54.5 | 54.5 | 1238 | 0.500 | 0.510 | tight | 0.507 | -0.002 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event MTL Canadiens vs W |  | 1393 | 0.520 | 0.530 | tight | 0.517 | 0.008 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event NYI Islanders vs D |  | 1333 | 0.360 | 0.370 | tight | 0.361 | 0.004 |  |  |  |
-| nhl | FULL_GAME | Will the total in NYI vs DAL be more than 5.5? | 5.5 | 1333 | 0.480 | 0.500 | tight | 0.497 | -0.007 |  |  |  |
-| nhl | FULL_GAME | Will the total in FLA vs CHI be more than 6.5? | 6.5 | 1153 | 0.460 | 0.480 | tight | 0.471 | -0.001 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event FLA Panthers vs CH |  | 1153 | 0.620 | 0.630 | tight | 0.622 | 0.003 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event WAS Wizards vs |  | 13 | 0.470 | 0.480 | tight | 0.470 | 0.005 |  |  |  |
-| nba | FULL_GAME | Will the total in WAS Wizards vs. CHI Bulls be more than 244 | 244.5 | 13 | 0.490 | 0.500 | tight | 0.496 | -0.001 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event SA Spurs vs DA |  | 13 | 0.860 | 0.870 | tight | 0.866 | -0.001 |  |  |  |
-| nba | FIRST_QUARTER | Will the first quarter total in SA Spurs vs. DAL Mavericks b | 60.5 | 13 | 0.480 | 0.510 | wide | 0.504 | -0.009 |  |  |  |
+| nfl | FULL_GAME | Will the total in MIA Dolphins vs. NY Jets be more than 39.5 | 39.5 | 1011 | 0.485 | 0.490 | tight | 0.488 | -0.000 |  |  |  |
+| nfl | FULL_GAME | Will the total in IND Colts vs. MIN Vikings be more than 41. | 41.5 | 1011 | 0.500 | 0.505 | tight | 0.499 | 0.004 |  |  |  |
+| nfl | FULL_GAME | Will the total in PIT Steelers vs. NO Saints be more than 44 | 44.5 | 801 | 0.485 | 0.490 | tight | 0.491 | -0.003 |  |  |  |
+| nfl | FULL_GAME | Will the total in SF 49ers vs. ATL Falcons be more than 49.5 | 49.5 | 1011 | 0.505 | 0.510 | tight | 0.501 | 0.006 |  |  |  |
+| nfl | FULL_GAME | Will the total in GB Packers vs. DET Lions be more than 54.5 | 54.5 | 1216 | 0.505 | 0.510 | tight | 0.507 | 0.001 |  |  |  |
+| nfl | FULL_GAME | Will the total in LA Rams vs. LV Raiders be more than 48.5? | 48.5 | 1216 | 0.495 | 0.500 | tight | 0.499 | -0.001 |  |  |  |
+| nhl | FULL_GAME | Will the total in FLA vs CHI be more than 6.5? | 6.5 | 1131 | 0.460 | 0.480 | tight | 0.471 | -0.001 |  |  |  |
+| nhl | FULL_GAME | Will the total in NYI vs DAL be more than 5.5? | 5.5 | 1311 | 0.480 | 0.500 | tight | 0.497 | -0.007 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event MTL Canadiens vs W |  | 1371 | 0.520 | 0.530 | tight | 0.526 | -0.001 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event NYI Islanders vs D |  | 1311 | 0.360 | 0.370 | tight | 0.361 | 0.004 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event FLA Panthers vs CH |  | 1131 | 0.620 | 0.630 | tight | 0.622 | 0.003 |  |  |  |
 
-## Passed inside the window: 22
+## Passed inside the window: 21
 
-- nba FULL_GAME Will the total in NO Pelicans vs. DEN Nuggets be more than 240.5? — machine-quoted within the margin of Pinnacle
 - nhl FULL_GAME Will the total in TBL vs UTA be more than 6.5? — machine-quoted within the margin of Pinnacle
-- nba FIRST_HALF Will the first half total in NO Pelicans vs. DEN Nuggets be more than  — Pinnacle moved +0.023 in 15 min; you are late
-- nhl REGULATION Will UTA Mammoth lead after regulation of TBL vs UTA? — machine-quoted within the margin of Pinnacle
-- nba FULL_GAME Who will win in the upcoming basketball event NO Pelicans vs DEN Nugge — machine-quoted within the margin of Pinnacle
-- nba FIRST_QUARTER Will the first quarter total in HOU Rockets vs. ATL Hawks be more than — machine-quoted within the margin of Pinnacle
-- nhl FULL_GAME Who will win in the upcoming hockey event TBL Lightning vs UTA Mammoth — machine-quoted within the margin of Pinnacle
 - nhl FIRST_PERIOD Will TBL vs UTA have more than 1.5 goals in the first period? — machine-quoted within the margin of Pinnacle
+- nhl REGULATION Will UTA Mammoth lead after regulation of TBL vs UTA? — machine-quoted within the margin of Pinnacle
 - nba FULL_GAME Who will win in the upcoming basketball event HOU Rockets vs ATL Hawks — machine-quoted within the margin of Pinnacle
-- nhl REGULATION Will MIN Wild lead after regulation of MIN vs SEA? — machine-quoted within the margin of Pinnacle
-- nhl REGULATION Will TBL Lightning lead after regulation of TBL vs UTA? — machine-quoted within the margin of Pinnacle
-- nba FIRST_QUARTER Will the first quarter total in NO Pelicans vs. DEN Nuggets be more th — machine-quoted within the margin of Pinnacle
-- nhl FULL_GAME Who will win in the upcoming hockey event MIN Wild vs SEA Kraken sched — machine-quoted within the margin of Pinnacle
+- nhl FULL_GAME Who will win in the upcoming hockey event TBL Lightning vs UTA Mammoth — machine-quoted within the margin of Pinnacle
+- nba FULL_GAME Will the total in HOU Rockets vs. ATL Hawks be more than 226.5? — machine-quoted within the margin of Pinnacle
+- nba FULL_GAME Who will win in the upcoming basketball event NO Pelicans vs DEN Nugge — machine-quoted within the margin of Pinnacle
 - nhl REGULATION Will DET vs CGY be tied after regulation? — machine-quoted within the margin of Pinnacle
-- nhl REGULATION Will TBL vs UTA be tied after regulation? — machine-quoted within the margin of Pinnacle
+- nhl REGULATION Will MIN vs SEA be tied after regulation? — machine-quoted within the margin of Pinnacle
+- nhl REGULATION Will SEA Kraken lead after regulation of MIN vs SEA? — machine-quoted within the margin of Pinnacle
+- nhl FULL_GAME Who will win in the upcoming hockey event MIN Wild vs SEA Kraken sched — machine-quoted within the margin of Pinnacle
+- nhl FULL_GAME Who will win in the upcoming hockey event DET Red Wings vs CGY Flames  — machine-quoted within the margin of Pinnacle
+- nhl FIRST_PERIOD Will DET vs CGY have more than 1.5 goals in the first period? — machine-quoted within the margin of Pinnacle
+- nba FIRST_HALF Will the first half total in NO Pelicans vs. DEN Nuggets be more than  — Pinnacle moved +0.023 in 15 min; you are late
+- nba FIRST_QUARTER Will the first quarter total in NO Pelicans vs. DEN Nuggets be more th — machine-quoted within the margin of Pinnacle
 
-## No Pinnacle reference yet: 524 contracts
+## No Pinnacle reference yet: 421 contracts
 
 | sport | quote state | n |
 |---|---|---|
 | cs2 | tight | 19 |
 | cs2 | unquoted | 51 |
 | cs2 | wide | 14 |
-| lol | tight | 1 |
-| mlb | tight | 41 |
-| mlb | wide | 1 |
-| nba | tight | 51 |
-| nba | unquoted | 71 |
-| nba | wide | 50 |
-| nfl | tight | 20 |
-| nfl | wide | 58 |
+| nba | tight | 34 |
+| nba | unquoted | 46 |
+| nba | wide | 32 |
+| nfl | tight | 21 |
+| nfl | wide | 57 |
 | nhl | tight | 47 |
 | nhl | wide | 100 |
 
