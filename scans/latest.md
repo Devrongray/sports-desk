@@ -1,6 +1,6 @@
-# Desk scan 2026-10-28T05:08:28+00:00
+# Desk scan 2026-10-28T06:03:56+00:00
 
-Universe: 181 upcoming main-line contracts; 13 events matched to Pinnacle; 20 contracts with a reference; 0 live actions. Quote states: {'wide': 91, 'tight': 68, 'unquoted': 22}.
+Universe: 219 upcoming main-line contracts; 13 events matched to Pinnacle; 20 contracts with a reference; 0 live actions. Quote states: {'tight': 97, 'wide': 95, 'unquoted': 27}.
 
 ## Actions inside the posting window
 
@@ -10,43 +10,43 @@ None. Every referenced contract inside the window is either machine-quoted withi
 
 | sport | segment | contract | line | mins | bid | ask | state | fair | mid − fair | would | at | edge |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| nba | FULL_GAME | Who will win in the upcoming basketball event MIA Heat vs AT |  | 1072 | 0.420 | 0.430 | tight | 0.408 | 0.017 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event WAS Wizards vs |  | 1072 | 0.210 | 0.220 | tight | 0.206 | 0.009 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event OKC Thunder vs |  | 1222 | 0.670 | 0.680 | tight | 0.668 | 0.007 |  |  |  |
-| nba | FULL_GAME | Will the total in WAS Wizards vs. CLE Cavaliers be more than | 238.5 | 1072 | 0.490 | 0.510 | tight | 0.504 | -0.004 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event ORL Magic vs T |  | 1102 | 0.360 | 0.370 | tight | 0.363 | 0.002 |  |  |  |
-| nba | FULL_GAME | Will the total in HOU Rockets vs. MIL Bucks be more than 227 | 227.5 | 1132 | 0.490 | 0.510 | tight | 0.507 | -0.007 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event SA Spurs vs UT |  | 1192 | 0.840 | 0.850 | tight | 0.848 | -0.003 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event HOU Rockets vs |  | 1132 | 0.740 | 0.750 | tight | 0.756 | -0.011 |  |  |  |
-| nba | FULL_GAME | Will the total in OKC Thunder vs. DAL Mavericks be more than | 229.5 | 1222 | 0.480 | 0.500 | tight | 0.500 | -0.010 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event GS Warriors vs |  | 1132 | 0.410 | 0.420 | tight | 0.413 | 0.002 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event DEN Nuggets vs |  | 1132 | 0.650 | 0.660 | tight | 0.655 | -0.000 |  |  |  |
-| nba | FULL_GAME | Will the total in SA Spurs vs. UTA Jazz be more than 233.5? | 233.5 | 1192 | 0.490 | 0.510 | tight | 0.500 | 0.000 |  |  |  |
-| nhl | FULL_GAME | Will the total in CGY vs EDM be more than 6.5? | 6.5 | 1162 | 0.510 | 0.520 | tight | 0.515 | 0.000 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event CGY Flames vs EDM  |  | 1162 | 0.340 | 0.350 | tight | 0.336 | 0.009 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event PHI Flyers vs WSH  |  | 1102 | 0.320 | 0.330 | tight | 0.326 | -0.001 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event PHI 76ers vs I |  | 1072 | 0.620 | 0.630 | tight | 0.633 | -0.008 |  |  |  |
-| nba | FULL_GAME | Will the total in PHI 76ers vs. IND Pacers be more than 236. | 236.5 | 1072 | 0.490 | 0.510 | tight | 0.493 | 0.007 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event TOR Maple Leafs vs |  | 1252 | 0.510 | 0.520 | tight | 0.520 | -0.005 |  |  |  |
-| nhl | FULL_GAME | Will the total in TOR vs SEA be more than 6.5? | 6.5 | 1252 | 0.520 | 0.530 | tight | 0.529 | -0.004 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event NJD Devils vs COL  |  | 1192 | 0.380 | 0.390 | tight | 0.383 | 0.002 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event SA Spurs vs UT |  | 1136 | 0.840 | 0.850 | tight | 0.848 | -0.003 |  |  |  |
+| nba | FULL_GAME | Will the total in SA Spurs vs. UTA Jazz be more than 233.5? | 233.5 | 1136 | 0.490 | 0.510 | tight | 0.500 | 0.000 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event OKC Thunder vs |  | 1166 | 0.670 | 0.680 | tight | 0.672 | 0.003 |  |  |  |
+| nba | FULL_GAME | Will the total in OKC Thunder vs. DAL Mavericks be more than | 229.5 | 1166 | 0.490 | 0.510 | tight | 0.500 | 0.000 |  |  |  |
+| nhl | FULL_GAME | Will the total in CGY vs EDM be more than 6.5? | 6.5 | 1106 | 0.510 | 0.520 | tight | 0.515 | 0.000 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event CGY Flames vs EDM  |  | 1106 | 0.340 | 0.350 | tight | 0.336 | 0.009 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event PHI Flyers vs WSH  |  | 1046 | 0.320 | 0.330 | tight | 0.330 | -0.005 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event HOU Rockets vs |  | 1076 | 0.740 | 0.750 | tight | 0.757 | -0.012 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event WAS Wizards vs |  | 1016 | 0.210 | 0.220 | tight | 0.206 | 0.009 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event GS Warriors vs |  | 1076 | 0.410 | 0.420 | tight | 0.410 | 0.005 |  |  |  |
+| nba | FULL_GAME | Will the total in PHI 76ers vs. IND Pacers be more than 236. | 236.5 | 1016 | 0.490 | 0.510 | tight | 0.493 | 0.007 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event ORL Magic vs T |  | 1046 | 0.360 | 0.370 | tight | 0.374 | -0.009 |  |  |  |
+| nba | FULL_GAME | Will the total in ORL Magic vs. TOR Raptors be more than 223 | 223.5 | 1046 | 0.490 | 0.500 | tight | 0.504 | -0.009 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event DEN Nuggets vs |  | 1076 | 0.640 | 0.650 | tight | 0.651 | -0.006 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event MIA Heat vs AT |  | 1016 | 0.420 | 0.430 | tight | 0.410 | 0.015 |  |  |  |
+| nba | FULL_GAME | Will the total in WAS Wizards vs. CLE Cavaliers be more than | 238.5 | 1016 | 0.500 | 0.510 | tight | 0.509 | -0.004 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event NJD Devils vs COL  |  | 1136 | 0.380 | 0.390 | tight | 0.389 | -0.004 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event PHI 76ers vs I |  | 1016 | 0.630 | 0.640 | tight | 0.633 | 0.002 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event TOR Maple Leafs vs |  | 1196 | 0.510 | 0.520 | tight | 0.520 | -0.005 |  |  |  |
+| nhl | FULL_GAME | Will the total in TOR vs SEA be more than 6.5? | 6.5 | 1196 | 0.520 | 0.530 | tight | 0.529 | -0.004 |  |  |  |
 
 ## Passed inside the window: 0
 
 
-## No Pinnacle reference yet: 161 contracts
+## No Pinnacle reference yet: 199 contracts
 
 | sport | quote state | n |
 |---|---|---|
-| cs2 | tight | 19 |
-| cs2 | unquoted | 21 |
-| cs2 | wide | 16 |
+| cs2 | tight | 17 |
+| cs2 | unquoted | 19 |
+| cs2 | wide | 17 |
 | lol | tight | 2 |
-| mlb | tight | 1 |
-| mlb | unquoted | 1 |
-| mlb | wide | 1 |
-| nba | tight | 20 |
-| nba | wide | 2 |
+| mlb | tight | 31 |
+| mlb | unquoted | 8 |
+| mlb | wide | 5 |
+| nba | tight | 21 |
+| nba | wide | 1 |
 | nhl | tight | 6 |
 | nhl | wide | 72 |
 
