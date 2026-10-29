@@ -1,0 +1,126 @@
+# Upsets track — pre-registered hypothesis catalogue
+# Source: "Upsets and Unlikely Outcomes" study (2026-10-29). Tiers: D documented,
+# S strong evidence, M mixed, P plausible/untested, F forum theory, X contradicted.
+# effect: prior guess in probability points (pp) or spread points (pts); replaced by data.
+# priced: how much the market already prices it (H/Med/L). A priced factor is still logged.
+# Status moves only by a dated note in CHANGELOG below, after an out-of-sample test.
+version: 2026-10-29
+factors:
+  # A — structural
+  - {id: A1, name: College longshots overbet (favorite-longshot bias), cat: structural, tier: S, effect: "-10 to -20% ROI on blind longshots", detect: days, priced: H, test: bin by implied p}
+  - {id: A2, name: MLB/NHL dogs fairly priced at close, cat: structural, tier: M, effect: "±1-2%", detect: days, priced: Med, test: bin by implied p}
+  - {id: A3, name: Openers less efficient than closers, cat: structural, tier: M, effect: "1-3%", detect: open, priced: n/a, test: Brier at open vs close}
+  - {id: A4, name: Low total / slow pace lifts dogs beyond spread, cat: structural, tier: S, effect: "1-3 pp", detect: days, priced: Med-H, test: logit + total}
+  - {id: A5, name: First backup-QB start raises variance, cat: structural, tier: S, effect: "+20% margin SD", detect: announcement, priced: L, test: variance by QB status}
+  - {id: A6, name: Teams with bad one-score record undervalued (Pythagorean regression), cat: structural, tier: S, effect: "1-3 pp", detect: weekly, priced: Med, test: record minus Pythagorean}
+  - {id: A7, name: Fumble/turnover luck evens out, cat: structural, tier: S, effect: "1-2 pp", detect: weekly, priced: Med-H, test: recovery rate residual}
+  - {id: A8, name: Weekend markets less efficient, cat: structural, tier: M, effect: small, detect: calendar, priced: Med, test: Brier by weekday}
+  # B — schedule, travel, sleep
+  - {id: B1, name: West teams in East night games (after 8pm ET), cat: schedule, tier: S-old, effect: "0-2 pts now", detect: months, priced: Med, test: nflverse 2012-26 ATS and props}
+  - {id: B2, name: West teams at 10am body-clock kickoffs, cat: schedule, tier: M, effect: "0.5-1.5 pts", detect: months, priced: Med, test: same}
+  - {id: B3, name: MLB eastward jet lag (HR allowed; home offense after trip), cat: schedule, tier: S, effect: "≈ home-field advantage", detect: schedule, priced: L-Med, test: Retrosheet time-zone shifts}
+  - {id: B4, name: NBA eastward jet lag hurts home teams, cat: schedule, tier: M, effect: "1-2 pp", detect: schedule, priced: Med, test: hoopR}
+  - {id: B5, name: Back-to-backs (NBA/NHL), cat: schedule, tier: D, effect: "1-3 pp", detect: schedule, priced: H, test: rest features}
+  - {id: B6, name: 3-in-4 / 4-in-5 / long road trips, cat: schedule, tier: S, effect: "1-2 pp", detect: schedule, priced: Med-H, test: rest features}
+  - {id: B7, name: MLB getaway-day / day-after-night lineups, cat: schedule, tier: P, effect: lineup-driven, detect: T-2-4h, priced: Med, test: lineup strength vs price at T-4h}
+  - {id: B8, name: Altitude x rest (Denver/Utah/Mexico City), cat: schedule, tier: S, effect: "1-2 pp", detect: schedule, priced: Med-H, test: interaction}
+  - {id: B9, name: Thursday short week (NFL), cat: schedule, tier: M, effect: "0-1 pt", detect: schedule, priced: H, test: nflverse}
+  - {id: B10, name: Hangover after international trip, cat: schedule, tier: P, effect: "1-2 pts", detect: schedule, priced: L-Med, test: flag}
+  - {id: B11, name: Travel disruption (diverted charter, fire alarm, illness), cat: schedule, tier: P, effect: "large, rare", detect: hours, priced: L, test: event log from news}
+  - {id: B12, name: Wind ≥15 mph, cat: weather, tier: S, effect: "total -2 to -4", detect: 24-48h, priced: Med-H, test: Open-Meteo}
+  - {id: B13, name: Nightlife cities (party-city trip), cat: schedule, tier: F, effect: unknown, detect: schedule, priced: L, test: city x rest}
+  - {id: B14, name: Daylight-saving weekends, cat: schedule, tier: P, effect: small, detect: calendar, priced: L, test: before/after}
+  - {id: B15, name: Opponent switched QBs during your bye (prepared for wrong QB), cat: schedule, tier: P, effect: unknown, detect: days, priced: L, test: bye x QB change}
+  - {id: B16, name: Body-clock hour -> mental errors (props), cat: schedule, tier: P, effect: small, detect: months, priced: L, test: props vs hour}
+  - {id: B17, name: Esports online play / ping / cross-region servers, cat: esports, tier: P, effect: "moderate tier-2", detect: format, priced: L-Med, test: LAN vs online}
+  # C — officiating
+  - {id: C1, name: Crowd-driven home bias, cat: officiating, tier: D, effect: "part of HFA", detect: always, priced: H, test: empty-stadium natural experiment}
+  - {id: C2, name: NBA refs favor trailing teams (game and series), cat: officiating, tier: S, effect: "small; larger in elimination games", detect: series state, priced: Med, test: discretionary calls}
+  - {id: C3, name: Stars get late whistles, cat: officiating, tier: M, effect: "FT props", detect: always, priced: Med, test: L2M + pbp}
+  - {id: C4, name: Fewer late wrong calls against underdogs, cat: officiating, tier: S, effect: close games, detect: always, priced: L, test: L2M}
+  - {id: C5, name: NBA crew foul rate moves totals / FT props, cat: officiating, tier: S, effect: "±2-4 pts", detect: morning of game, priced: Med, test: crew rate vs line}
+  - {id: C6, name: MLB home-plate zone moves K/BB props, cat: officiating, tier: S, effect: "±0.3-0.6 K", detect: rotation, priced: Med, test: K residuals}
+  - {id: C7, name: Umpire attention depletion, cat: officiating, tier: S-tiny, effect: "-0.32%/SD", detect: in-game, priced: n/a, test: not pregame}
+  - {id: C8, name: Referee travel / fatigue (user hypothesis), cat: officiating, tier: P, effect: "probably small; totals/FT", detect: assignments, priced: L, test: ref travel km + back-to-back -> L2M errors, fouls}
+  - {id: C9, name: Soccer referee errors rise late, cat: officiating, tier: M, effect: small, detect: in-play, priced: L, test: late penalties/cards}
+  - {id: C10, name: Older umpires less accurate, cat: officiating, tier: M, effect: "K/BB props", detect: assignment, priced: L, test: controlled regression}
+  - {id: C11, name: Empty stadiums cut home bias, cat: officiating, tier: D, effect: "HFA shrinks", detect: attendance, priced: Med, test: attendance x result}
+  - {id: C12, name: Corrupt individual officials, cat: integrity, tier: D-rare, effect: "huge, rare", detect: line moves, priced: n/a, test: crew x line anomaly}
+  - {id: C13, name: Mid-season rule / emphasis changes, cat: officiating, tier: S, effect: totals, detect: announcement, priced: Med, test: before/after}
+  # D — injuries, lineups, backups
+  - {id: D1, name: Market overreacts to QB news, cat: lineups, tier: S, effect: "1-2 pts ATS", detect: announcement, priced: Med, test: QB-change games}
+  - {id: D2, name: Home backups overvalued, cat: lineups, tier: M, effect: "2-3 pts", detect: announcement, priced: Med, test: replicate Action Network}
+  - {id: D3, name: QB/goalie/pitcher dependence index (penalty for star out scales with reliance), cat: lineups, tier: P-strong, effect: "2-5 pp", detect: days, priced: L-Med, test: dependence index}
+  - {id: D4, name: Opponent prepared for starter; little film on backup, cat: lineups, tier: P, effect: small, detect: days, priced: L, test: backup film count}
+  - {id: D5, name: Late scratches / warmup decisions, cat: lineups, tier: D, effect: large, detect: minutes, priced: Med, test: price T-30 vs T-0}
+  - {id: D6, name: Cumulative injury load (OL/CB/edge clusters), cat: lineups, tier: P-S, effect: "1-3 pp", detect: days, priced: L-Med, test: snap-weighted missing starters}
+  - {id: D7, name: Weak OL vs strong pass rush, cat: matchup, tier: S, effect: "2-4 pp", detect: days, priced: Med, test: pressure vs sacks allowed}
+  - {id: D8, name: Return-from-injury rust / minutes caps, cat: lineups, tier: M, effect: "prop unders", detect: practice reports, priced: Med, test: first game back}
+  - {id: D9, name: NHL backup goalie start, cat: lineups, tier: S, effect: "2-5 pp", detect: morning skate, priced: "H once confirmed", test: DailyFaceoff timestamps}
+  - {id: D10, name: NBA rest / load management, cat: lineups, tier: D, effect: "3-8 pp", detect: injury report, priced: H, test: timestamps}
+  - {id: D11, name: College game-time decisions, cat: lineups, tier: P, effect: variable, detect: 2h, priced: Med, test: T-3h vs T-1h price}
+  - {id: D12, name: Interim-coach bounce, cat: lineups, tier: M, effect: "0-2 pp", detect: firing, priced: Med, test: post-firing results}
+  - {id: D13, name: Bowl opt-outs / transfer portal, cat: lineups, tier: D, effect: large, detect: weeks, priced: Med-H, test: opt-out lists}
+  - {id: D14, name: Esports stand-ins / roster swaps, cat: esports, tier: S, effect: "5-15 pp", detect: hours, priced: L-Med, test: lineup at start}
+  - {id: D15, name: Teammate out -> usage shift (props), cat: props, tier: S, effect: large, detect: report, priced: Med-H, test: usage model}
+  # E — motivation, incentives
+  - {id: E1, name: Letdown after emotional win, cat: motivation, tier: M, effect: "0-1 pt", detect: schedule, priced: Med, test: prior win-prob swing}
+  - {id: E2, name: Lookahead, cat: motivation, tier: M, effect: "0-1 pt", detect: schedule, priced: Med, test: next-opponent rating}
+  - {id: E3, name: Revenge, cat: motivation, tier: M/X, effect: "≈0", detect: schedule, priced: Med, test: prior margin}
+  - {id: E4, name: Rivalry compresses margins, cat: motivation, tier: M, effect: small, detect: schedule, priced: Med, test: flag}
+  - {id: E5, name: Tanking, cat: incentives, tier: D, effect: "large late", detect: standings, priced: Med-H, test: draft-incentive index}
+  - {id: E6, name: Resting starters with seeding locked, cat: incentives, tier: D, effect: large, detect: coach statements, priced: Med, test: clinch flags}
+  - {id: E7, name: Contract year, cat: incentives, tier: M, effect: small, detect: Spotrac, priced: L, test: tbd}
+  - {id: E8, name: Incentive benching (user hypothesis), cat: incentives, tier: P-rare, effect: "rare, sharp", detect: "NFL wk 17-18; MLB Sept", priced: L, test: snaps near threshold vs not}
+  - {id: E9, name: Incentive chasing -> overs, cat: incentives, tier: X-1sample, effect: negative, detect: public lists, priced: overbet, test: fade hype}
+  - {id: E10, name: Hot-seat or just-fired-coach games, cat: motivation, tier: M, effect: "0-2 pp", detect: news, priced: Med, test: flags}
+  - {id: E11, name: Paycheck games (FCS/G5 at power teams), cat: motivation, tier: S, effect: "bad for longshots", detect: schedule, priced: H, test: bins}
+  - {id: E12, name: Eliminated teams play loose, cat: motivation, tier: F, effect: unknown, detect: standings, priced: L, test: post-elimination ATS}
+  - {id: E13, name: Desperation after losing streak, cat: motivation, tier: F/P, effect: unknown, detect: standings, priced: L, test: streak x price}
+  - {id: E14, name: QB saga / cohesion, cat: psychology, tier: P, effect: unknown, detect: weeks, priced: L, test: text flags}
+  - {id: E15, name: March Madness profile upsets, cat: matchup, tier: S, effect: model-based, detect: bracket, priced: Med, test: KenPom/Torvik}
+  # F — psychology, locker room
+  - {id: F1, name: Reported conflict precedes collapses, cat: psychology, tier: P, effect: unknown, detect: days, priced: L, test: pre-game conflict tags}
+  - {id: F2, name: Grudge / head game (user hypothesis), cat: psychology, tier: F, effect: unknown, detect: prior incidents, priced: L, test: player props after incident}
+  - {id: F3, name: Off-field life events, cat: psychology, tier: P, effect: variable, detect: news, priced: L, test: tags}
+  - {id: F4, name: Hot hand, cat: psychology, tier: M, effect: small, detect: in-game, priced: Med, test: n/a}
+  - {id: F5, name: Choking / clutch, cat: psychology, tier: M, effect: small, detect: n/a, priced: Med, test: leverage splits}
+  - {id: F6, name: Declining home-field advantage, cat: structural, tier: D, effect: "shrink priors", detect: seasonal, priced: H, test: yearly update}
+  - {id: F7, name: Late-night posting / partying, cat: psychology, tier: F, effect: unknown, detect: hours, priced: L, test: post timestamps}
+  - {id: F8, name: Coach 4th-down timidity, cat: strategy, tier: S, effect: "small-moderate", detect: history, priced: L-Med, test: aggressiveness index}
+  - {id: F9, name: Favorite complacency, cat: psychology, tier: P, effect: unknown, detect: n/a, priced: L, test: proxy needed}
+  # G — strategy, matchups
+  - {id: G1, name: High 3PA-rate dogs have fat tails, cat: matchup, tier: S, effect: "2-4 pp", detect: days, priced: Med, test: 3PA rate x price}
+  - {id: G2, name: Slow-pace dogs, cat: matchup, tier: S, effect: "1-3 pp", detect: days, priced: Med, test: tempo}
+  - {id: G3, name: Run-heavy clock control, cat: matchup, tier: P-S, effect: small, detect: days, priced: Med, test: run rate}
+  - {id: G4, name: Goalie streaks are noise (save % regresses), cat: matchup, tier: S, effect: "fade streaks", detect: confirmation, priced: Med, test: GSAx}
+  - {id: G5, name: MLB bullpen fatigue, cat: matchup, tier: S, effect: "1-3 pp late", detect: box scores, priced: Med, test: 3-day pitch counts}
+  - {id: G6, name: Umpire zone x pitcher fit, cat: matchup, tier: P-S, effect: "K props", detect: assignment, priced: L-Med, test: interaction}
+  - {id: G7, name: Esports map pool / veto, cat: esports, tier: S, effect: "5-10 pp in Bo1", detect: veto, priced: Med, test: map win rate}
+  - {id: G8, name: Patch / meta shift (first 2 weeks), cat: esports, tier: S, effect: moderate, detect: patch notes, priced: L, test: post-patch window}
+  - {id: G9, name: Line-of-scrimmage mismatch, cat: matchup, tier: S, effect: "2-4 pp", detect: days, priced: Med, test: pressure model}
+  - {id: G10, name: Non-offensive TDs (noise), cat: noise, tier: D-noise, effect: unpredictable, detect: n/a, priced: n/a, test: tag as noise}
+  - {id: G11, name: Underdogs seek variance, cat: strategy, tier: S-theory, effect: small, detect: history, priced: L, test: aggressiveness}
+  # H — props
+  - {id: H1, name: Goal-line / red-zone share drives TDs, cat: props, tier: S, effect: primary, detect: weekly, priced: Med-H, test: nflverse}
+  - {id: H2, name: Underdog RB volume paradox (QB limited + weak run D -> heavy RB volume), cat: props, tier: P-S, effect: "big on volume", detect: days, priced: L-Med, test: QB-limited flag x opponent YPC}
+  - {id: H3, name: Opponent RB TDs allowed is noisy, cat: props, tier: M, effect: small, detect: weekly, priced: Med, test: shrink}
+  - {id: H4, name: Multi-TD probability follows team total (Poisson), cat: props, tier: S, effect: "pricing shape", detect: days, priced: Med, test: fit distributions}
+  - {id: H5, name: NBA blowout risk -> unders, cat: props, tier: S, effect: big, detect: spread, priced: Med, test: minutes model}
+  - {id: H6, name: Illness tag + full practice ≈ ignorable, cat: props, tier: P, effect: small, detect: reports, priced: L, test: tag x output}
+  - {id: H7, name: Fixers target role-player unders, early exits, first pitches, first halves, cat: integrity, tier: D, effect: large, detect: anomalies, priced: n/a, test: monitor}
+  - {id: H8, name: Esports kill props depend on maps / stand-ins, cat: esports, tier: S, effect: large, detect: lineups, priced: L-Med, test: kills per round x expected maps}
+  - {id: H9, name: K props: ump x opponent K%, cat: props, tier: S, effect: moderate, detect: day of, priced: Med, test: interaction}
+  # I — markets, integrity
+  - {id: I1, name: Books shade toward public bias, cat: market, tier: S, effect: small, detect: days, priced: Med, test: public-side ATS}
+  - {id: I2, name: Fading the public works, cat: market, tier: M, effect: unstable, detect: splits, priced: Med, test: feature only}
+  - {id: I3, name: Reverse line movement = sharp, cat: market, tier: M, effect: unreliable, detect: line history, priced: Med, test: snapshots}
+  - {id: I4, name: League steering, cat: integrity, tier: M-bias-no-intent, effect: small, detect: series state, priced: Med, test: Part 5 tests}
+  - {id: I5, name: Books fix outcomes, cat: integrity, tier: X-systematic, effect: n/a, detect: n/a, priced: n/a, test: calibration}
+  - {id: I6, name: Scripted games, cat: integrity, tier: F, effect: n/a, detect: n/a, priced: n/a, test: calibration}
+  - {id: I7, name: Insider injury leaks, cat: integrity, tier: D, effect: large, detect: pre-news moves, priced: n/a, test: timestamps}
+  - {id: I8, name: Backdoor covers, cat: market, tier: P-structural, effect: "spread only", detect: n/a, priced: Med, test: late scoring vs spread}
+  - {id: I9, name: Abnormal volume on obscure markets, cat: integrity, tier: D, effect: avoid, detect: minutes, priced: n/a, test: Polymarket monitor}
+  - {id: I10, name: Thin Polymarket books overreact to late news, cat: market, tier: P, effect: "1-3% windows", detect: minutes, priced: unknown, test: PM vs Pinnacle gap}
+changelog:
+  - 2026-10-29: catalogue registered (72 factors). No tier changes yet.
