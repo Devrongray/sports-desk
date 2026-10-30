@@ -48,7 +48,15 @@ Not being tested: that any single upset can be explained after the fact.
 - Effect sizes in `hypotheses.yaml` are priors from literature and practitioners, not fitted.
 - Forum sweep not yet automated; text flags come from beat-writer and news searches on the day.
 
+## 8. Daily output (user rules, 2026-10-30)
+
+- This track runs in its own chat; the Begin picks routine runs in a separate chat. Here, "Begin" (or "Upsets") means: grade yesterday's rows, then post today's upset table.
+- Reply = two tables. First, yesterday's rows with HIT (the upset happened) or MISS, plus the night's count against the market's expected count. Second, today's pool sorted by my probability, highest first (ties: larger edge first), with price, edge, UPS, tier (A / Watch / Pass) and the factors in plain words.
+- Times on a 12-hour AM/PM clock, Pacific. Never 24-hour time.
+- Intuition arm: from 2026-10-31, write a no-research gut probability for each pool game before any research is read; log it in `gut_flag`/notes and grade it separately.
+
 ## Amendment log
 
 - 2026-10-29: registered.
 - 2026-10-29 (evening): Watch requires UPS ≥ 3 (a +3 pp edge on a 1-point stack is not a Watch). D14 stand-in-quality modifier registered in hypotheses.yaml for testing.
+- 2026-10-30 (midday): section 8 added — this chat is the upsets chat; two-table output; 12-hour times; gut arm starts 2026-10-31.
