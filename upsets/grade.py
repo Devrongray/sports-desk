@@ -44,12 +44,20 @@ for r in graded:
 print("\ntier | n | mean Brier mine | mean Brier market | diff (neg = we beat price) | hits")
 for t, rs in by_tier.items():
     bm = statistics.mean(float(r['brier_mine']) for r in rs)
-    bq = statistics.mean(float(r['brier_market']) for r in rs if r.get('brier_market'))
+    paired = [r for r in rs if r.get('brier_market')]
     hits = sum(int(float(r['result'])) for r in rs)
-    print(f"{t} | {len(rs)} | {bm:.4f} | {bq:.4f} | {bm - bq:+.4f} | {hits}/{len(rs)}")
+    if paired:
+        bm_p = statistics.mean(float(r['brier_mine']) for r in paired)
+        bq = statistics.mean(float(r['brier_market']) for r in paired)
+        print(f"{t} | {len(rs)} | {bm:.4f} | {bq:.4f} (n={len(paired)} priced) | {bm_p - bq:+.4f} | {hits}/{len(rs)}")
+    else:
+        print(f"{t} | {len(rs)} | {bm:.4f} | n/a | n/a | {hits}/{len(rs)}")
 bands = defaultdict(list)
 for r in graded:
-    q = f(r['pm_price']); bands[f"{math.floor(q*10)/10:.1f}-{math.floor(q*10)/10+0.1:.1f}"].append(float(r['result']))
+    q = f(r['pm_price'])
+    if q is None:
+        continue
+    bands[f"{math.floor(q*10)/10:.1f}-{math.floor(q*10)/10+0.1:.1f}"].append(float(r['result']))
 print("\nprice band | n | actual win rate")
 for b in sorted(bands):
     print(f"{b} | {len(bands[b])} | {statistics.mean(bands[b]):.3f}")

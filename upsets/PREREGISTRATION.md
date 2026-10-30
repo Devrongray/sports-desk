@@ -27,7 +27,7 @@ Not being tested: that any single upset can be explained after the fact.
 ## 4. Pick rule
 
 - **A candidate**: UPS ≥ 6 with at least two S/D-tier factors, and my probability ≥ price + **4 pp** (game lines) or + **6 pp** (props/segments).
-- **Watch**: UPS 3–5, or edge below threshold. Logged, not bet.
+- **Watch**: UPS 3–5 (UPS ≥ 3 required from 2026-10-30), or edge below threshold. Logged, not bet.
 - **Pass**: everything else in the pool; still logged with UPS.
 - Any market with an integrity anomaly (move ≥ 5 pp in ≤ 15 min with no news; 3× volume on a role-player under or first-half market; tier-2 esports price crossing 0.50) is **not bet** and is logged as `anomaly`.
 - Stakes during the trial: the user's standing $10–$20.
@@ -51,3 +51,4 @@ Not being tested: that any single upset can be explained after the fact.
 ## Amendment log
 
 - 2026-10-29: registered.
+- 2026-10-29 (evening): Watch requires UPS ≥ 3 (a +3 pp edge on a 1-point stack is not a Watch). D14 stand-in-quality modifier registered in hypotheses.yaml for testing.

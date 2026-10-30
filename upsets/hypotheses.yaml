@@ -124,3 +124,4 @@ factors:
   - {id: I10, name: Thin Polymarket books overreact to late news, cat: market, tier: P, effect: "1-3% windows", detect: minutes, priced: unknown, test: PM vs Pinnacle gap}
 changelog:
   - 2026-10-29: catalogue registered (72 factors). No tier changes yet.
+  - 2026-10-29 (post-mortem): D14 amendment registered, not yet tested — add a stand-in QUALITY modifier (former tier-1 starter / recent pro vs academy or unknown); TES's 369 case showed the sign can flip. D8 note — media 'lighter workload' talk without a depth-chart change is weak evidence (Jacobs 21 carries). Watch tier now requires UPS >= 3 (CFO case).
