@@ -14,7 +14,7 @@ Not being tested: that any single upset can be explained after the fact.
 ## 2. Candidate pool (per day)
 
 - Game lines: every side priced **0.30–0.48** on Polymarket US (mid) at the T-6h check (or the first check of the day when later).
-- Props and segment markets: any outcome priced **≤ 0.25**.
+- Props and segment markets: any player/stat outcome priced **≤ 0.45** (alternate lines such as 30+ points, 14+ rebounds, 6+ threes, 35+ saves, 2+ TDs) that has a named usage, matchup or lineup factor behind it. Props without a factor are not logged. (Widened from ≤ 0.25 on 2026-10-30 at the user's direction — unlikely stat outcomes are half the brief.)
 - Any league the catalogue covers, esports included. NFL game winners and spreads excluded by standing rule; NFL props allowed.
 
 ## 3. Scoring
@@ -60,3 +60,4 @@ Not being tested: that any single upset can be explained after the fact.
 - 2026-10-29: registered.
 - 2026-10-29 (evening): Watch requires UPS ≥ 3 (a +3 pp edge on a 1-point stack is not a Watch). D14 stand-in-quality modifier registered in hypotheses.yaml for testing.
 - 2026-10-30 (midday): section 8 added — this chat is the upsets chat; two-table output; 12-hour times; gut arm starts 2026-10-31.
+- 2026-10-30 (afternoon): prop pool widened to ≤ 0.45 with a named factor; a daily prop pass (NBA pts/reb/ast/3s, NHL goals/shots/saves, NFL yds/TDs, esports kills/maps) added to the routine. Polymarket US prop prices are not recorded by the scanner, so the user reads them from the app; rows are logged with my probability and the max bet price, and the app price is filled in when reported.
