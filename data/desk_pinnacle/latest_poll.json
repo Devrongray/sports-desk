@@ -1,1 +1,1 @@
-{"ts": "2026-11-01T18:36:44+00:00", "enabled": true, "events": 6, "rows": 32, "credits_spent_est": 15.0, "skipped": null, "quota": {"remaining": 19695.0, "used": 305.0, "last": 3.0}, "key_present": true, "credits_spent_today_before": 66.0, "events_skipped_recent": 0}
+{"ts": "2026-11-01T19:30:23+00:00", "enabled": true, "events": 7, "rows": 38, "credits_spent_est": 18.0, "skipped": null, "quota": {"remaining": 19669.0, "used": 331.0, "last": 3.0}, "key_present": true, "credits_spent_today_before": 81.0, "events_skipped_recent": 0}
