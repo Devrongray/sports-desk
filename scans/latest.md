@@ -1,54 +1,54 @@
-# Desk scan 2026-11-01T01:36:37+00:00
+# Desk scan 2026-11-01T02:34:31+00:00
 
-Universe: 295 upcoming main-line contracts; 18 events matched to Pinnacle; 17 contracts with a reference; 3 live actions. Quote states: {'wide': 120, 'unquoted': 93, 'tight': 82}.
+Universe: 277 upcoming main-line contracts; 20 events matched to Pinnacle; 18 contracts with a reference; 0 live actions. Quote states: {'wide': 129, 'unquoted': 80, 'tight': 68}.
 
 ## Actions inside the posting window
 
-| # | sport | segment | contract | line | mins | bid | ask | state | fair (ref) | action | price | edge | size $ | flags |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | nhl | REGULATION | Will CGY vs COL be tied after regulation? |  | 23 | 0.010 | 0.200 | wide | 0.159 (h2h_3_way) | **post_bid** | 0.120 | 0.039 | 20.00 | buying under 0.20 |
-| 2 | nhl | REGULATION | Will CGY Flames lead after regulation of CGY vs COL? |  | 23 | 0.010 | 0.220 | wide | 0.168 (h2h_3_way) | **post_bid** | 0.130 | 0.038 | 20.00 | buying under 0.20 |
-| 3 | nhl | REGULATION | Will COL Avalanche lead after regulation of CGY vs COL? |  | 23 | 0.460 | 0.700 | wide | 0.673 (h2h_3_way) | **post_bid** | 0.640 | 0.033 | 20.00 |  |
+None. Every referenced contract inside the window is either machine-quoted within the margin of Pinnacle or Pinnacle just moved.
 
 ## Referenced contracts outside the window (largest gaps first)
 
 | sport | segment | contract | line | mins | bid | ask | state | fair | mid − fair | would | at | edge |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| nfl | FULL_GAME | Will the total in ARI Cardinals vs. DAL Cowboys be more than | 54.5 | 983 | 0.500 | 0.505 | tight | 0.500 | 0.003 |  |  |  |
-| nfl | FULL_GAME | Will the total in IND Colts vs. JAC Jaguars be more than 46. | 46.5 | 983 | 0.485 | 0.490 | tight | 0.499 | -0.011 |  |  |  |
-| nfl | FULL_GAME | Will the total in PHI Eagles vs. WAS Commanders be more than | 40.5 | 1423 | 0.485 | 0.490 | tight | 0.480 | 0.008 |  |  |  |
-| nfl | FULL_GAME | Will the total in KC Chiefs vs. DEN Broncos be more than 40. | 40.5 | 1188 | 0.505 | 0.510 | tight | 0.496 | 0.011 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event MIN Wild vs WSH Ca |  | 1133 | 0.500 | 0.510 | tight | 0.497 | 0.008 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event UTA Mammoth vs PHI |  | 1163 | 0.600 | 0.610 | tight | 0.598 | 0.007 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event WPG Jets vs CAR Hu |  | 983 | 0.270 | 0.280 | tight | 0.280 | -0.005 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event EDM Oilers vs NYR  |  | 1283 | 0.460 | 0.470 | tight | 0.457 | 0.009 |  |  |  |
-| nhl | FULL_GAME | Will the total in EDM vs NYR be more than 6.5? | 6.5 | 1283 | 0.500 | 0.510 | tight | 0.512 | -0.007 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event OTT Senators vs AN |  | 1403 | 0.500 | 0.510 | tight | 0.525 | -0.020 |  |  |  |
-| nhl | FULL_GAME | Will the total in OTT vs ANA be more than 6.5? | 6.5 | 1403 | 0.540 | 0.550 | tight | 0.548 | -0.003 |  |  |  |
+| nfl | FULL_GAME | Will the total in IND Colts vs. JAC Jaguars be more than 46. | 46.5 | 926 | 0.485 | 0.490 | tight | 0.499 | -0.011 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event UTA Mammoth vs PHI |  | 1106 | 0.600 | 0.610 | tight | 0.598 | 0.007 |  |  |  |
+| nfl | FULL_GAME | Will the total in PHI Eagles vs. WAS Commanders be more than | 40.5 | 1366 | 0.485 | 0.490 | tight | 0.480 | 0.008 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event MIN Wild vs WSH Ca |  | 1076 | 0.500 | 0.510 | tight | 0.497 | 0.008 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event WPG Jets vs CAR Hu |  | 926 | 0.270 | 0.280 | tight | 0.277 | -0.002 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event OTT Senators vs AN |  | 1346 | 0.510 | 0.520 | tight | 0.525 | -0.010 |  |  |  |
+| nhl | FULL_GAME | Will the total in OTT vs ANA be more than 6.5? | 6.5 | 1346 | 0.540 | 0.550 | tight | 0.548 | -0.003 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event TOR Raptors vs |  | 1406 | 0.360 | 0.370 | tight | 0.359 | 0.006 |  |  |  |
+| nfl | FULL_GAME | Will the total in LV Raiders vs. NY Jets be more than 46.5? | 46.5 | 926 | 0.485 | 0.490 | tight | 0.497 | -0.010 |  |  |  |
+| nba | FULL_GAME | Will the total in TOR Raptors vs. LA Lakers be more than 227 | 227.5 | 1406 | 0.500 | 0.510 | tight | 0.500 | 0.005 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event BKN Nets vs IN |  | 1166 | 0.380 | 0.390 | tight | 0.376 | 0.009 |  |  |  |
+| nba | FULL_GAME | Will the total in BOS Celtics vs. ORL Magic be more than 223 | 223.5 | 1076 | 0.490 | 0.500 | tight | 0.500 | -0.005 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event BOS Celtics vs |  | 1076 | 0.700 | 0.710 | tight | 0.708 | -0.003 |  |  |  |
+| nhl | FULL_GAME | Will the total in EDM vs NYR be more than 6.5? | 6.5 | 1226 | 0.500 | 0.510 | tight | 0.512 | -0.007 |  |  |  |
+| nfl | FULL_GAME | Will the total in KC Chiefs vs. DEN Broncos be more than 40. | 40.5 | 1130 | 0.505 | 0.510 | tight | 0.501 | 0.006 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event EDM Oilers vs NYR  |  | 1226 | 0.460 | 0.470 | tight | 0.457 | 0.009 |  |  |  |
+| nfl | FULL_GAME | Will the total in ARI Cardinals vs. DAL Cowboys be more than | 54.5 | 926 | 0.500 | 0.505 | tight | 0.500 | 0.003 |  |  |  |
+| nba | FULL_GAME | Will the total in BKN Nets vs. IND Pacers be more than 230.5 | 230.5 | 1166 | 0.490 | 0.510 | tight | 0.501 | -0.001 |  |  |  |
 
-## Passed inside the window: 3
+## Passed inside the window: 0
 
-- nhl FULL_GAME Will the total in CGY vs COL be more than 6.5? — machine-quoted within the margin of Pinnacle
-- nhl FULL_GAME Who will win in the upcoming hockey event CGY Flames vs COL Avalanche  — machine-quoted within the margin of Pinnacle
-- nhl FIRST_PERIOD Will CGY vs COL have more than 1.5 goals in the first period? — machine-quoted within the margin of Pinnacle
 
-## No Pinnacle reference yet: 278 contracts
+## No Pinnacle reference yet: 259 contracts
 
 | sport | quote state | n |
 |---|---|---|
-| cs2 | tight | 11 |
-| cs2 | unquoted | 42 |
-| cs2 | wide | 8 |
-| nba | tight | 9 |
+| cs2 | tight | 12 |
+| cs2 | unquoted | 39 |
+| cs2 | wide | 10 |
+| nba | tight | 3 |
 | nba | unquoted | 2 |
 | nba | wide | 1 |
-| ncaab | tight | 3 |
-| ncaab | unquoted | 4 |
-| ncaab | wide | 5 |
-| nfl | tight | 24 |
-| nfl | wide | 56 |
-| nhl | tight | 21 |
-| nhl | unquoted | 45 |
-| nhl | wide | 47 |
+| ncaab | tight | 5 |
+| ncaab | unquoted | 6 |
+| ncaab | wide | 4 |
+| nfl | tight | 21 |
+| nfl | wide | 58 |
+| nhl | tight | 9 |
+| nhl | unquoted | 33 |
+| nhl | wide | 56 |
 
 Rules: PREREGISTRATION.md. Edges in probability points per $1 contract; maker pays no fee; taker fee 0.0695·p(1−p).
