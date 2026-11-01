@@ -1,0 +1,16 @@
+{"logged_at_utc":"2026-11-01T15:30Z","note":"No-research gut reads written BEFORE any research agent returned (intuition arm, day 1). Prices = Polymarket US mid from the 05:30Z desk scan.",
+ "reads":[
+  {"event":"ORL at BOS (12:30 PM PT)","selection":"ORL","price":0.305,"gut":0.30},
+  {"event":"IND at BKN (2:00 PM PT)","selection":"BKN","price":0.395,"gut":0.42},
+  {"event":"GSW at LAC (5:30 PM PT)","selection":"LAC","price":0.465,"gut":0.48},
+  {"event":"LAL at TOR (6:00 PM PT)","selection":"TOR","price":0.375,"gut":0.38},
+  {"event":"PHI at UTA (1:00 PM PT)","selection":"PHI","price":0.395,"gut":0.40},
+  {"event":"NYR at EDM (3:00 PM PT)","selection":"EDM","price":0.465,"gut":0.47},
+  {"event":"ANA at OTT (5:00 PM PT)","selection":"ANA","price":0.485,"gut":0.47},
+  {"event":"WSH at MIN (12:30 PM PT)","selection":"MIN","price":0.505,"gut":0.50},
+  {"event":"PARIVISION vs G2 (8:30 PM PT)","selection":"PARIVISION","price":0.465,"gut":0.45},
+  {"event":"9z vs BetBoom (11:00 PM PT)","selection":"9z","price":0.365,"gut":0.35},
+  {"event":"Heroic vs B8 (6:00 PM PT)","selection":"B8","price":0.385,"gut":0.38},
+  {"event":"FURIA vs FaZe (11:00 PM PT)","selection":"FaZe","price":0.325,"gut":0.36,"why":"FURIA played 8 straight days incl. a Bo5 final Saturday in Bucharest - fatigue/travel (known from this chat, not researched)"},
+  {"event":"Aurora vs Liquid (8:30 PM PT)","selection":"Liquid","price":0.29,"gut":0.30}
+ ]}
