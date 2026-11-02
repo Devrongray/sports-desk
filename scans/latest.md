@@ -1,56 +1,57 @@
-# Desk scan 2026-11-02T00:26:27+00:00
+# Desk scan 2026-11-02T01:37:36+00:00
 
-Universe: 634 upcoming main-line contracts; 9 events matched to Pinnacle; 19 contracts with a reference; 2 live actions. Quote states: {'wide': 335, 'tight': 195, 'unquoted': 83, 'none': 21}.
+Universe: 575 upcoming main-line contracts; 16 events matched to Pinnacle; 21 contracts with a reference; 0 live actions. Quote states: {'wide': 305, 'tight': 191, 'unquoted': 58, 'none': 21}.
 
 ## Actions inside the posting window
 
-| # | sport | segment | contract | line | mins | bid | ask | state | fair (ref) | action | price | edge | size $ | flags |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | nhl | REGULATION | Will ANA Ducks lead after regulation of OTT vs ANA? |  | 34 | 0.320 | 0.390 | wide | 0.368 (h2h_3_way) | **post_bid** | 0.330 | 0.038 | 20.00 |  |
-| 2 | nhl | REGULATION | Will OTT Senators lead after regulation of OTT vs ANA? |  | 34 | 0.340 | 0.420 | wide | 0.416 (h2h_3_way) | **post_bid** | 0.380 | 0.036 | 20.00 |  |
+None. Every referenced contract inside the window is either machine-quoted within the margin of Pinnacle or Pinnacle just moved.
 
 ## Referenced contracts outside the window (largest gaps first)
 
 | sport | segment | contract | line | mins | bid | ask | state | fair | mid − fair | would | at | edge |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| nfl | FULL_GAME | Will the total in CHI Bears vs. SEA Seahawks be more than 46 | 46.5 | 1488 | 0.495 | 0.500 | tight | 0.500 | -0.003 |  |  |  |
-| nhl | FULL_GAME | Will the total in CGY vs SJS be more than 6.5? | 6.5 | 1534 | 0.470 | 0.490 | tight | 0.483 | -0.003 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event CGY Flames vs SJS  |  | 1534 | 0.440 | 0.450 | tight | 0.440 | 0.005 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event DET Red Wings vs F |  | 1414 | 0.380 | 0.390 | tight | 0.387 | -0.002 |  |  |  |
-| nhl | FULL_GAME | Will the total in COL vs CHI be more than 6.5? | 6.5 | 1474 | 0.460 | 0.480 | tight | 0.472 | -0.002 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event COL Avalanche vs C |  | 1474 | 0.680 | 0.690 | tight | 0.683 | 0.002 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event VGK Golden Knights |  | 1414 | 0.500 | 0.510 | tight | 0.504 | 0.001 |  |  |  |
+| nfl | FULL_GAME | Will the total in CHI Bears vs. SEA Seahawks be more than 46 | 46.5 | 1417 | 0.495 | 0.500 | tight | 0.500 | -0.003 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event WAS Wizards vs |  | 1372 | 0.430 | 0.440 | tight | 0.467 | -0.032 |  |  |  |
+| nba | FULL_GAME | Will the total in BKN Nets vs. NY Knicks be more than 221.5? | 221.5 | 1372 | 0.490 | 0.520 | wide | 0.500 | 0.005 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event BKN Nets vs NY |  | 1372 | 0.120 | 0.130 | tight | 0.101 | 0.024 |  |  |  |
+| nba | FULL_GAME | Will the total in WAS Wizards vs. ORL Magic be more than 224 | 224.5 | 1372 | 0.500 | 0.520 | tight | 0.512 | -0.002 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event NO Pelicans vs |  | 1402 | 0.340 | 0.350 | tight | 0.326 | 0.019 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event MIL Bucks vs M |  | 1402 | 0.200 | 0.210 | tight | 0.193 | 0.012 |  |  |  |
+| nba | FULL_GAME | Will the total in MIL Bucks vs. MIN Timberwolves be more tha | 233.5 | 1402 | 0.490 | 0.510 | tight | 0.500 | 0.000 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event CGY Flames vs SJS  |  | 1462 | 0.440 | 0.450 | tight | 0.440 | 0.005 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event DET Pistons vs |  | 1372 | 0.620 | 0.630 | tight | 0.618 | 0.007 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event OKC Thunder vs |  | 1342 | 0.380 | 0.390 | tight | 0.386 | -0.001 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event CHI Bulls vs P |  | 1372 | 0.170 | 0.180 | tight | 0.158 | 0.017 |  |  |  |
+| nhl | FULL_GAME | Will the total in CGY vs SJS be more than 6.5? | 6.5 | 1462 | 0.470 | 0.490 | tight | 0.483 | -0.003 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event VGK Golden Knights |  | 1342 | 0.500 | 0.510 | tight | 0.504 | 0.001 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event DET Red Wings vs F |  | 1342 | 0.380 | 0.390 | tight | 0.387 | -0.002 |  |  |  |
+| nhl | FULL_GAME | Who will win in the upcoming hockey event COL Avalanche vs C |  | 1402 | 0.680 | 0.690 | tight | 0.683 | 0.002 |  |  |  |
+| nhl | FULL_GAME | Will the total in COL vs CHI be more than 6.5? | 6.5 | 1402 | 0.460 | 0.470 | tight | 0.472 | -0.007 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event UTA Jazz vs SA |  | 1432 | 0.090 | 0.100 | tight | 0.083 | 0.012 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event BOS Celtics vs |  | 1432 | 0.350 | 0.360 | tight | 0.358 | -0.003 |  |  |  |
+| nba | FULL_GAME | Who will win in the upcoming basketball event POR Trail Blaz |  | 1462 | 0.380 | 0.390 | tight | 0.379 | 0.006 |  |  |  |
 
-## Passed inside the window: 10
+## Passed inside the window: 1
 
-- nhl FULL_GAME Who will win in the upcoming hockey event OTT Senators vs ANA Ducks sc — machine-quoted within the margin of Pinnacle
-- nhl FULL_GAME Will the total in OTT vs ANA be more than 6.5? — machine-quoted within the margin of Pinnacle
-- nfl FIRST_HALF Will the total in PHI Eagles vs. WAS Commanders be more than 20.5? — machine-quoted within the margin of Pinnacle
-- nhl REGULATION Will OTT vs ANA be tied after regulation? — wide quote but the book is already inside fair ∓ margin
-- nba FULL_GAME Who will win in the upcoming basketball event LA Clippers vs GS Warrio — machine-quoted within the margin of Pinnacle
-- nba FULL_GAME Will the total in LA Clippers vs. GS Warriors be more than 220.5? — machine-quoted within the margin of Pinnacle
-- nba FIRST_QUARTER Will the first quarter total in LA Clippers vs. GS Warriors be more th — machine-quoted within the margin of Pinnacle
-- nfl FULL_GAME Will the total in PHI Eagles vs. WAS Commanders be more than 40.5? — machine-quoted within the margin of Pinnacle
-- nba FULL_GAME Will the total in TOR Raptors vs. LA Lakers be more than 224.5? — machine-quoted within the margin of Pinnacle
 - nba FULL_GAME Who will win in the upcoming basketball event TOR Raptors vs LA Lakers — machine-quoted within the margin of Pinnacle
 
-## No Pinnacle reference yet: 615 contracts
+## No Pinnacle reference yet: 554 contracts
 
 | sport | quote state | n |
 |---|---|---|
-| cs2 | tight | 8 |
-| cs2 | unquoted | 12 |
-| cs2 | wide | 16 |
-| nba | tight | 40 |
-| nba | unquoted | 7 |
-| nba | wide | 59 |
+| cs2 | tight | 13 |
+| cs2 | unquoted | 11 |
+| cs2 | wide | 12 |
+| nba | tight | 35 |
+| nba | unquoted | 5 |
+| nba | wide | 24 |
 | ncaab | none | 21 |
-| ncaab | tight | 101 |
-| ncaab | unquoted | 64 |
-| ncaab | wide | 182 |
-| nfl | tight | 7 |
+| ncaab | tight | 113 |
+| ncaab | unquoted | 42 |
+| ncaab | wide | 194 |
+| nfl | tight | 2 |
 | nfl | wide | 4 |
-| nhl | tight | 23 |
-| nhl | wide | 71 |
+| nhl | tight | 8 |
+| nhl | wide | 70 |
 
 Rules: PREREGISTRATION.md. Edges in probability points per $1 contract; maker pays no fee; taker fee 0.0695·p(1−p).
