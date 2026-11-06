@@ -1,4 +1,4 @@
-# Desk scorecard 2026-11-05T12:34:23+00:00
+# Desk scorecard 2026-11-06T12:31:32+00:00
 
 Closing-line value in probability points per $1 contract against Pinnacle's last pre-game fair price; fee-adjusted on fills. Decisions use the t statistic on fills once n is in the hundreds; everything else is context.
 
@@ -6,25 +6,25 @@ Closing-line value in probability points per $1 contract against Pinnacle's last
 |---|---|---|---|---|---|
 | fills (what you actually hold) | 0 |  |  |  |  |
 | unfilled posts (would-have, at post price) | 0 |  |  |  |  |
-| paper takes (every flagged take, filled at the touch, fee charged) | 108 | +0.0374 | 0.0022 | 17.13 | P&L $+471.92 on 108 settled, 53 winners |
-| paper posts (every flagged post, at post price, fill unknown) | 111 | +0.0373 | 0.0007 | 54.13 |  |
-| live-action candidates (scanner, at post price) | 219 | +0.0448 | 0.0012 | 37.53 |  |
-| all referenced candidates (at mid) | 1205 | +0.0072 | 0.0009 | 8.20 |  |
+| paper takes (every flagged take, filled at the touch, fee charged) | 115 | +0.0376 | 0.0021 | 18.19 | P&L $+404.54 on 115 settled, 55 winners |
+| paper posts (every flagged post, at post price, fill unknown) | 141 | +0.0372 | 0.0007 | 55.35 |  |
+| live-action candidates (scanner, at post price) | 256 | +0.0444 | 0.0011 | 41.80 |  |
+| all referenced candidates (at mid) | 1285 | +0.0079 | 0.0008 | 9.40 |  |
 
 ## By sport (live-action candidates)
 
 | group | n | mean CLV | se | t |
 |---|---|---|---|---|
 | nba | 10 | +0.0294 | 0.0044 | 6.77 |
-| nhl | 209 | +0.0456 | 0.0012 | 37.57 |
+| nhl | 246 | +0.0451 | 0.0011 | 41.88 |
 
 ## By quote state (live-action candidates)
 
 | group | n | mean CLV | se | t |
 |---|---|---|---|---|
-| tight | 120 | +0.0518 | 0.0019 | 27.15 |
+| tight | 128 | +0.0517 | 0.0018 | 28.64 |
 | unquoted | 23 | +0.0379 | 0.0017 | 22.40 |
-| wide | 76 | +0.0360 | 0.0006 | 60.57 |
+| wide | 105 | +0.0370 | 0.0007 | 51.14 |
 
 ## By segment (live-action candidates)
 
@@ -34,10 +34,10 @@ Closing-line value in probability points per $1 contract against Pinnacle's last
 | FIRST_PERIOD | 8 | +0.0336 | 0.0009 | 36.57 |
 | FIRST_QUARTER | 5 | +0.0338 | 0.0027 | 12.29 |
 | FULL_GAME | 2 | +0.0065 | 0.0094 | 0.69 |
-| REGULATION | 201 | +0.0461 | 0.0012 | 36.86 |
+| REGULATION | 238 | +0.0454 | 0.0011 | 41.19 |
 
 ## Is Pinnacle's close calibrated on Polymarket US settlements?
 
-n = 1205; slope 1.212 (95% CI 0.98–1.45); intercept +0.107. Slope near 1 and intercept near 0 means the reference is sound on this venue. Read it from 200+.
+n = 1285; slope 1.211 (95% CI 0.98–1.44); intercept +0.099. Slope near 1 and intercept near 0 means the reference is sound on this venue. Read it from 200+.
 
 Kill rules and thresholds: PREREGISTRATION.md.
