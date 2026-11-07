@@ -1,1 +1,1 @@
-{"ts": "2026-11-07T06:08:44+00:00", "enabled": true, "events": 0, "rows": 0, "credits_spent_est": 0, "skipped": "no events inside the window", "quota": {"remaining": 17232.0, "used": 2768.0, "last": 0.0}, "key_present": true, "credits_spent_today_before": 48.0}
+{"ts": "2026-11-07T16:28:55+00:00", "enabled": true, "events": 2, "rows": 14, "credits_spent_est": 6.0, "skipped": null, "quota": {"remaining": 17126.0, "used": 2874.0, "last": 3.0}, "key_present": true, "credits_spent_today_before": 48.0}
