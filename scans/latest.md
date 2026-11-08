@@ -1,6 +1,6 @@
-# Desk scan 2026-11-08T16:29:37+00:00
+# Desk scan 2026-11-08T17:10:23+00:00
 
-Universe: 783 upcoming main-line contracts; 26 events matched to Pinnacle; 8 contracts with a reference; 0 live actions. Quote states: {'wide': 366, 'tight': 304, 'unquoted': 105, 'none': 8}.
+Universe: 790 upcoming main-line contracts; 26 events matched to Pinnacle; 8 contracts with a reference; 0 live actions. Quote states: {'wide': 339, 'tight': 329, 'unquoted': 114, 'none': 8}.
 
 ## Actions inside the posting window
 
@@ -21,25 +21,25 @@ None.
 - nhl FIRST_PERIOD Will FLA vs BOS have more than 1.5 goals in the first period? — machine-quoted within the margin of Pinnacle
 - nfl FIRST_QUARTER Will the total in LA Rams vs. WAS Commanders be more than 9.5? — machine-quoted within the margin of Pinnacle
 
-## No Pinnacle reference yet: 775 contracts
+## No Pinnacle reference yet: 782 contracts
 
 | sport | quote state | n |
 |---|---|---|
-| cs2 | tight | 25 |
-| cs2 | unquoted | 23 |
-| cs2 | wide | 18 |
+| cs2 | tight | 29 |
+| cs2 | unquoted | 29 |
+| cs2 | wide | 17 |
 | lol | tight | 1 |
-| nba | tight | 44 |
-| nba | unquoted | 22 |
-| nba | wide | 173 |
+| nba | tight | 51 |
+| nba | unquoted | 23 |
+| nba | wide | 165 |
 | ncaab | none | 8 |
-| ncaab | tight | 95 |
-| ncaab | unquoted | 31 |
-| ncaab | wide | 63 |
+| ncaab | tight | 92 |
+| ncaab | unquoted | 33 |
+| ncaab | wide | 62 |
 | nfl | tight | 77 |
 | nfl | wide | 10 |
-| nhl | tight | 54 |
+| nhl | tight | 71 |
 | nhl | unquoted | 29 |
-| nhl | wide | 102 |
+| nhl | wide | 85 |
 
 Rules: PREREGISTRATION.md. Edges in probability points per $1 contract; maker pays no fee; taker fee 0.0695·p(1−p).
