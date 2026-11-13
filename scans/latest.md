@@ -1,6 +1,6 @@
-# Desk scan 2026-11-13T05:47:01+00:00
+# Desk scan 2026-11-13T16:45:04+00:00
 
-Universe: 327 upcoming main-line contracts; 11 events matched to Pinnacle; 12 contracts with a reference; 0 live actions. Quote states: {'tight': 189, 'wide': 103, 'unquoted': 27, 'none': 8}.
+Universe: 1119 upcoming main-line contracts; 11 events matched to Pinnacle; 0 contracts with a reference; 0 live actions. Quote states: {'wide': 494, 'tight': 326, 'unquoted': 286, 'none': 13}.
 
 ## Actions inside the posting window
 
@@ -8,37 +8,28 @@ None. Every referenced contract inside the window is either machine-quoted withi
 
 ## Referenced contracts outside the window (largest gaps first)
 
-| sport | segment | contract | line | mins | bid | ask | state | fair | mid − fair | would | at | edge |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| nhl | FULL_GAME | Who will win in the upcoming hockey event NYR Rangers vs VAN |  | 1213 | 0.670 | 0.680 | tight | 0.666 | 0.009 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event NY Knicks vs I |  | 1093 | 0.700 | 0.710 | tight | 0.702 | 0.003 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event MEM Grizzlies  |  | 1153 | 0.600 | 0.610 | tight | 0.592 | 0.013 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event MIL Bucks vs O |  | 1093 | 0.220 | 0.230 | tight | 0.231 | -0.006 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event ATL Hawks vs C |  | 1153 | 0.700 | 0.710 | tight | 0.697 | 0.008 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event UTA Jazz vs HO |  | 1183 | 0.080 | 0.090 | tight | 0.083 | 0.002 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event CLE Cavaliers  |  | 1153 | 0.440 | 0.450 | tight | 0.444 | 0.001 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event OKC Thunder vs |  | 1303 | 0.720 | 0.730 | tight | 0.722 | 0.003 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event GS Warriors vs |  | 1243 | 0.140 | 0.150 | tight | 0.135 | 0.010 |  |  |  |
-| nba | FULL_GAME | Who will win in the upcoming basketball event POR Trail Blaz |  | 1273 | 0.820 | 0.830 | tight | 0.815 | 0.010 |  |  |  |
-| nhl | FULL_GAME | Will the total in NYR vs VAN be more than 6.5? | 6.5 | 1213 | 0.480 | 0.490 | tight | 0.492 | -0.007 |  |  |  |
-| nhl | FULL_GAME | Who will win in the upcoming hockey event NSH Predators vs V |  | 1273 | 0.380 | 0.390 | tight | 0.371 | 0.014 |  |  |  |
+None.
 
 ## Passed inside the window: 0
 
 
-## No Pinnacle reference yet: 315 contracts
+## No Pinnacle reference yet: 1119 contracts
 
 | sport | quote state | n |
 |---|---|---|
-| cs2 | tight | 28 |
-| cs2 | unquoted | 26 |
-| cs2 | wide | 33 |
-| nba | tight | 18 |
-| ncaab | none | 8 |
-| ncaab | tight | 113 |
-| ncaab | unquoted | 1 |
-| ncaab | wide | 49 |
-| nhl | tight | 18 |
-| nhl | wide | 21 |
+| cs2 | tight | 24 |
+| cs2 | unquoted | 21 |
+| cs2 | wide | 11 |
+| lol | tight | 1 |
+| nba | tight | 92 |
+| nba | unquoted | 139 |
+| nba | wide | 161 |
+| ncaab | none | 13 |
+| ncaab | tight | 156 |
+| ncaab | unquoted | 13 |
+| ncaab | wide | 152 |
+| nhl | tight | 53 |
+| nhl | unquoted | 113 |
+| nhl | wide | 170 |
 
 Rules: PREREGISTRATION.md. Edges in probability points per $1 contract; maker pays no fee; taker fee 0.0695·p(1−p).
