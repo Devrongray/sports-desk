@@ -1,6 +1,6 @@
-# Desk scan 2026-11-14T20:25:37+00:00
+# Desk scan 2026-11-15T00:04:48+00:00
 
-Universe: 1156 upcoming main-line contracts; 29 events matched to Pinnacle; 4 contracts with a reference; 0 live actions. Quote states: {'tight': 554, 'wide': 396, 'unquoted': 202, 'none': 4}.
+Universe: 809 upcoming main-line contracts; 20 events matched to Pinnacle; 11 contracts with a reference; 0 live actions. Quote states: {'tight': 301, 'wide': 298, 'unquoted': 207, 'none': 3}.
 
 ## Actions inside the posting window
 
@@ -8,34 +8,40 @@ None. Every referenced contract inside the window is either machine-quoted withi
 
 ## Referenced contracts outside the window (largest gaps first)
 
-| sport | segment | contract | line | mins | bid | ask | state | fair | mid − fair | would | at | edge |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| nhl | REGULATION | Will CHI Blackhawks lead after regulation of WPG vs CHI? |  | 4 | 0.330 | 0.340 | tight | 0.315 | 0.021 |  |  |  |
-| nhl | REGULATION | Will WPG Jets lead after regulation of WPG vs CHI? |  | 4 | 0.490 | 0.500 | tight | 0.471 | 0.024 |  |  |  |
-| nhl | FIRST_PERIOD | Will WPG vs CHI have more than 1.5 goals in the first period | 1.5 | 4 | 0.570 | 0.580 | tight | 0.556 | 0.019 |  |  |  |
-| nhl | REGULATION | Will WPG vs CHI be tied after regulation? |  | 4 | 0.170 | 0.240 | wide | 0.214 | -0.009 | post_bid | 0.180 | 0.034 |
+None.
 
-## Passed inside the window: 0
+## Passed inside the window: 11
 
+- nba FIRST_QUARTER Will the first quarter total in CHI Bulls vs. MIN Timberwolves be more — machine-quoted within the margin of Pinnacle
+- nhl REGULATION Will UTA Mammoth lead after regulation of SJS vs UTA? — machine-quoted within the margin of Pinnacle
+- nhl REGULATION Will BUF Sabres lead after regulation of BUF vs DAL? — machine-quoted within the margin of Pinnacle
+- nhl REGULATION Will DAL Stars lead after regulation of BUF vs DAL? — machine-quoted within the margin of Pinnacle
+- nhl REGULATION Will BUF vs DAL be tied after regulation? — machine-quoted within the margin of Pinnacle
+- nhl REGULATION Will SJS Sharks lead after regulation of SJS vs UTA? — machine-quoted within the margin of Pinnacle
+- nhl REGULATION Will SJS vs UTA be tied after regulation? — machine-quoted within the margin of Pinnacle
+- nhl FIRST_PERIOD Will BUF vs DAL have more than 1.5 goals in the first period? — machine-quoted within the margin of Pinnacle
+- nba FIRST_HALF Will the first half total in DAL Mavericks vs. CLE Cavaliers be more t — machine-quoted within the margin of Pinnacle
+- nba FIRST_HALF Will the first half total in DET Pistons vs. MIA Heat be more than 117 — machine-quoted within the margin of Pinnacle
+- nhl FIRST_PERIOD Will SJS vs UTA have more than 1.5 goals in the first period? — machine-quoted within the margin of Pinnacle
 
-## No Pinnacle reference yet: 1152 contracts
+## No Pinnacle reference yet: 798 contracts
 
 | sport | quote state | n |
 |---|---|---|
-| cs2 | tight | 46 |
-| cs2 | unquoted | 24 |
-| cs2 | wide | 10 |
-| nba | tight | 73 |
-| nba | unquoted | 145 |
-| nba | wide | 118 |
-| ncaab | none | 4 |
-| ncaab | tight | 135 |
-| ncaab | unquoted | 14 |
-| ncaab | wide | 125 |
+| cs2 | tight | 32 |
+| cs2 | unquoted | 31 |
+| cs2 | wide | 18 |
+| nba | tight | 71 |
+| nba | unquoted | 147 |
+| nba | wide | 98 |
+| ncaab | none | 3 |
+| ncaab | tight | 64 |
+| ncaab | unquoted | 10 |
+| ncaab | wide | 59 |
 | nfl | tight | 29 |
 | nfl | wide | 55 |
-| nhl | tight | 268 |
+| nhl | tight | 94 |
 | nhl | unquoted | 19 |
-| nhl | wide | 87 |
+| nhl | wide | 68 |
 
 Rules: PREREGISTRATION.md. Edges in probability points per $1 contract; maker pays no fee; taker fee 0.0695·p(1−p).
