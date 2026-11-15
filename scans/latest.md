@@ -1,6 +1,6 @@
-# Desk scan 2026-11-15T11:37:20+00:00
+# Desk scan 2026-11-15T20:49:29+00:00
 
-Universe: 632 upcoming main-line contracts; 22 events matched to Pinnacle; 1 contracts with a reference; 0 live actions. Quote states: {'wide': 294, 'tight': 217, 'unquoted': 108, 'none': 13}.
+Universe: 754 upcoming main-line contracts; 18 events matched to Pinnacle; 4 contracts with a reference; 0 live actions. Quote states: {'tight': 334, 'wide': 253, 'unquoted': 157, 'none': 10}.
 
 ## Actions inside the posting window
 
@@ -10,27 +10,31 @@ None. Every referenced contract inside the window is either machine-quoted withi
 
 None.
 
-## Passed inside the window: 1
+## Passed inside the window: 4
 
-- nfl FIRST_HALF Will the total in NE Patriots vs. DET Lions be more than 24.5? — machine-quoted within the margin of Pinnacle
+- nba FIRST_QUARTER Will the first quarter total in DAL Mavericks vs. BOS Celtics be more  — machine-quoted within the margin of Pinnacle
+- nba FIRST_HALF Will the first half total in CHA Hornets vs. LA Clippers be more than  — machine-quoted within the margin of Pinnacle
+- nfl FIRST_QUARTER Will the total in SEA Seahawks vs. LV Raiders be more than 7.5? — machine-quoted within the margin of Pinnacle
+- nfl FIRST_QUARTER Will the total in SF 49ers vs. DAL Cowboys be more than 10.5? — machine-quoted within the margin of Pinnacle
 
-## No Pinnacle reference yet: 631 contracts
+## No Pinnacle reference yet: 750 contracts
 
 | sport | quote state | n |
 |---|---|---|
-| cs2 | tight | 42 |
-| cs2 | unquoted | 19 |
-| cs2 | wide | 11 |
-| nba | tight | 29 |
-| nba | unquoted | 40 |
-| nba | wide | 120 |
-| ncaab | none | 13 |
-| ncaab | tight | 62 |
-| ncaab | unquoted | 49 |
-| ncaab | wide | 58 |
-| nfl | tight | 39 |
-| nfl | wide | 44 |
-| nhl | tight | 44 |
-| nhl | wide | 61 |
+| cs2 | tight | 16 |
+| cs2 | unquoted | 17 |
+| cs2 | wide | 6 |
+| nba | tight | 129 |
+| nba | unquoted | 130 |
+| nba | wide | 155 |
+| ncaab | none | 10 |
+| ncaab | tight | 59 |
+| ncaab | unquoted | 7 |
+| ncaab | wide | 41 |
+| nfl | tight | 28 |
+| nfl | wide | 5 |
+| nhl | tight | 98 |
+| nhl | unquoted | 3 |
+| nhl | wide | 46 |
 
 Rules: PREREGISTRATION.md. Edges in probability points per $1 contract; maker pays no fee; taker fee 0.0695·p(1−p).
