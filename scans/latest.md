@@ -1,6 +1,6 @@
-# Desk scan 2026-11-18T04:39:30+00:00
+# Desk scan 2026-11-18T04:58:10+00:00
 
-Universe: 607 upcoming main-line contracts; 0 events matched to Pinnacle; 0 contracts with a reference; 0 live actions. Quote states: {'wide': 289, 'tight': 179, 'unquoted': 128, 'none': 11}.
+Universe: 607 upcoming main-line contracts; 0 events matched to Pinnacle; 0 contracts with a reference; 0 live actions. Quote states: {'wide': 282, 'tight': 187, 'unquoted': 127, 'none': 11}.
 
 ## Actions inside the posting window
 
@@ -17,16 +17,16 @@ None.
 
 | sport | quote state | n |
 |---|---|---|
-| cs2 | tight | 42 |
-| cs2 | unquoted | 16 |
-| cs2 | wide | 42 |
+| cs2 | tight | 45 |
+| cs2 | unquoted | 15 |
+| cs2 | wide | 40 |
 | nba | tight | 31 |
 | nba | unquoted | 111 |
 | nba | wide | 110 |
 | ncaab | none | 11 |
-| ncaab | tight | 69 |
+| ncaab | tight | 74 |
 | ncaab | unquoted | 1 |
-| ncaab | wide | 111 |
+| ncaab | wide | 106 |
 | nhl | tight | 37 |
 | nhl | wide | 26 |
 
