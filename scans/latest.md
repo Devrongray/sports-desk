@@ -1,6 +1,6 @@
-# Desk scan 2026-11-28T05:21:08+00:00
+# Desk scan 2026-11-28T14:24:39+00:00
 
-Universe: 625 upcoming main-line contracts; 0 events matched to Pinnacle; 0 contracts with a reference; 0 live actions. Quote states: {'wide': 280, 'tight': 280, 'unquoted': 63, 'none': 2}.
+Universe: 1131 upcoming main-line contracts; 0 events matched to Pinnacle; 0 contracts with a reference; 0 live actions. Quote states: {'tight': 474, 'wide': 434, 'unquoted': 220, 'none': 3}.
 
 ## Actions inside the posting window
 
@@ -13,21 +13,24 @@ None.
 ## Passed inside the window: 0
 
 
-## No Pinnacle reference yet: 625 contracts
+## No Pinnacle reference yet: 1131 contracts
 
 | sport | quote state | n |
 |---|---|---|
 | cs2 | tight | 18 |
-| cs2 | unquoted | 19 |
-| cs2 | wide | 18 |
-| nba | tight | 15 |
-| nba | unquoted | 40 |
-| nba | wide | 50 |
-| ncaab | none | 2 |
-| ncaab | tight | 115 |
-| ncaab | unquoted | 4 |
-| ncaab | wide | 71 |
-| nhl | tight | 132 |
-| nhl | wide | 141 |
+| cs2 | unquoted | 10 |
+| cs2 | wide | 5 |
+| nba | tight | 57 |
+| nba | unquoted | 178 |
+| nba | wide | 120 |
+| ncaab | none | 3 |
+| ncaab | tight | 200 |
+| ncaab | unquoted | 3 |
+| ncaab | wide | 152 |
+| nfl | tight | 17 |
+| nfl | wide | 53 |
+| nhl | tight | 182 |
+| nhl | unquoted | 29 |
+| nhl | wide | 104 |
 
 Rules: PREREGISTRATION.md. Edges in probability points per $1 contract; maker pays no fee; taker fee 0.0695·p(1−p).
